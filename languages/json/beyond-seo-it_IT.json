@@ -1,0 +1,4954 @@
+{
+  "": {
+    "domain": "rankingcoach",
+    "plural-forms": "nplurals=2; plural=n > 1;",
+    "lang": "it"
+  },
+  "Start": [
+    "Inizia"
+  ],
+  "Close": [
+    "Chiudi"
+  ],
+  "Cancel": [
+    "Annulla"
+  ],
+  "General": [
+    "Generale"
+  ],
+  "Optimisation": [
+    "Ottimizzazione"
+  ],
+  "Social": [
+    "Social"
+  ],
+  "Schema": [
+    "Schema"
+  ],
+  "Link assistant": [
+    "Assistente link"
+  ],
+  "Redirects": [
+    "Reindirizzamenti"
+  ],
+  "Advanced": [
+    "Avanzato"
+  ],
+  "Keywords": [
+    "Parole chiave"
+  ],
+  "Enter the main keyword that best describes the focus of your content. This primary keyword will help search engines understand the core topic of your page and improve your ranking for this specific term.": [
+    "Inserisci la parola chiave principale che descrive meglio il focus del tuo contenuto. Questa parola chiave primaria aiuterà i motori di ricerca a comprendere l'argomento principale della tua pagina e migliorare il tuo posizionamento per questo termine specifico."
+  ],
+  "Write words that you want to search": [
+    "Scrivi le parole che vuoi cercare"
+  ],
+  "Primary keyword": [
+    "Parola chiave primaria"
+  ],
+  "Additional keywords": [
+    "Parole chiave aggiuntive"
+  ],
+  "Add additional keywords": [
+    "Aggiungi parole chiave aggiuntive"
+  ],
+  "Add a primary keyword": [
+    "Aggiungi una parola chiave primaria"
+  ],
+  "These keywords should capture key aspects of your content to boost search visibility": [
+    "Queste parole chiave dovrebbero catturare gli aspetti chiave del tuo contenuto per migliorare la visibilità di ricerca"
+  ],
+  "This keyword should capture a key aspect of your content to boost search visibility": [
+    "Questa parola chiave dovrebbe catturare un aspetto chiave del tuo contenuto per migliorare la visibilità di ricerca"
+  ],
+  "Set as primary": [
+    "Imposta come primaria"
+  ],
+  "Breadcrumbs": [
+    "Breadcrumb"
+  ],
+  "Show users their location on a website with clickable links to parent pages, acting as a secondary navigation tool. In our rc Assistant plugin, customize their look to fit your site. They're auto-added to schema markup for better SEO and crawlability, no extra setup needed.": [
+    "Mostra agli utenti la loro posizione su un sito web con link cliccabili alle pagine padre, fungendo da strumento di navigazione secondario. Nel nostro plugin rc Assistant, personalizza il loro aspetto per adattarlo al tuo sito. Vengono aggiunti automaticamente al markup schema per una migliore SEO e scansionabilità, senza configurazione aggiuntiva necessaria."
+  ],
+  "General Settings": [
+    "Impostazioni generali"
+  ],
+  "Allow run score calculation on page/post save": [
+    "Consenti il calcolo del punteggio al salvataggio della pagina/post"
+  ],
+  "Enable this option to automatically run the SEO score calculation when a page or post is saved": [
+    "Abilita questa opzione per eseguire automaticamente il calcolo del punteggio SEO quando una pagina o un articolo viene salvato"
+  ],
+  "Allow synchronisation the keywords an interval basis": [
+    "Consenti la sincronizzazione delle parole chiave a intervalli regolari"
+  ],
+  "Enable this option to synchronise keywords from your WordPress site to the rC platform": [
+    "Abilita questa opzione per sincronizzare le parole chiave dal tuo sito WordPress alla piattaforma rC"
+  ],
+  "Enable WP-Cron service": [
+    "Abilita il servizio WP-Cron"
+  ],
+  "Enable this option to use the WP-Cron service for scheduling tasks": [
+    "Abilita questa opzione per utilizzare il servizio WP-Cron per la pianificazione delle attività"
+  ],
+  "Allow to run broken link checker an interval basis": [
+    "Consenti l'esecuzione del controllo link rotti a intervalli regolari"
+  ],
+  "Enable this option to run the broken link checker job that scans your site for broken links": [
+    "Abilita questa opzione per eseguire il processo di controllo dei link rotti che scansiona il tuo sito alla ricerca di link non funzionanti"
+  ],
+  "Enable anonymous usage data sharing": [
+    "Abilita la condivisione anonima dei dati di utilizzo"
+  ],
+  "Enable this option to share anonymous usage data with the plugin developers": [
+    "Abilita questa opzione per condividere dati di utilizzo anonimi con gli sviluppatori del plugin"
+  ],
+  "Remove settings on plugin deactivation": [
+    "Rimuovi le impostazioni alla disattivazione del plugin"
+  ],
+  "Enable this option to remove all plugin settings when the plugin is deactivated. This can help keep your database clean": [
+    "Abilita questa opzione per rimuovere tutte le impostazioni del plugin quando il plugin viene disattivato. Questo può aiutare a mantenere pulito il tuo database"
+  ],
+  "Disable WordPress heartbeat admin-ajax service": [
+    "Disabilita il servizio heartbeat admin-ajax di WordPress"
+  ],
+  "Enable this option to disable the WordPress heartbeat service that sends periodic AJAX requests to admin-ajax.php. This can improve performance by reducing server load": [
+    "Abilita questa opzione per disabilitare il servizio heartbeat di WordPress che invia richieste AJAX periodiche a admin-ajax.php. Questo può migliorare le prestazioni riducendo il carico del server"
+  ],
+  "Robots.txt": [
+    "Robots.txt"
+  ],
+  "View your robots.txt file to check search engine crawling instructions.": [
+    "Visualizza il tuo file robots.txt per controllare le istruzioni di scansione dei motori di ricerca."
+  ],
+  "Include sitemap URL in robots.txt file": [
+    "Includi l'URL della sitemap nel file robots.txt"
+  ],
+  "When enabled, your sitemap URL will be automatically added to your robots.txt file.": [
+    "Quando abilitato, l'URL della tua sitemap verrà automaticamente aggiunto al tuo file robots.txt."
+  ],
+  "Save Settings": [
+    "Salva impostazioni"
+  ],
+  "View Robots.txt": [
+    "Visualizza Robots.txt"
+  ],
+  "Last updated:": [
+    "Ultimo aggiornamento:"
+  ],
+  "The robots.txt file tells search engines which pages or files they can or cannot request from your site.": [
+    "Il file robots.txt dice ai motori di ricerca quali pagine o file possono o non possono richiedere dal tuo sito."
+  ],
+  "Your robots.txt URL:": [
+    "URL del tuo robots.txt:"
+  ],
+  "RSS": [
+    "RSS"
+  ],
+  "This feature is used to automatically add content to your site's RSS feed. More specifically, it allows you to add links back to your blog and your blog posts so scrapers will automatically add these links too. This helps search engines identify you as the original source of the content.": [
+    "Questa funzionalità viene utilizzata per aggiungere automaticamente contenuto al feed RSS del tuo sito. Più specificamente, ti consente di aggiungere link di ritorno al tuo blog e ai tuoi articoli del blog così che gli scraper aggiungeranno automaticamente anche questi link. Questo aiuta i motori di ricerca a identificarti come la fonte originale del contenuto."
+  ],
+  "Open RSS Feed": [
+    "Apri feed RSS"
+  ],
+  "Content to put before each post in the feed": [
+    "Contenuto da inserire prima di ogni post nel feed"
+  ],
+  "Content to put after each post in the feed": [
+    "Contenuto da inserire dopo ogni post nel feed"
+  ],
+  "Content exceeds maximum length of 255 characters": [
+    "Il contenuto supera la lunghezza massima di 255 caratteri"
+  ],
+  "Save changes": [
+    "Salva modifiche"
+  ],
+  "Sitemap": [
+    "Sitemap"
+  ],
+  "Generate and manage your XML sitemap for better search engine indexing.": [
+    "Genera e gestisci la tua sitemap XML per una migliore indicizzazione dei motori di ricerca."
+  ],
+  "Generate Sitemap": [
+    "Genera sitemap"
+  ],
+  "View Sitemap": [
+    "Visualizza sitemap"
+  ],
+  "The sitemap is automatically regenerated when you publish new content. You can also manually generate it using the button above.": [
+    "La sitemap viene automaticamente rigenerata quando pubblichi nuovo contenuto. Puoi anche generarla manualmente utilizzando il pulsante sopra."
+  ],
+  "Your sitemap URL:": [
+    "URL della tua sitemap:"
+  ],
+  "Settings": [
+    "Impostazioni"
+  ],
+  "Plugin version:": [
+    "Versione plugin:"
+  ],
+  "UserID:": [
+    "ID utente:"
+  ],
+  "ProjectID:": [
+    "ID progetto:"
+  ],
+  "Subscription:": [
+    "Abbonamento:"
+  ],
+  "Name:": [
+    "Nome:"
+  ],
+  "Separator": [
+    "Separatore"
+  ],
+  "Import settings": [
+    "Importa impostazioni"
+  ],
+  "Coming soon": [
+    "Prossimamente"
+  ],
+  "Switching to our SEO Plugin? Import your settings from other SEO plugins like Yoast SEO, All in One SEO, Rank Math, or SEOPress in just a few clicks. We'll ensure your data is safely transferred.": [
+    "Stai passando al nostro plugin SEO? Importa le tue impostazioni da altri plugin SEO come Yoast SEO, All in One SEO, Rank Math o SEOPress con pochi clic. Ci assicureremo che i tuoi dati vengano trasferiti in sicurezza."
+  ],
+  "Step 1. Backup your site": [
+    "Passaggio 1. Fai il backup del tuo sito"
+  ],
+  "Before importing settings, we strongly recommend creating a full backup of your WordPress site to avoid any data loss.": [
+    "Prima di importare le impostazioni, si consiglia vivamente di creare un backup completo del sito WordPress per evitare perdite di dati."
+  ],
+  "Learn how to backup your site": [
+    "Impara come fare il backup del tuo sito"
+  ],
+  "Step 2. Select Plugin to import from": [
+    "Passaggio 2. Seleziona il plugin da cui importare"
+  ],
+  "Choose the SEO plugin you're currently using. We've detected the following plugins installed on your site.": [
+    "Scegli il plugin SEO che stai attualmente utilizzando. Abbiamo rilevato i seguenti plugin installati sul tuo sito."
+  ],
+  "Yoast SEO": [
+    "Yoast SEO"
+  ],
+  "All in One SEO": [
+    "All in One SEO"
+  ],
+  "This feature will be available soon.": [
+    "Questa funzionalità sarà disponibile presto."
+  ],
+  "No link assistant data found": [
+    "Nessun dato dell'assistente link trovato"
+  ],
+  "Failed to load link assistant data": [
+    "Impossibile caricare i dati dell'assistente link"
+  ],
+  "Error:": [
+    "Errore:"
+  ],
+  "Inbound Internal:": [
+    "Link interni in entrata:"
+  ],
+  "No internal links found.": [
+    "Nessun link interno trovato."
+  ],
+  "Outbound Internal:": [
+    "Link interni in uscita:"
+  ],
+  "No outbound links found.": [
+    "Nessun link in uscita trovato."
+  ],
+  "External:": [
+    "Esterno:"
+  ],
+  "No external links found.": [
+    "Nessun link esterno trovato."
+  ],
+  "Source Page": [
+    "Pagina sorgente"
+  ],
+  "Target URL": [
+    "URL di destinazione"
+  ],
+  "Link Text": [
+    "Testo del link"
+  ],
+  "Link Status": [
+    "Stato del link"
+  ],
+  "Set noindex for this page:": [
+    "Imposta noindex per questa pagina:"
+  ],
+  "Prevents this page from being indexed by search engines. Adds a noindex tag to exclude this page from search results.": [
+    "Impedisce a questa pagina di essere indicizzata dai motori di ricerca. Aggiunge un tag noindex per escludere questa pagina dai risultati di ricerca."
+  ],
+  "Exclude this page from sitemap:": [
+    "Escludi questa pagina dalla sitemap:"
+  ],
+  "Prevents this page from appearing in the sitemap. Excludes this page from the sitemap, reducing its visibility to search engines.": [
+    "Impedisce a questa pagina di apparire nella sitemap. Esclude questa pagina dalla sitemap, riducendo la sua visibilità ai motori di ricerca."
+  ],
+  "Canonical URL": [
+    "URL canonico"
+  ],
+  "Enter canonical URL": [
+    "Inserisci URL canonico"
+  ],
+  "Create a series of posts": [
+    "Crea una serie di articoli"
+  ],
+  "Social media planner": [
+    "Pianificatore social media"
+  ],
+  "Publish on multiple platforms": [
+    "Pubblica su più piattaforme"
+  ],
+  "Monitor and reply to reviews": [
+    "Monitora e rispondi alle recensioni"
+  ],
+  "Review collector widget": [
+    "Widget raccoglitore recensioni"
+  ],
+  "URL shortener for marketing links": [
+    "Accorciatore URL per link di marketing"
+  ],
+  "They're everywhere. You're easy to miss.": [
+    "Sono ovunque. È facile non essere notati."
+  ],
+  "If your competitors appear on more platforms, they'll get found faster. Upgrade now to make your business easier to discover.": [
+    "Se i tuoi concorrenti appaiono su più piattaforme, verranno trovati più velocemente. Aggiorna ora per rendere la tua attività più facile da scoprire."
+  ],
+  "And more": [
+    "E altro"
+  ],
+  "Boost my visibility": [
+    "Aumenta la mia visibilità"
+  ],
+  "Feature illustration": [
+    "Illustrazione della funzionalità"
+  ],
+  "On-Page Optimization Overview": [
+    "Panoramica dell'ottimizzazione on-page"
+  ],
+  "Content SEO Score": [
+    "Punteggio SEO del contenuto"
+  ],
+  "Recommendations": [
+    "Raccomandazioni"
+  ],
+  "Issues": [
+    "Problemi"
+  ],
+  "SEO Plug-in": [
+    "Plugin SEO"
+  ],
+  "Poor SEO score — major improvements needed.": [
+    "Punteggio SEO scarso — sono necessari miglioramenti importanti."
+  ],
+  "You have good optimisation level on this page": [
+    "Hai un buon livello di ottimizzazione su questa pagina"
+  ],
+  "No suggestions found": [
+    "Nessun suggerimento trovato"
+  ],
+  "rankingCoach logo": [
+    "Logo rankingCoach"
+  ],
+  "Status": [
+    "Stato"
+  ],
+  "Actions": [
+    "Azioni"
+  ],
+  "No redirects found. Use the form below to create one.": [
+    "Nessun reindirizzamento trovato. Usa il modulo qui sotto per crearne uno."
+  ],
+  "Update redirect:": [
+    "Aggiorna reindirizzamento:"
+  ],
+  "Add new redirect:": [
+    "Aggiungi nuovo reindirizzamento:"
+  ],
+  "Source URL": [
+    "URL sorgente"
+  ],
+  "Source URL (e.g., /old-page)": [
+    "URL sorgente (es. /vecchia-pagina)"
+  ],
+  "Target URL (e.g., /new-page)": [
+    "URL di destinazione (es. /nuova-pagina)"
+  ],
+  "Redirect type": [
+    "Tipo di reindirizzamento"
+  ],
+  "Update Redirect": [
+    "Aggiorna reindirizzamento"
+  ],
+  "Add Redirect": [
+    "Aggiungi reindirizzamento"
+  ],
+  "Failed to add redirect": [
+    "Impossibile aggiungere il reindirizzamento"
+  ],
+  "An error occurred while updating the redirect": [
+    "Si è verificato un errore durante l'aggiornamento del reindirizzamento"
+  ],
+  "An error occurred while adding the redirect": [
+    "Si è verificato un errore durante l'aggiunta del reindirizzamento"
+  ],
+  "Schema in use": [
+    "Schema in uso"
+  ],
+  "Generate Schema": [
+    "Genera schema"
+  ],
+  "Schema loaded from cache": [
+    "Schema caricato dalla cache"
+  ],
+  "Schema generated successfully": [
+    "Schema generato con successo"
+  ],
+  "Preview": [
+    "Anteprima"
+  ],
+  "Enter a title": [
+    "Inserisci un titolo"
+  ],
+  "yourdomain.com": [
+    "tuodominio.com"
+  ],
+  "Your page title will appear here": [
+    "Il titolo della tua pagina apparirà qui"
+  ],
+  "From": [
+    "Da"
+  ],
+  "Post Title": [
+    "Titolo dell'articolo"
+  ],
+  "Enter post title": [
+    "Inserisci il titolo dell'articolo"
+  ],
+  "Meta Description": [
+    "Meta descrizione"
+  ],
+  "Enter SEO meta description": [
+    "Inserisci la meta descrizione SEO"
+  ],
+  "Remove": [
+    "Rimuovi"
+  ],
+  "Post title": [
+    "Titolo dell'articolo"
+  ],
+  "Post slug": [
+    "Slug dell'articolo"
+  ],
+  "Post date": [
+    "Data dell'articolo"
+  ],
+  "Author name": [
+    "Nome dell'autore"
+  ],
+  "Site title": [
+    "Titolo del sito"
+  ],
+  "Site tagline": [
+    "Slogan del sito"
+  ],
+  "Category": [
+    "Categoria"
+  ],
+  "Categories": [
+    "Categorie"
+  ],
+  "Current date": [
+    "Data corrente"
+  ],
+  "Current time": [
+    "Ora corrente"
+  ],
+  "Year": [
+    "Anno"
+  ],
+  "Month": [
+    "Mese"
+  ],
+  "Day": [
+    "Giorno"
+  ],
+  "Search term": [
+    "Termine di ricerca"
+  ],
+  "From 1 to many": [
+    "Da 1 a molti"
+  ],
+  "Track more keywords than you can right now": [
+    "Traccia più parole chiave di quante puoi ora"
+  ],
+  "Meta generator": [
+    "Generatore meta"
+  ],
+  "Create meta descriptions and titles automatically": [
+    "Crea meta descrizioni e titoli automaticamente"
+  ],
+  "Automatic canonicals": [
+    "Canonici automatici"
+  ],
+  "Avoid duplicate content with smart URL settings": [
+    "Evita contenuti duplicati con impostazioni URL intelligenti"
+  ],
+  "Image Alt-text generator": [
+    "Generatore testo alternativo immagini"
+  ],
+  "Automate alt text and titles for images": [
+    "Automatizza testo alternativo e titoli per le immagini"
+  ],
+  "AI-powered social content": [
+    "Contenuto social alimentato da AI"
+  ],
+  "Generate social media titles and metadata instantly": [
+    "Genera titoli e metadati per i social media istantaneamente"
+  ],
+  "Page content": [
+    "Contenuto della pagina"
+  ],
+  "Auto-integrate keywords into your page content": [
+    "Integra automaticamente le parole chiave nel contenuto della tua pagina"
+  ],
+  "Autogenerate": [
+    "Genera automaticamente"
+  ],
+  "PRO FEATURE": [
+    "FUNZIONALITÀ PRO"
+  ],
+  "Something went wrong from our side, please try again!": [
+    "Qualcosa è andato storto dal nostro lato, riprova!"
+  ],
+  "An unexpected error occurred": [
+    "Si è verificato un errore imprevisto"
+  ],
+  "Hey there, I'm your assistant.": [
+    "Ciao, sono il tuo assistente."
+  ],
+  "Im here to make SEO simple and effective for your website.": [
+    "Sono qui per rendere la SEO semplice ed efficace per il tuo sito web."
+  ],
+  "Ready to dive in?": [
+    "Pronto a iniziare?"
+  ],
+  "Im setting it up for you. This will be done in a bit. This might take up to a few minutes. Once its done, we can continue optimising your website and content right here.": [
+    "Lo sto configurando per te. Sarà fatto tra poco. Potrebbe richiedere fino a qualche minuto. Una volta fatto, potremo continuare a ottimizzare il tuo sito web e il contenuto proprio qui."
+  ],
+  "After Ill open Wordpress, and we can continue on optimising your website and content from there.": [
+    "Dopo aprirò WordPress, e potremo continuare a ottimizzare il tuo sito web e il contenuto da lì."
+  ],
+  "Skip to manual input": [
+    "Passa all'inserimento manuale"
+  ],
+  "Loading...": [
+    "Caricamento..."
+  ],
+  "Message cannot exceed 255 characters": [
+    "Il messaggio non può superare i 255 caratteri"
+  ],
+  "Text contains URL or is missing a space after a period (.)": [
+    "Il testo contiene un URL o manca uno spazio dopo un punto (.)"
+  ],
+  "Write here to communicate": [
+    "Scrivi qui per comunicare"
+  ],
+  "Lets get started!": [
+    "Iniziamo!"
+  ],
+  "Processing your input": [
+    "Elaborazione del tuo input"
+  ],
+  "Analyzing details": [
+    "Analisi dettagliata"
+  ],
+  "Processing input": [
+    "Elaborazione input"
+  ],
+  "Checking name": [
+    "Controllo nome"
+  ],
+  "Verifying availability": [
+    "Verifica disponibilità"
+  ],
+  "Reviewing details": [
+    "Revisione dettagli"
+  ],
+  "Understanding scope": [
+    "Comprensione ambito"
+  ],
+  "Locating business": [
+    "Localizzazione attività"
+  ],
+  "Validating area": [
+    "Validazione area"
+  ],
+  "Determining focus": [
+    "Determinazione focus"
+  ],
+  "Mapping region": [
+    "Mappatura regione"
+  ],
+  "Highlighting features": [
+    "Evidenziazione caratteristiche"
+  ],
+  "Finding uniqueness": [
+    "Ricerca unicità"
+  ],
+  "Provide details to continue": [
+    "Fornisci dettagli per continuare"
+  ],
+  "Please proceed with the next step": [
+    "Procedi con il prossimo passaggio"
+  ],
+  "Awesome!": [
+    "Ottimo!"
+  ],
+  "loading...": [
+    "caricamento..."
+  ],
+  "Heres a summary of your website profile. Everything looks good?": [
+    "Ecco un riassunto del profilo del tuo sito web. Tutto sembra a posto?"
+  ],
+  "Business Information": [
+    "Informazioni sull'attività"
+  ],
+  "Website Description": [
+    "Descrizione del sito web"
+  ],
+  "You dont have any website description at the moment": [
+    "Non hai alcuna descrizione del sito web al momento"
+  ],
+  "Generated by us": [
+    "Generato da noi"
+  ],
+  "Search category eg.: Computer repair shop": [
+    "Categoria di ricerca es.: Negozio di riparazione computer"
+  ],
+  "You can add up to 10 categories.": [
+    "Puoi aggiungere fino a 10 categorie."
+  ],
+  "You dont have any categories at the moment": [
+    "Non hai alcuna categoria al momento"
+  ],
+  "Edit website description": [
+    "Modifica descrizione sito web"
+  ],
+  "Website description can have maximum 750 characters.": [
+    "La descrizione del sito web può avere massimo 750 caratteri."
+  ],
+  "Keywords to be used for SEO": [
+    "Parole chiave da utilizzare per la SEO"
+  ],
+  "Add new keyword": [
+    "Aggiungi nuova parola chiave"
+  ],
+  "Enter new keyword (minimum 3 characters)": [
+    "Inserisci nuova parola chiave (minimo 3 caratteri)"
+  ],
+  "A keyword can have max 80 characters": [
+    "Una parola chiave può avere massimo 80 caratteri"
+  ],
+  "You have reached max number of keywords": [
+    "Hai raggiunto il numero massimo di parole chiave"
+  ],
+  "You have already added this keyword": [
+    "Hai già aggiunto questa parola chiave"
+  ],
+  "You dont have any keywords at the moment": [
+    "Non hai alcuna parola chiave al momento"
+  ],
+  "Finish Onboarding": [
+    "Completa onboarding"
+  ],
+  "Add": [
+    "Aggiungi"
+  ],
+  "Enter website description": [
+    "Inserisci la descrizione del sito web"
+  ],
+  "Save": [
+    "Salva"
+  ],
+  "Edit business information": [
+    "Modifica informazioni attività"
+  ],
+  "Business Name": [
+    "Nome attività"
+  ],
+  "Enter business name": [
+    "Inserisci nome attività"
+  ],
+  "Website URL": [
+    "URL sito web"
+  ],
+  "Enter website URL": [
+    "Inserisci URL sito web"
+  ],
+  "Business Address": [
+    "Indirizzo attività"
+  ],
+  "Enter business address": [
+    "Inserisci indirizzo attività"
+  ],
+  "Optimisation level": [
+    "Livello di ottimizzazione"
+  ],
+  "rC Icon": [
+    "Icona rC"
+  ],
+  "Status Icon": [
+    "Icona stato"
+  ],
+  "This page doesnt have keywords": [
+    "Questa pagina non ha parole chiave"
+  ],
+  "Using the right keywords can significantly increase your websites visibility, making it easier for people to find it.": [
+    "Utilizzare le parole chiave giuste può aumentare significativamente la visibilità del tuo sito web, rendendolo più facile da trovare per le persone."
+  ],
+  "Use these keywords": [
+    "Usa queste parole chiave"
+  ],
+  "Skip this": [
+    "Salta questo"
+  ],
+  "Checking your page for<br>existing keywords": [
+    "Controllo della tua pagina per<br>parole chiave esistenti"
+  ],
+  "SERP Preview": [
+    "Anteprima SERP"
+  ],
+  "Meta Title": [
+    "Meta titolo"
+  ],
+  "Title": [
+    "Titolo"
+  ],
+  "Enter meta title": [
+    "Inserisci meta titolo"
+  ],
+  "Add Variable": [
+    "Aggiungi variabile"
+  ],
+  "Add Separator": [
+    "Aggiungi separatore"
+  ],
+  "Link Assistant Overview": [
+    "Panoramica assistente link"
+  ],
+  "Link Assistant": [
+    "Assistente link"
+  ],
+  "Internal links help search engines understand your content structure and improve your SEO rankings.": [
+    "I link interni aiutano i motori di ricerca a comprendere la struttura del tuo contenuto e migliorare i tuoi posizionamenti SEO."
+  ],
+  "Link Status Guide:": [
+    "Guida stato link:"
+  ],
+  "Not yet scanned - Click Scan Links to analyze": [
+    "Non ancora scansionato - Clicca Scansiona link per analizzare"
+  ],
+  "Working links - SEO-friendly": [
+    "Link funzionanti - SEO-friendly"
+  ],
+  "Broken links - Need attention": [
+    "Link rotti - Necessitano attenzione"
+  ],
+  "Redirects Overview": [
+    "Panoramica reindirizzamenti"
+  ],
+  "Redirects help preserve your SEO rankings when URLs change or pages are removed. They ensure users and search engines are sent to the correct destination.": [
+    "I reindirizzamenti aiutano a preservare i tuoi posizionamenti SEO quando gli URL cambiano o le pagine vengono rimosse. Assicurano che utenti e motori di ricerca vengano inviati alla destinazione corretta."
+  ],
+  "To create a redirect:": [
+    "Per creare un reindirizzamento:"
+  ],
+  "Source URL should be a local path (e.g. /old-page)": [
+    "L'URL sorgente dovrebbe essere un percorso locale (es. /vecchia-pagina)"
+  ],
+  "Destination URL can be any full link (internal or external)": [
+    "L'URL di destinazione può essere qualsiasi link completo (interno o esterno)"
+  ],
+  "Set up redirects to avoid broken links, retain link equity, and deliver a smoother experience to your visitors and search engines.": [
+    "Configura i reindirizzamenti per evitare link rotti, mantenere l'equity dei link e offrire un'esperienza più fluida ai tuoi visitatori e ai motori di ricerca."
+  ],
+  "Current redirects:": [
+    "Reindirizzamenti attuali:"
+  ],
+  "301 – Permanent Redirect": [
+    "301 – Reindirizzamento permanente"
+  ],
+  "Best for SEO. Use when a page is moved or replaced permanently.": [
+    "Ottimale per la SEO. Da utilizzare quando una pagina viene spostata o sostituita in modo permanente."
+  ],
+  "302 – Temporary Redirect": [
+    "302 – Reindirizzamento temporaneo"
+  ],
+  "Use when the original page will come back, like during maintenance or testing.": [
+    "Usa quando la pagina originale tornerà, come durante la manutenzione o i test."
+  ],
+  "Your RSS feed URL:": [
+    "URL del tuo feed RSS:"
+  ],
+  "View RSS Feed": [
+    "Visualizza feed RSS"
+  ],
+  "Enable RSS": [
+    "Abilita RSS"
+  ],
+  "Enable breadcrumbs": [
+    "Abilita breadcrumb"
+  ],
+  "Display options": [
+    "Opzioni di visualizzazione"
+  ],
+  "Anchor text for homepage": [
+    "Testo di ancoraggio della homepage"
+  ],
+  "Home": [
+    "Home"
+  ],
+  "Advanced options": [
+    "Opzioni avanzate"
+  ],
+  "Prefix for breadcrumb path": [
+    "Prefisso per percorso breadcrumb"
+  ],
+  "Suffix for archive breadcrumbs": [
+    "Suffisso per breadcrumb archivio"
+  ],
+  "Archives for": [
+    "Archivi per"
+  ],
+  "Suffix for search page breadcrumbs": [
+    "Suffisso per breadcrumb pagina ricerca"
+  ],
+  "Search results for": [
+    "Risultati di ricerca per"
+  ],
+  "Breadcrumbs for 404 Page": [
+    "Breadcrumb per pagina 404"
+  ],
+  "Error 404: Page not found": [
+    "Errore 404: Pagina non trovata"
+  ],
+  "Enable sitemap": [
+    "Abilita sitemap"
+  ],
+  "Enable robots.txt": [
+    "Abilita robots.txt"
+  ],
+  "Options": [
+    "Opzioni"
+  ],
+  "This page doesn`t have keywords": [
+    ""
+  ],
+  "Using the right keywords can significantly increase your website`s visibility, making it easier for people to find it.": [
+    ""
+  ],
+  "Finish onboarding": [
+    "Completa onboarding"
+  ],
+  "recommended": [
+    ""
+  ],
+  "Description": [
+    ""
+  ],
+  "Enter meta description": [
+    ""
+  ],
+  "No recommendations available": [
+    ""
+  ],
+  "Both Source URL and Target URL are required": [
+    ""
+  ],
+  "Failed to update redirect": [
+    ""
+  ],
+  "No redirects data found in the response": [
+    ""
+  ],
+  "Failed to load redirects data": [
+    ""
+  ],
+  "Permanent (301)": [
+    ""
+  ],
+  "Temporary (302)": [
+    ""
+  ],
+  "Permanent": [
+    ""
+  ],
+  "Temporary": [
+    ""
+  ],
+  "Type": [
+    ""
+  ],
+  "Hits": [
+    ""
+  ],
+  "Failed to scan links": [
+    ""
+  ],
+  "Not yet scanned - Click `Scan Links` to analyze": [
+    ""
+  ],
+  "Scan Links": [
+    ""
+  ],
+  "Generated by AI": [
+    ""
+  ],
+  "Remove keyword": [
+    ""
+  ],
+  "You don`t have any website description at the moment": [
+    ""
+  ],
+  "You don`t have any categories at the moment": [
+    ""
+  ],
+  "You don`t have any keywords at the moment": [
+    ""
+  ],
+  "Let`s get started!": [
+    ""
+  ],
+  "rankingCoach SEO": [
+    ""
+  ],
+  "https://www.rankingcoach.com/en-us/wordpress": [
+    ""
+  ],
+  "Be Found Easier in Google with rankingCoach | Effectively Perform Online Marketing in WordPress with rankingCoach | Assistant on SEO, Listing & Ads for better Google rankings and online visibility, and much more": [
+    ""
+  ],
+  "rankingCoach Team": [
+    ""
+  ],
+  "https://www.rankingcoach.com/en-us/about-us": [
+    ""
+  ],
+  "Database connection parameters are not set in wp-config.php": [
+    ""
+  ],
+  "No MediaItem name declared!": [
+    ""
+  ],
+  "No Bucket declared!": [
+    ""
+  ],
+  "No Region declared!": [
+    ""
+  ],
+  "English": [
+    ""
+  ],
+  "English (UK)": [
+    ""
+  ],
+  "French": [
+    ""
+  ],
+  "Spanish": [
+    ""
+  ],
+  "German": [
+    ""
+  ],
+  "Italian": [
+    ""
+  ],
+  "Dutch": [
+    ""
+  ],
+  "Russian": [
+    ""
+  ],
+  "Portuguese": [
+    ""
+  ],
+  "Chinese (Simplified)": [
+    ""
+  ],
+  "Chinese (Traditional)": [
+    ""
+  ],
+  "Japanese": [
+    ""
+  ],
+  "Korean": [
+    ""
+  ],
+  "Unknown": [
+    ""
+  ],
+  "Hi %s": [
+    ""
+  ],
+  "Dear Mr. %1$s %2$s": [
+    ""
+  ],
+  "Dear Mrs. %1$s %2$s": [
+    ""
+  ],
+  "Hi there": [
+    ""
+  ],
+  "No BASE_ENTITY_CLASS defined in %s": [
+    ""
+  ],
+  "No BASE_ORM_MODEL defined in %s": [
+    ""
+  ],
+  "Request contains invalid data": [
+    ""
+  ],
+  "No BASE_REPO_CLASS defined in %s": [
+    ""
+  ],
+  "No BASE_ENTITY_SET_CLASS defined in %s": [
+    ""
+  ],
+  "Failed to generate unique key: %s": [
+    ""
+  ],
+  "User with ID %s not found.": [
+    ""
+  ],
+  "Invalid URL provided.": [
+    ""
+  ],
+  "HTTP error fetching URL. Status code: %d": [
+    ""
+  ],
+  "Your meta title contains too many words. Please aim to keep it below 6 words for optimal SEO performance.": [
+    ""
+  ],
+  "Meta Title Contains Too Many Words": [
+    ""
+  ],
+  "Your meta description is within the acceptable range but could be improved. Aim for a length between %1$d and %2$d characters to enhance click-through rates.": [
+    ""
+  ],
+  "Slightly Short Meta Description": [
+    ""
+  ],
+  "This page has too many headings. For better readability and SEO, use no more than %d headings per 1000 words.": [
+    ""
+  ],
+  "Reduce Excessive Headings": [
+    ""
+  ],
+  "Your meta title has inconsistent capitalization. Use proper capitalization rules to improve readability and professionalism. Capitalize all words longer than 3 letters, and always capitalize the first and last word of the title.": [
+    ""
+  ],
+  "Improve Meta Title Capitalization": [
+    ""
+  ],
+  "Transition words connect ideas smoothly. Use them to guide readers through your content logically. Add transition words like \\": [
+    ""
+  ],
+  "Use more transition words": [
+    ""
+  ],
+  "Your page has very few websites linking to it. Getting links from at least 10 different websites will help search engines trust your site more and improve your rankings.": [
+    ""
+  ],
+  "Build More Backlinks": [
+    ""
+  ],
+  "You have some websites linking to you, but getting more links (aim for 50+) will significantly boost your search rankings and make your site more authoritative.": [
+    ""
+  ],
+  "Expand Your Backlink Profile": [
+    ""
+  ],
+  "The websites linking to you are not very trustworthy. Focus on getting links from respected, authoritative websites in your industry instead of low-quality sites.": [
+    ""
+  ],
+  "Improve Backlink Quality": [
+    ""
+  ],
+  "Your links look artificial to search engines. Focus on earning links naturally from relevant websites that would genuinely reference your content, rather than using manipulative tactics.": [
+    ""
+  ],
+  "Balance Your Backlink Profile": [
+    ""
+  ],
+  "Many websites linking to you are not related to your industry. Focus on getting links from websites in your specific field, as these are more valuable for SEO.": [
+    ""
+  ],
+  "Increase Topical Relevance of Backlinks": [
+    ""
+  ],
+  "You do not have links from highly respected websites. Even just a few links from trusted, popular sites can significantly boost your search rankings.": [
+    ""
+  ],
+  "Acquire High-Authority Backlinks": [
+    ""
+  ],
+  "Your links come from too few types of websites or regions. Getting links from diverse sources looks more natural to search engines and improves rankings.": [
+    ""
+  ],
+  "Diversify Your Backlink Sources": [
+    ""
+  ],
+  "You are losing more links than you are gaining. This signals declining relevance to search engines. Create a consistent strategy to earn new links regularly.": [
+    ""
+  ],
+  "Address Declining Backlink Trend": [
+    ""
+  ],
+  "The clickable text in your backlinks is not varied enough. Aim for a natural mix of branded text, keywords, and generic phrases like \\": [
+    ""
+  ],
+  "Improve Anchor Text Distribution": [
+    ""
+  ],
+  "Too many of your backlinks use exact keyword phrases as clickable text. This looks manipulative to search engines. Aim for more natural, varied link text.": [
+    ""
+  ],
+  "Reduce Over-Optimized Anchor Text": [
+    ""
+  ],
+  "Many of your backlinks use vague text like \\": [
+    ""
+  ],
+  "Reduce Generic Anchor Text Usage": [
+    ""
+  ],
+  "Some of your backlinks use text that is unrelated to your business or content. Try to get links with text that actually relates to what you offer.": [
+    ""
+  ],
+  "Address Irrelevant Anchor Text": [
+    ""
+  ],
+  "Not enough links use your brand name as the clickable text. Brand-name links help establish your authority and create a natural-looking link profile.": [
+    ""
+  ],
+  "Increase Branded Anchor Text": [
+    ""
+  ],
+  "Few of your backlinks use relevant keywords as clickable text. Having some (but not too many) keyword-rich links helps search engines understand your content's topic.": [
+    ""
+  ],
+  "Add Relevant Keyword Anchors": [
+    ""
+  ],
+  "Too many of your links are marked \\": [
+    ""
+  ],
+  "Balance Nofollow/Dofollow Ratio": [
+    ""
+  ],
+  "Your backlink profile lacks contextual links (links embedded within relevant content). These are more valuable than links in footers, sidebars, or author bios.": [
+    ""
+  ],
+  "Acquire More Contextual Backlinks": [
+    ""
+  ],
+  "Your selected keywords face intense competition. Pivot toward alternative terms with moderate competition to enhance visibility and achieve better ranking positions.": [
+    ""
+  ],
+  "Target Lower Competition Keywords": [
+    ""
+  ],
+  "Look for keywords with a good balance between search volume and competition. Ideal keywords have moderate search volume with relatively low competition.": [
+    ""
+  ],
+  "Balance Search Volume and Competition": [
+    ""
+  ],
+  "Keywords with higher CPC (Cost Per Click) often indicate higher commercial intent. For conversion-focused pages, prioritize keywords with good CPC values.": [
+    ""
+  ],
+  "Consider Commercial Intent": [
+    ""
+  ],
+  "Your keyword strategy relies on too few terms. Diversify with a blend of competitive and niche keywords to capture broader traffic and achieve sustainable ranking growth.": [
+    ""
+  ],
+  "Expand Your Keyword Portfolio": [
+    ""
+  ],
+  "Your content omits specific multi-word phrases that attract highly targeted visitors. Incorporate these longer, conversational keyword variations to capture users with precise search intent.": [
+    ""
+  ],
+  "Target Long Tail Variations": [
+    ""
+  ],
+  "Your site needs a structured keyword mapping strategy. Create a comprehensive plan assigning specific terms to each page, preventing content overlap and maximizing topical authority.": [
+    ""
+  ],
+  "Create a Keyword Map": [
+    ""
+  ],
+  "You have multiple pages targeting the same keywords, which confuses search engines about which page to rank. Either combine these pages into one stronger page or make each page focus on different keywords to avoid competing with yourself.": [
+    ""
+  ],
+  "Fix Keyword Cannibalization": [
+    ""
+  ],
+  "Your keyword distribution is uneven. Some topics have too many pages while others have too few. Balance your keyword targeting across content.": [
+    ""
+  ],
+  "Improve Keyword Distribution": [
+    ""
+  ],
+  "Your site needs content addressing several industry-relevant keywords. Develop strategic pages targeting these untapped opportunities to capture additional search traffic and audience segments.": [
+    ""
+  ],
+  "Expand Keyword Coverage": [
+    ""
+  ],
+  "Your website isn't seen as an authority on this topic. Create a main page (pillar page) about your core topic, then link to related pages that cover specific aspects in more detail. This connected structure shows search engines you're an expert on the subject.": [
+    ""
+  ],
+  "Strengthen Topical Authority": [
+    ""
+  ],
+  "Your content doesn't have a main keyword to target. Choose one specific phrase that best represents what your page is about. This helps search engines understand your content and show it to the right people.": [
+    ""
+  ],
+  "Set Primary Keyword": [
+    ""
+  ],
+  "Your content focuses too much on just one keyword. Add 2-3 related phrases (secondary keywords) that people might also search for. This helps your page appear in more search results and attract more visitors.": [
+    ""
+  ],
+  "Add Secondary Keywords": [
+    ""
+  ],
+  "Your main keyword isn't placed in the most important parts of your content. Make sure to include it in your title, first paragraph, at least one heading, and meta description. These locations have the biggest impact on search rankings.": [
+    ""
+  ],
+  "Place Keywords in Strategic Locations": [
+    ""
+  ],
+  "Your main keyword appears either too frequently or not often enough in your content. Try to use it in about 1-2% of your text (1-2 times per 100 words). This makes your content relevant without looking like you're trying to manipulate search rankings.": [
+    ""
+  ],
+  "Maintain Optimal Keyword Density": [
+    ""
+  ],
+  "Your main keyword isn't being used effectively throughout your content. Make sure to include it naturally in important places like your title, headings, and throughout your text. This helps search engines understand what your page is about.": [
+    ""
+  ],
+  "Optimize Primary Keyword Usage": [
+    ""
+  ],
+  "Your content contains excessive keyword repetition. Diversify your language with synonyms and related terms to maintain natural flow while preserving search relevance.": [
+    ""
+  ],
+  "Keyword Overuse": [
+    ""
+  ],
+  "Too many images contain your keyword in their alt text. This appears unnatural to search engines. Use your keyword in alt text for only the most relevant images (aim for 30-50% of images).": [
+    ""
+  ],
+  "Reduce Keyword Usage in Image Alt Text": [
+    ""
+  ],
+  "Your first paragraph contains excessive keyword repetition. This creates poor readability and may trigger search engine penalties. Rewrite using pronouns, synonyms, and natural language flow.": [
+    ""
+  ],
+  "Fix Keyword Stuffing in Opening Paragraph": [
+    ""
+  ],
+  "Your meta description repeats keywords too frequently. Write a compelling, natural description that mentions your keyword once while focusing on user engagement and click-through appeal.": [
+    ""
+  ],
+  "Reduce Keyword Repetition in Meta Description": [
+    ""
+  ],
+  "You have defined too many secondary keywords. Focus on 3-5 highly relevant secondary keywords that complement your primary keyword rather than trying to target too many terms.": [
+    ""
+  ],
+  "Reduce Number of Secondary Keywords": [
+    ""
+  ],
+  "Refine your primary keyword phrase to capture optimal search intent. Select a specific 2-4 word phrase that balances search volume with competition.": [
+    ""
+  ],
+  "Primary Keyword Optimization": [
+    ""
+  ],
+  "Secondary keywords are overused in your meta description, diluting its effectiveness. Strategically incorporate 1-2 secondary terms to enhance relevance without compromising readability.": [
+    ""
+  ],
+  "Optimize Meta Description Keywords": [
+    ""
+  ],
+  "Your content contains obsolete information. Refresh with current data, recent developments, and emerging industry trends to maintain relevance and authority.": [
+    ""
+  ],
+  "Update Content Freshness": [
+    ""
+  ],
+  "Your content fails to incorporate recent industry developments and trends. Update with current information to maintain authority and improve search visibility.": [
+    ""
+  ],
+  "Adapt to Industry Changes": [
+    ""
+  ],
+  "Enhance your content by incorporating additional dimensions of the topic. This enriches contextual relevance, improves user engagement, and boosts search engine visibility.": [
+    ""
+  ],
+  "Expand Content Depth": [
+    ""
+  ],
+  "Your competitors dominate search rankings with superior content depth and keyword optimization. Enhance your material to surpass their quality and establish market authority.": [
+    ""
+  ],
+  "Improve Competitive Advantage": [
+    ""
+  ],
+  "This content underperforms and dilutes site authority. Consider removing or merging it with stronger pages to enhance overall domain quality and search visibility.": [
+    ""
+  ],
+  "Consider Content Pruning": [
+    ""
+  ],
+  "Your primary keyword appears either too frequently or insufficiently in your content. Aim for 0.5% to 3% density to enhance search engine recognition and relevance.": [
+    ""
+  ],
+  "Optimize Keyword Density": [
+    ""
+  ],
+  "Your content contains excessive keyword repetition, which may trigger search engine penalties. Create more natural, reader-friendly text with balanced keyword distribution.": [
+    ""
+  ],
+  "Reduce Keyword Overuse": [
+    ""
+  ],
+  "Your content contains insufficient mentions of the primary keyword, diminishing topical relevance. Strategically integrate more instances while maintaining natural readability.": [
+    ""
+  ],
+  "Increase Primary Keyword Usage": [
+    ""
+  ],
+  "Your keywords concentrate in isolated sections rather than flowing naturally throughout the content. Spread them evenly across headings, paragraphs, and conclusion for better SEO impact.": [
+    ""
+  ],
+  "Your primary keyword is absent from the post/page title, significantly reducing search visibility and click-through rates. Incorporate it naturally to boost rankings and relevance.": [
+    ""
+  ],
+  "Add Primary Keyword to Post Title": [
+    "Aggiungi la parola chiave principale al titolo del post"
+  ],
+  "Your primary keyword is absent from the meta title tag, significantly reducing search visibility and click-through rates. Incorporate it naturally to boost rankings and relevance.": [
+    ""
+  ],
+  "Add Primary Keyword to Meta Title": [
+    ""
+  ],
+  "Your meta title lacks secondary keywords that could expand your search visibility. Incorporate them naturally to capture additional relevant traffic and ranking opportunities.": [
+    ""
+  ],
+  "Add a Secondary Keyword to Meta Title": [
+    ""
+  ],
+  "Your headings fail to incorporate primary and secondary keywords, reducing topical relevance. Strategically integrate them to enhance search visibility and user engagement.": [
+    ""
+  ],
+  "Add Keywords to Headings": [
+    ""
+  ],
+  "Your opening paragraph omits the primary keyword, reducing immediate relevance signals. Incorporate it naturally to enhance topical clarity and search engine recognition.": [
+    ""
+  ],
+  "Add Primary Keyword to First Paragraph": [
+    ""
+  ],
+  "Your content shows irregular keyword placement with clusters in some sections and sparse usage in others. Distribute keywords evenly for improved SEO performance.": [
+    ""
+  ],
+  "Balance Keyword Usage in Content Sections": [
+    ""
+  ],
+  "Your content omits crucial semantically-related terms that search engines expect to find. Incorporate these contextual keywords to strengthen topical relevance and authority.": [
+    ""
+  ],
+  "Include Missing Related Keywords": [
+    ""
+  ],
+  "Your content mentions related keywords but doesn't clearly explain how they connect to your main topic. Try using these keywords in complete sentences that show their relationship to your main subject. This helps search engines better understand what your content is about.": [
+    ""
+  ],
+  "Enhance Semantic Context": [
+    ""
+  ],
+  "Your content omits essential semantic terms that search engines associate with your topic, diminishing your authority and topical relevance.": [
+    ""
+  ],
+  "Add Key Missing Related Terms": [
+    ""
+  ],
+  "Your content lacks supporting keywords that expand your main topical coverage. Add 2-5 relevant secondary keywords to improve search visibility and semantic context.": [
+    ""
+  ],
+  "Your secondary keywords are too complex. Simplify them to 5 words or fewer to improve readability and search engine recognition in meta titles and description.": [
+    ""
+  ],
+  "Simplify Secondary Keywords": [
+    ""
+  ],
+  "Your related keywords appear concentrated in isolated sections rather than flowing naturally throughout the content. Redistribute them strategically to enhance topical relevance and improve search visibility.": [
+    ""
+  ],
+  "Your content provides only surface-level information without comprehensive analysis or detailed explanations. Incorporate expert insights, relevant statistics, and practical examples to establish topical authority and satisfy user intent.": [
+    ""
+  ],
+  "Simplify Complex Language To Avoid Lack of Depth": [
+    ""
+  ],
+  "Content lacks a clear heading hierarchy. Use strategic H2–H4 tags to improve readability, user experience, and search engine understanding.": [
+    ""
+  ],
+  "Add More Headings": [
+    ""
+  ],
+  "Your paragraphs exceed optimal length. It should contain less than %d words. Divide them into smaller, focused sections to enhance readability, reduce cognitive load, and improve visitor engagement.": [
+    ""
+  ],
+  "Shorten Paragraphs": [
+    ""
+  ],
+  "Your paragraphs are too short, making the content feel fragmented. Aim for a minimum of %d words per paragraph to improve flow and coherence.": [
+    ""
+  ],
+  "Lengthen Paragraphs": [
+    ""
+  ],
+  "Your content lacks sufficient depth for search engines to recognize topical authority. Expand to at least 500 words with comprehensive, valuable information for readers.": [
+    ""
+  ],
+  "Expand Content Length": [
+    ""
+  ],
+  "Your content exceeds optimal length. Trim unnecessary sections and focus on core messages to enhance reader engagement and reduce bounce rates.": [
+    ""
+  ],
+  "Shorten Content Length": [
+    ""
+  ],
+  "Your introduction section is missing multimedia elements. Consider adding images, videos, or infographics to enhance engagement.": [
+    ""
+  ],
+  "Add Multimedia to Introduction": [
+    ""
+  ],
+  "Your content does not satisfy the user intent behind the target keywords. Ensure your content aligns with what users are searching for.": [
+    ""
+  ],
+  "Align Content with User Intent": [
+    ""
+  ],
+  "Your meta title needs expansion with relevant keywords. Longer titles capture more search intent and enhance click-through rates from search results.": [
+    ""
+  ],
+  "Expand Meta Title": [
+    ""
+  ],
+  "Your meta title exceeds recommended character limits. Truncated titles diminish click-through rates and weaken keyword relevance. Aim for 50-60 characters for optimal search visibility.": [
+    ""
+  ],
+  "Shorten Meta Title": [
+    ""
+  ],
+  "Your page requires a meta title tag. Implementing a concise, keyword-rich title enhances click-through rates and establishes crucial context for search engines.": [
+    ""
+  ],
+  "Add Meta Title": [
+    ""
+  ],
+  "Your meta title contains clickbait patterns. Consider using a more professional and straightforward title that accurately represents your content.": [
+    ""
+  ],
+  "Avoid Clickbait in Meta Title": [
+    ""
+  ],
+  "Your meta title lacks a brand separator (-, |, :). Adding a separator between content and brand name improves readability and professional appearance in search results.": [
+    ""
+  ],
+  "Add Brand Separator to Meta Title": [
+    ""
+  ],
+  "The primary keyword isn't placed at the beginning of the meta title. For stronger SEO signals, move it closer to the start to emphasize relevance.": [
+    ""
+  ],
+  "Move Keyword to Beginning of Meta Title": [
+    ""
+  ],
+  "Your meta description requires expansion to at least 150 characters. Incorporate compelling details and relevant keywords to improve click-through rates from search results.": [
+    ""
+  ],
+  "Expand Meta Description": [
+    ""
+  ],
+  "Your meta description exceeds optimal length and will be truncated in search results, diminishing click-through rates. Condense it to 155-160 characters for maximum visibility and impact.": [
+    ""
+  ],
+  "Shorten Meta Description": [
+    ""
+  ],
+  "Your page needs a meta description. Creating a compelling summary improves SERP appearance, drives qualified traffic, and communicates page value to search engines.": [
+    ""
+  ],
+  "Add Meta Description": [
+    ""
+  ],
+  "Your meta description includes a weak or vague call to action. Make it more specific and persuasive to increase clicks.": [
+    ""
+  ],
+  "Strengthen Your CTA": [
+    ""
+  ],
+  "Your meta description does not satisfy the user intent behind the target keywords. Ensure your meta description aligns with what users are searching for.": [
+    ""
+  ],
+  "Align Meta Description with User Intent": [
+    ""
+  ],
+  "Replace underscores with hyphens in your URLs to enhance search visibility. Search engines recognize hyphens as word separators, improving crawling efficiency and keyword recognition.": [
+    ""
+  ],
+  "Use Hyphens in URLs": [
+    ""
+  ],
+  "Your URL omits the primary keyword, reducing search visibility. Incorporating it enhances ranking potential, signals content relevance, and improves user experience.": [
+    ""
+  ],
+  "Add Primary Keyword to URL": [
+    ""
+  ],
+  "The primary keyword is in the URL, but located deep in the structure. Move it closer to the root for stronger SEO signals.": [
+    ""
+  ],
+  "Move Primary Keyword Closer to Root in URL": [
+    ""
+  ],
+  "The URL contains complex structures, query parameters, symbols that reduce readability or a long path. Simplify the structure and remove unnecessary characters.": [
+    ""
+  ],
+  "Simplify the URL Structure": [
+    ""
+  ],
+  "The primary keyword is not reflected in the URL slug, reducing relevance. Include it in a natural and concise way.": [
+    ""
+  ],
+  "Include Primary Keyword in URL": [
+    ""
+  ],
+  "Your permalink structure is not optimized for SEO. Consider enabling a custom or post-name-based structure for better visibility.": [
+    ""
+  ],
+  "Use SEO-Friendly Permalink Structure": [
+    ""
+  ],
+  "Your URL exceeds optimal length, reducing user experience and SEO effectiveness. Trim unnecessary segments and parameters for improved performance.": [
+    ""
+  ],
+  "Shorten the URL": [
+    ""
+  ],
+  "Your page lacks a canonical tag, risking search ranking dilution through duplicate content. Implement this tag to consolidate page authority and clarify preferred URL versions.": [
+    ""
+  ],
+  "Add a Canonical Tag": [
+    ""
+  ],
+  "Your canonical tag contains a malformed URL that search engines cannot interpret. Fix this to prevent indexing issues and ensure proper attribution of page authority.": [
+    ""
+  ],
+  "Fix Canonical Tag URL": [
+    ""
+  ],
+  "Your canonical tag points to an incorrect URL, potentially diverting search engines to index the wrong page and diluting your ranking potential.": [
+    ""
+  ],
+  "Update Canonical to Self-Referential": [
+    ""
+  ],
+  "Your page contains several canonical tags, creating ambiguity for search engines and compromising their ability to properly index your content.": [
+    ""
+  ],
+  "Use Only One Canonical Tag": [
+    ""
+  ],
+  "Technical SEO issues can hinder how search engines crawl and index your website. These include broken links, incorrect meta tags, and slow load times.": [
+    ""
+  ],
+  "Resolve Technical SEO Issues": [
+    ""
+  ],
+  "Important admin sections like /wp-admin/, /wp-includes/, and /wp-login.php are not blocked in your robots.txt file. Blocking these areas prevents search engines from crawling non-essential pages and improves crawl efficiency.": [
+    ""
+  ],
+  "Block Admin Sections in Robots.txt": [
+    ""
+  ],
+  "Your robots.txt file structure could be optimized. Consider organizing directives by user-agent and ensuring consistent formatting for better readability and effectiveness.": [
+    ""
+  ],
+  "Optimize Robots.txt Structure": [
+    ""
+  ],
+  "Your robots.txt file doesn't reference your XML sitemap. Adding a Sitemap directive helps search engines discover and crawl your content more efficiently.": [
+    ""
+  ],
+  "Add Sitemap Reference to Robots.txt": [
+    ""
+  ],
+  "Your canonical tag references an inappropriate or erroneous URL, causing search engines to misinterpret page relationships and potentially diluting ranking signals.": [
+    ""
+  ],
+  "Correct the Canonical Tag": [
+    ""
+  ],
+  "Identical content has been detected on multiple URLs. This can severely dilute ranking signals and confuse search engines.": [
+    ""
+  ],
+  "Remove Identical Duplicate Content": [
+    ""
+  ],
+  "URLs with different query parameters are serving the same content. Search engines may treat these as duplicate pages unless properly canonicalized.": [
+    ""
+  ],
+  "Consolidate Parameterized URLs": [
+    ""
+  ],
+  "Content is duplicated across different URL paths (e.g., /product and /product/index). This creates indexing inefficiencies.": [
+    ""
+  ],
+  "Unify Duplicate URL Paths": [
+    ""
+  ],
+  "Multiple identical pages found without canonical tags, causing search engines to split ranking power instead of consolidating it to your preferred version.": [
+    ""
+  ],
+  "Add Canonical Tags to Duplicates": [
+    ""
+  ],
+  "Similar content exists across multiple pages, diluting SEO value. Evaluate these instances to determine if merging or implementing canonical references would benefit rankings.": [
+    ""
+  ],
+  "Review Potential Duplicates": [
+    ""
+  ],
+  "Your page needs structured data implementation. Adding appropriate schema markup enhances search engine comprehension and boosts visibility in rich search results.": [
+    ""
+  ],
+  "Add Schema Markup to Page": [
+    ""
+  ],
+  "Your structured data contains validation errors, preventing search engines from properly interpreting it. Resolve these issues to ensure effective indexing and rich result display.": [
+    ""
+  ],
+  "Fix Schema Markup Validation Errors": [
+    ""
+  ],
+  "The existing structured data does not match the expected type for this content. Update it to a more suitable schema type such as Article, Product, LocalBusiness, etc.": [
+    ""
+  ],
+  "Update to Correct Schema Type": [
+    ""
+  ],
+  "The LocalBusiness schema is present but missing required properties such as name, address, or telephone. Complete the schema to ensure proper validation.": [
+    ""
+  ],
+  "Fix Incomplete LocalBusiness Schema": [
+    ""
+  ],
+  "Your website requires a robots.txt file to guide search engine crawlers effectively. Implementing this essential file will enhance crawl efficiency and provide better indexation control.": [
+    ""
+  ],
+  "Create a Robots.txt File": [
+    ""
+  ],
+  "Your robots.txt file is blocking all pages from being crawled (Disallow: /). This prevents search engines from indexing any content. Remove or revise the rule immediately.": [
+    ""
+  ],
+  "Fix Robots.txt Blocking All Pages": [
+    ""
+  ],
+  "Some critical pages (like homepage, contact, product pages) are blocked in your robots.txt file. This may harm visibility in search results. Allow search engines to access key pages.": [
+    ""
+  ],
+  "Allow Crawling of Important Pages": [
+    ""
+  ],
+  "Your page contains unoptimized images that are too large (over 200KB). Large images slow down page loading, affecting user experience and SEO rankings. Compress these images without losing quality using image optimization tools.": [
+    ""
+  ],
+  "Optimize Large Images": [
+    ""
+  ],
+  "Your page uses legacy image formats (JPEG, PNG, GIF) instead of modern formats like WebP or AVIF. Next-gen formats provide better compression and quality, reducing page load times by 25-35% while maintaining visual quality. Convert your images to WebP for better performance and SEO.": [
+    ""
+  ],
+  "Use Next-Gen Image Formats": [
+    ""
+  ],
+  "Your website does not serve WebP images or provide fallbacks for browsers that support this format. Implementing WebP with proper fallbacks can significantly improve page load times while ensuring compatibility across all browsers.": [
+    ""
+  ],
+  "Implement WebP Support": [
+    ""
+  ],
+  "Your page contains images without responsive attributes (srcset). Responsive images allow browsers to load appropriately sized images based on the device screen size, improving page load speed and mobile experience. Add srcset attributes to deliver optimized images for different devices.": [
+    ""
+  ],
+  "Implement Responsive Images": [
+    ""
+  ],
+  "Your images have srcset attributes but are missing the sizes attribute. The sizes attribute helps browsers determine which image to download before layout occurs, improving performance. Add sizes attributes to your responsive images for optimal rendering.": [
+    ""
+  ],
+  "Complete Responsive Image Implementation": [
+    ""
+  ],
+  "The primary keyword is present in some alt texts, but appears forced or unnatural. Revise the alt text to include the keyword in a more natural and descriptive way.": [
+    ""
+  ],
+  "Use Keywords Naturally in Alt Text": [
+    ""
+  ],
+  "Your page contains multiple H1 tags. Use a single H1 tag to clearly define the main topic of the page for both users and search engines.": [
+    ""
+  ],
+  "Use Only One H1 Tag": [
+    ""
+  ],
+  "Your page omits the crucial H1 heading tag. Incorporate a descriptive, keyword-rich H1 element to establish page hierarchy and strengthen topical relevance for search engines.": [
+    ""
+  ],
+  "Add an H1 Heading": [
+    ""
+  ],
+  "Heading tags are not used in a proper hierarchical order (e.g., skipping from H1 to H4). Use correct nesting to improve semantic structure and SEO.": [
+    ""
+  ],
+  "Fix Heading Nesting Order": [
+    ""
+  ],
+  "One or more heading tags are empty or too short to be meaningful. Provide concise and descriptive text to help both readers and search engines.": [
+    ""
+  ],
+  "Avoid Empty or Short Headings": [
+    ""
+  ],
+  "Your primary keyword is missing from all heading tags. Include it in at least one heading to improve topic clarity and SEO.": [
+    ""
+  ],
+  "Add Primary Keyword to Headings": [
+    ""
+  ],
+  "The first heading on the page is not an H1. Begin with an H1 to clearly define the page's topic for both users and search engines.": [
+    ""
+  ],
+  "Use H1 as the First Heading": [
+    ""
+  ],
+  "Your opening paragraph lacks emotional appeal. Include words that evoke emotions to create a stronger connection with readers and increase engagement.": [
+    ""
+  ],
+  "Add Emotional Appeal to Opening": [
+    ""
+  ],
+  "Your opening paragraph doesn't create curiosity or intrigue. Include elements that spark curiosity such as questions, teasers, or hints at valuable information to come.": [
+    ""
+  ],
+  "Create Curiosity in Opening Paragraph": [
+    ""
+  ],
+  "Your opening paragraph doesn't establish a personal connection with readers. Use direct address (you/your) or shared experiences to make readers feel the content is relevant to them personally.": [
+    ""
+  ],
+  "Establish Reader Connection in Opening": [
+    ""
+  ],
+  "Your page is not indexed by search engines. This means it won't appear in search results, significantly limiting its visibility and traffic potential.": [
+    ""
+  ],
+  "Page Not Indexed by Search Engines": [
+    ""
+  ],
+  "Your page has been flagged by Google Safe Browsing. This indicates potential security issues such as malware, phishing, or harmful content that could harm visitors and damage your site reputation.": [
+    ""
+  ],
+  "Security Issue Detected by Safe Browsing": [
+    ""
+  ],
+  "Your page has a low overall performance score. Slow loading pages lead to higher bounce rates and lower conversion rates. Implement the specific recommendations to improve page speed.": [
+    ""
+  ],
+  "Improve Overall Page Performance": [
+    ""
+  ],
+  "Your page takes too long to load completely. Pages that load in under 3 seconds have significantly higher engagement. Optimize resources to reduce total loading time.": [
+    ""
+  ],
+  "Reduce Total Page Load Time": [
+    ""
+  ],
+  "Your page takes too long to show the first piece of content to visitors. This is called First Contentful Paint (FCP) and it's an important part of user experience. Improve your server response time and remove anything that blocks the page from loading quickly.": [
+    ""
+  ],
+  "Improve First Contentful Paint": [
+    ""
+  ],
+  "The largest element on your page (like a hero image or banner) takes too long to appear. This is called Largest Contentful Paint (LCP) and it's a key factor in how Google ranks your site. Optimize your largest images and content elements to load faster.": [
+    ""
+  ],
+  "Improve Largest Contentful Paint": [
+    ""
+  ],
+  "Total Blocking Time (TBT) is too high. This indicates that your page has long tasks that block the main thread and delay interactivity. Optimize JavaScript execution and split long tasks.": [
+    ""
+  ],
+  "Reduce Total Blocking Time": [
+    ""
+  ],
+  "Cumulative Layout Shift (CLS) is too high. This Core Web Vital measures visual stability. Elements that shift unexpectedly create a poor user experience. Set dimensions for images and ads, and avoid inserting content above existing content.": [
+    ""
+  ],
+  "Improve Visual Stability": [
+    ""
+  ],
+  "Your page contains images that are too large in file size. Large images significantly slow down page loading. Resize and compress images to appropriate dimensions and file sizes.": [
+    ""
+  ],
+  "Your page contains unoptimized images. Properly compressed images can reduce file size by 30-80% without visible quality loss. Use modern image compression techniques and appropriate formats.": [
+    ""
+  ],
+  "Compress Images Properly": [
+    ""
+  ],
+  "Your page has render-blocking resources that delay page rendering. These resources (typically CSS and JavaScript) prevent the page from displaying quickly. Inline critical CSS, defer non-critical CSS, and use async/defer for scripts.": [
+    ""
+  ],
+  "Eliminate Render-Blocking Resources": [
+    ""
+  ],
+  "Your page includes unminified CSS and JavaScript files. Minification removes unnecessary characters from code without changing functionality, reducing file size. Minify all CSS and JavaScript resources.": [
+    ""
+  ],
+  "Minify CSS and JavaScript": [
+    ""
+  ],
+  "Your page does not leverage browser caching effectively. Proper cache settings allow returning visitors to load your page faster by storing resources locally. Set appropriate cache headers for static resources.": [
+    ""
+  ],
+  "Implement Efficient Browser Caching": [
+    ""
+  ],
+  "Some pages have problematic meta robots tags that may prevent proper indexing or crawling. Review and update these tags to ensure proper search engine visibility.": [
+    ""
+  ],
+  "Fix Meta Robots Tag Issues": [
+    ""
+  ],
+  "Your site has X-Robots-Tag HTTP header issues that may affect search engine crawling and indexing. These HTTP headers need to be corrected to ensure proper visibility.": [
+    ""
+  ],
+  "Fix X-Robots-Tag Header Issues": [
+    ""
+  ],
+  "Your primary keyword is not effectively placed in image alt text. Include the keyword naturally in alt text for relevant images to improve accessibility and SEO relevance.": [
+    ""
+  ],
+  "Optimize Keyword Placement in Alt Text": [
+    ""
+  ],
+  "Your primary and secondary keywords are not properly assigned or validated. Review and optimize your keyword selection to ensure they align with content intent and search behavior.": [
+    ""
+  ],
+  "Improve Keyword Assignment Strategy": [
+    ""
+  ],
+  "Your primary keyword appears too late in the first paragraph. Place the keyword within the first 100 words to establish topic relevance early for both users and search engines.": [
+    ""
+  ],
+  "Move Keyword Earlier in First Paragraph": [
+    ""
+  ],
+  "Your opening paragraph lacks engaging keyword integration. Incorporate the primary keyword naturally while maintaining compelling, reader-focused content that encourages continued reading.": [
+    ""
+  ],
+  "Enhance Keyword Engagement in Opening": [
+    ""
+  ],
+  "Your primary keyword is not optimally positioned in the meta title. Place the keyword near the beginning of the title for maximum SEO impact and improved click-through rates.": [
+    ""
+  ],
+  "Optimize Keyword Position in Meta Title": [
+    ""
+  ],
+  "Some images on your page are missing alt text. Alt text is crucial for accessibility and SEO, as it helps search engines understand the content of images.": [
+    ""
+  ],
+  "Add Alt Text to Images": [
+    ""
+  ],
+  "Some images have alt text that is too short or not descriptive enough. Use more detailed alt text to improve accessibility and provide better context for search engines.": [
+    ""
+  ],
+  "Enhance Image Alt Text Descriptiveness": [
+    ""
+  ],
+  "Some images have alt text that does not include the primary keyword. Including the keyword in image alt text can improve relevance and help with SEO.": [
+    ""
+  ],
+  "Include Primary Keyword in Image Alt Text": [
+    ""
+  ],
+  "Informational suggestion": [
+    ""
+  ],
+  "Implementation suggestion": [
+    ""
+  ],
+  "Optimization suggestion": [
+    ""
+  ],
+  "Warning suggestion": [
+    ""
+  ],
+  "Low": [
+    ""
+  ],
+  "Medium": [
+    ""
+  ],
+  "High": [
+    ""
+  ],
+  "Critical": [
+    ""
+  ],
+  "%1$s: %2$s": [
+    ""
+  ],
+  "Invalid post ID": [
+    ""
+  ],
+  "Empty page content": [
+    ""
+  ],
+  "Failed to retrieve page content": [
+    ""
+  ],
+  "No images found on the page": [
+    ""
+  ],
+  "Missing alt text": [
+    ""
+  ],
+  "Alt text analysis completed": [
+    ""
+  ],
+  "Alt text appears to be a filename": [
+    ""
+  ],
+  "Alt text is too short to be descriptive": [
+    ""
+  ],
+  "Generic alt text detected": [
+    ""
+  ],
+  "No primary keyword found for analysis": [
+    ""
+  ],
+  "Failed to analyze images in content": [
+    ""
+  ],
+  "Analysis completed successfully": [
+    ""
+  ],
+  "No valid URL found for this post": [
+    ""
+  ],
+  "External API call is disabled by feature flag": [
+    ""
+  ],
+  "Failed to fetch referring domains data from API": [
+    ""
+  ],
+  "Referring domains analysis completed successfully": [
+    ""
+  ],
+  "Failed to fetch backlinks data from API": [
+    ""
+  ],
+  "Referring links quality assessment completed successfully": [
+    ""
+  ],
+  "No keywords found for this post": [
+    ""
+  ],
+  "Failed to fetch keyword metrics from API": [
+    ""
+  ],
+  "Keyword metrics fetched successfully": [
+    ""
+  ],
+  "Invalid post ID provided": [
+    ""
+  ],
+  "Failed to fetch content for analysis": [
+    ""
+  ],
+  "No published content found": [
+    ""
+  ],
+  "Failed to build keyword mapping": [
+    ""
+  ],
+  "Keyword mapping analysis completed": [
+    ""
+  ],
+  "Critical error during keyword mapping analysis": [
+    ""
+  ],
+  "Keywords validated successfully": [
+    ""
+  ],
+  "Content depth analysis completed successfully": [
+    ""
+  ],
+  "Content length analysis completed successfully": [
+    ""
+  ],
+  "No content found for analysis": [
+    ""
+  ],
+  "Multimedia analysis completed successfully": [
+    ""
+  ],
+  "No content found for this post": [
+    ""
+  ],
+  "Readability analysis completed successfully": [
+    ""
+  ],
+  "Very Easy: Easily understood by an average 11-year-old student": [
+    ""
+  ],
+  "Easy: Conversational English for consumers": [
+    ""
+  ],
+  "Fairly Easy: Easily understood by 13-15 year old students": [
+    ""
+  ],
+  "Standard: Easily understood by 13-15 year old students": [
+    ""
+  ],
+  "Fairly Difficult: Easily understood by college students": [
+    ""
+  ],
+  "Difficult: Best understood by university graduates": [
+    ""
+  ],
+  "Very Difficult: Best understood by university graduates": [
+    ""
+  ],
+  "Elementary level: Very accessible content": [
+    ""
+  ],
+  "Middle school level: Ideal for general audience": [
+    ""
+  ],
+  "High school level: Reasonably accessible for most readers": [
+    ""
+  ],
+  "College level: May be challenging for some readers": [
+    ""
+  ],
+  "Graduate level: Technical content that may be difficult for many readers": [
+    ""
+  ],
+  "Excellent": [
+    ""
+  ],
+  "Very Good": [
+    ""
+  ],
+  "Good": [
+    ""
+  ],
+  "Acceptable": [
+    ""
+  ],
+  "Poor": [
+    ""
+  ],
+  "Very Poor": [
+    ""
+  ],
+  "Content is too short for meaningful audience targeting analysis": [
+    ""
+  ],
+  "Audience targeting analysis completed successfully": [
+    ""
+  ],
+  "Simplify the language to better match your target audience's education level.": [
+    ""
+  ],
+  "Reduce sentence length (aim for an average of 15-20 words per sentence)": [
+    ""
+  ],
+  "Use simpler vocabulary where possible": [
+    ""
+  ],
+  "Break down complex concepts into smaller, digestible points": [
+    ""
+  ],
+  "Consider using more bullet points for complex information": [
+    ""
+  ],
+  "Elevate the language to better match your target audience's education level.": [
+    ""
+  ],
+  "Use more precise terminology": [
+    ""
+  ],
+  "Provide more technical details where appropriate": [
+    ""
+  ],
+  "Develop ideas more thoroughly with supporting evidence": [
+    ""
+  ],
+  "Include more complex analysis of concepts": [
+    ""
+  ],
+  "Adjust your content tone to better match industry expectations.": [
+    ""
+  ],
+  "Use more formal language and avoid casual expressions": [
+    ""
+  ],
+  "Focus on facts and evidence rather than opinions": [
+    ""
+  ],
+  "Avoid first-person pronouns (I, we) when possible": [
+    ""
+  ],
+  "Use more conversational language": [
+    ""
+  ],
+  "Incorporate personal pronouns (you, we) to engage readers": [
+    ""
+  ],
+  "Consider using questions to engage readers directly": [
+    ""
+  ],
+  "Incorporate more industry-specific terminology": [
+    ""
+  ],
+  "Provide more specific technical details": [
+    ""
+  ],
+  "Include data points and technical examples": [
+    ""
+  ],
+  "Acknowledge reader challenges or pain points": [
+    ""
+  ],
+  "Use supportive language that shows understanding": [
+    ""
+  ],
+  "Share relevant examples that readers can relate to": [
+    ""
+  ],
+  "Back claims with evidence, research or expert quotes": [
+    ""
+  ],
+  "Use confident, definitive language": [
+    ""
+  ],
+  "Provide clear, unambiguous guidance": [
+    ""
+  ],
+  "Emphasize benefits and value propositions": [
+    ""
+  ],
+  "Address and overcome potential objections": [
+    ""
+  ],
+  "Include calls-to-action throughout the content": [
+    ""
+  ],
+  "Use more straightforward explanations": [
+    ""
+  ],
+  "Avoid jargon or complex terminology without explanation": [
+    ""
+  ],
+  "Include examples to illustrate complex concepts": [
+    ""
+  ],
+  "Adjust tone to be more %s": [
+    ""
+  ],
+  "Reduce the technical complexity to better match your audience's technical proficiency.": [
+    ""
+  ],
+  "Define technical terms when first introduced": [
+    ""
+  ],
+  "Replace specialized jargon with more widely understood terms": [
+    ""
+  ],
+  "Provide more background context for complex concepts": [
+    ""
+  ],
+  "Use analogies to explain technical concepts": [
+    ""
+  ],
+  "Include visual aids to help explain complex ideas": [
+    ""
+  ],
+  "Enhance the technical depth to better match your audience's technical proficiency.": [
+    ""
+  ],
+  "Include more specific technical details and terminology": [
+    ""
+  ],
+  "Provide deeper explanations of processes or concepts": [
+    ""
+  ],
+  "Reference industry standards or best practices": [
+    ""
+  ],
+  "Include more data-driven insights": [
+    ""
+  ],
+  "Add technical examples or case studies": [
+    ""
+  ],
+  "Expand your content to provide more value to your target audience.": [
+    ""
+  ],
+  "Add more detailed explanations": [
+    ""
+  ],
+  "Include examples relevant to your audience": [
+    ""
+  ],
+  "Address common questions your audience might have": [
+    ""
+  ],
+  "Provide more comprehensive coverage of the topic": [
+    ""
+  ],
+  "Unable to retrieve content": [
+    ""
+  ],
+  "Content formatting validated successfully": [
+    ""
+  ],
+  "Content is too short for meaningful readability analysis": [
+    ""
+  ],
+  "Too many long sentences. %s%% of your sentences are longer than 20 words.": [
+    ""
+  ],
+  "Your average sentence length (%1$s words) is above the recommended maximum (%2$s words).": [
+    ""
+  ],
+  "Break longer sentences into smaller ones to improve readability.": [
+    ""
+  ],
+  "Your content contains too many complex words (%s%% of total words).": [
+    ""
+  ],
+  "Replace complex words with simpler alternatives to improve readability.": [
+    ""
+  ],
+  "Too many long paragraphs. %s paragraphs have more than 100 words.": [
+    ""
+  ],
+  "Break longer paragraphs into smaller ones of 2-3 sentences each.": [
+    ""
+  ],
+  "Your content uses too much passive voice (%s%% of sentences).": [
+    ""
+  ],
+  "Use active voice for more engaging and clearer content.": [
+    ""
+  ],
+  "Your content could use more transition words. Only %s%% of sentences contain transition words.": [
+    ""
+  ],
+  "Add transition words like \\": [
+    ""
+  ],
+  "Your content's readability score (%s) indicates it may be difficult to read for the average person.": [
+    ""
+  ],
+  "Simplify language, shorten sentences, and reduce complex terminology.": [
+    ""
+  ],
+  "No primary keyword found for this post": [
+    ""
+  ],
+  "First paragraph keyword analysis completed": [
+    ""
+  ],
+  "No first paragraph found in the content": [
+    ""
+  ],
+  "First paragraph too short for keyword stuffing analysis": [
+    ""
+  ],
+  "Keyword stuffing detected in first paragraph": [
+    ""
+  ],
+  "No keyword stuffing detected": [
+    ""
+  ],
+  "Keyword appears multiple times in close proximity": [
+    ""
+  ],
+  "Keyword used at both start and end of the same sentence": [
+    ""
+  ],
+  "Keyword repeated with only a comma in between": [
+    ""
+  ],
+  "Use Synonyms and Related Terms": [
+    ""
+  ],
+  "Instead of repeating the exact same keyword, use synonyms or related terms": [
+    ""
+  ],
+  "Original from your text: \\": [
+    ""
+  ],
+  "Improved version: \\": [
+    ""
+  ],
+  "Instead of: \\": [
+    ""
+  ],
+  "Better: \\": [
+    ""
+  ],
+  "Or: \\": [
+    ""
+  ],
+  "Use Pronouns After First Mention": [
+    ""
+  ],
+  "After mentioning your keyword once, refer to it using pronouns or descriptive phrases": [
+    ""
+  ],
+  "Original sentence: \\": [
+    ""
+  ],
+  "Try rewriting with a question: \\": [
+    ""
+  ],
+  "Start with a question: \\": [
+    ""
+  ],
+  "Use an indirect reference: \\": [
+    ""
+  ],
+  "Incorporate into a broader statement: \\": [
+    ""
+  ],
+  "Vary Your Sentence Structure": [
+    ""
+  ],
+  "Change how you incorporate keywords into sentences to make them flow naturally": [
+    ""
+  ],
+  "Break Up Longer Keyword Phrases": [
+    ""
+  ],
+  "For multi-word keywords, try separating the components across the sentence": [
+    ""
+  ],
+  "Instead of repeatedly using \\": [
+    ""
+  ],
+  "Try: \\": [
+    ""
+  ],
+  "Instead of repeating \\": [
+    ""
+  ],
+  "Incorporate Secondary Keywords": [
+    ""
+  ],
+  "Instead of repeating your primary keyword, strategically use related secondary keywords": [
+    ""
+  ],
+  "Instead of always using \\": [
+    ""
+  ],
+  "Replace \\": [
+    ""
+  ],
+  "For \\": [
+    ""
+  ],
+  "Try referring to \\": [
+    ""
+  ],
+  "No opening paragraph found in the content": [
+    ""
+  ],
+  "Opening paragraph engagement analysis completed successfully": [
+    ""
+  ],
+  "No links found to analyze": [
+    ""
+  ],
+  "Broken links analysis completed successfully": [
+    ""
+  ],
+  "Header consistency check completed successfully": [
+    ""
+  ],
+  "Keyword in header check completed successfully": [
+    ""
+  ],
+  "Failed to retrieve content": [
+    ""
+  ],
+  "Image compression analysis completed": [
+    ""
+  ],
+  "Next-gen image format analysis completed": [
+    ""
+  ],
+  "Responsive image sizing analysis completed": [
+    ""
+  ],
+  "Could not retrieve post URL": [
+    ""
+  ],
+  "No local keywords found for analysis": [
+    ""
+  ],
+  "Failed to fetch HTML content from URL": [
+    ""
+  ],
+  "Local keyword meta tag analysis completed successfully": [
+    ""
+  ],
+  "Failed to fetch content": [
+    ""
+  ],
+  "Local keyword presence analysis completed": [
+    ""
+  ],
+  "Local schema markup analysis completed successfully": [
+    ""
+  ],
+  "Your page already has valid LocalBusiness schema markup. No action required.": [
+    ""
+  ],
+  "The existing schema is valid and complete.": [
+    ""
+  ],
+  "Local business schema is not necessary for this page.": [
+    ""
+  ],
+  "This page does not contain sufficient local business information to warrant schema markup.": [
+    ""
+  ],
+  "Required properties missing: %s": [
+    ""
+  ],
+  "Recommended properties missing: %s": [
+    ""
+  ],
+  "Incomplete properties: %s": [
+    ""
+  ],
+  "Your existing LocalBusiness schema needs %s.": [
+    ""
+  ],
+  "fixing": [
+    ""
+  ],
+  "improvement": [
+    ""
+  ],
+  "This page would benefit from LocalBusiness schema markup.": [
+    ""
+  ],
+  "Adding structured data will help search engines better understand your business information.": [
+    ""
+  ],
+  "Local schema validation completed": [
+    ""
+  ],
+  "No meta description found": [
+    ""
+  ],
+  "Meta description CTA analysis completed successfully": [
+    ""
+  ],
+  "Add an action verb (like \\": [
+    ""
+  ],
+  "Include a clear directive about what the user should do next": [
+    ""
+  ],
+  "Consider adding urgency elements like \\": [
+    ""
+  ],
+  "Strengthen your CTA by making it more specific and compelling": [
+    ""
+  ],
+  "Consider adding a benefit that users will gain by clicking through": [
+    ""
+  ],
+  "Your CTA is good, but could be improved by adding urgency or clarifying the benefit": [
+    ""
+  ],
+  "Your call-to-action is strong and effective": [
+    ""
+  ],
+  "Unable to get post URL": [
+    ""
+  ],
+  "Meta description analysis completed successfully": [
+    ""
+  ],
+  "too_short": [
+    ""
+  ],
+  "slightly_short": [
+    ""
+  ],
+  "optimal": [
+    ""
+  ],
+  "slightly_long": [
+    ""
+  ],
+  "too_long": [
+    ""
+  ],
+  "Meta description is empty": [
+    ""
+  ],
+  "No meta title found": [
+    ""
+  ],
+  "Meta title analysis completed successfully": [
+    ""
+  ],
+  "Meta title quality analysis completed successfully": [
+    ""
+  ],
+  "Primary keyword validated successfully": [
+    ""
+  ],
+  "Secondary keywords validated successfully": [
+    ""
+  ],
+  "Page speed check is disabled by feature flag": [
+    ""
+  ],
+  "Failed to fetch page speed data from API": [
+    ""
+  ],
+  "Page speed data fetched successfully": [
+    ""
+  ],
+  "Could not retrieve URL": [
+    ""
+  ],
+  "URL structure analysis completed": [
+    ""
+  ],
+  "URL is too long. Consider shortening it.": [
+    ""
+  ],
+  "URL length is optimal.": [
+    ""
+  ],
+  "Remove unnecessary query parameters to shorten the URL.": [
+    ""
+  ],
+  "Consider removing date information from permalink structure.": [
+    ""
+  ],
+  "Remove unnecessary filler words like \\": [
+    ""
+  ],
+  "Shorten very long words or phrases in the URL.": [
+    ""
+  ],
+  "Try to make your URL more concise by removing unnecessary words.": [
+    ""
+  ],
+  "URL readability analysis completed": [
+    ""
+  ],
+  "Failed to extract content from the page": [
+    ""
+  ],
+  "Failed to fetch content update suggestions from API": [
+    ""
+  ],
+  "Content update suggestions fetched successfully": [
+    ""
+  ],
+  "No keywords found for analysis": [
+    ""
+  ],
+  "Error fetching content: %s": [
+    ""
+  ],
+  "Keyword density analysis completed": [
+    ""
+  ],
+  "Keyword distribution analysis completed": [
+    ""
+  ],
+  "No primary keyword or related keywords found for analysis": [
+    ""
+  ],
+  "Related keywords analysis completed": [
+    ""
+  ],
+  "No schema markup found": [
+    ""
+  ],
+  "This page appears to be relevant for LocalBusiness schema but does not have it implemented.": [
+    ""
+  ],
+  "Schema markup validation completed": [
+    ""
+  ],
+  "Schema analysis completed successfully": [
+    ""
+  ],
+  "Failed to fetch indexation status from API": [
+    ""
+  ],
+  "Indexation status fetched successfully": [
+    ""
+  ],
+  "Unable to determine site URL": [
+    ""
+  ],
+  "No robots.txt file found": [
+    ""
+  ],
+  "Robots.txt and meta-tag validation passed successfully": [
+    ""
+  ],
+  "Robots.txt and meta-tag validation found issues": [
+    ""
+  ],
+  "Robots.txt validation passed successfully": [
+    ""
+  ],
+  "Robots.txt validation found issues": [
+    ""
+  ],
+  "Failed to fetch safe browsing status from API": [
+    ""
+  ],
+  "Safe browsing status fetched successfully": [
+    ""
+  ],
+  "Canonical tag validation completed": [
+    ""
+  ],
+  "Cross-domain canonical check completed": [
+    ""
+  ],
+  "Duplicate content analysis completed": [
+    ""
+  ],
+  "No canonical tag found on this page": [
+    ""
+  ],
+  "Add a self-referencing canonical tag to help prevent duplicate content issues.": [
+    ""
+  ],
+  "Canonical tag points to a different URL": [
+    ""
+  ],
+  "This may be intentional if this page is a duplicate of another page. If not, update the canonical tag to point to this URL.": [
+    ""
+  ],
+  "Invalid post ID for SEO score persistence": [
+    ""
+  ],
+  "Failed to calculate and save average SEO score: %s": [
+    ""
+  ],
+  "Invalid entity type on WebPageService update": [
+    ""
+  ],
+  "Failed to save meta tags through MetaTags service": [
+    ""
+  ],
+  "Could you provide more details?": [
+    ""
+  ],
+  "Response class does not exist: %s": [
+    ""
+  ],
+  "Error API": [
+    ""
+  ],
+  "%1$s > %2$s: %3$s": [
+    ""
+  ],
+  "There was a problem with the API request. Please try again later.": [
+    ""
+  ],
+  "Post ID is required": [
+    ""
+  ],
+  "The API call (JSON response) is valid: %s": [
+    ""
+  ],
+  "The API call (text/html or error property on JSON): %s": [
+    ""
+  ],
+  "SEO analysis is being throttled. Please try again later.": [
+    ""
+  ],
+  "Activation": [
+    ""
+  ],
+  "Onboarding": [
+    ""
+  ],
+  "Upgrade Plan": [
+    ""
+  ],
+  "Activation done": [
+    ""
+  ],
+  "Activation code processed successfully.": [
+    ""
+  ],
+  "You will be automatically redirected to the main dashboard in 5 seconds...": [
+    ""
+  ],
+  "Continue onboarding": [
+    ""
+  ],
+  "Enter your activation code": [
+    ""
+  ],
+  "To use the plugin, you'll need to activate it. Paste your code below to get started.": [
+    ""
+  ],
+  "Activation Code": [
+    ""
+  ],
+  "ex: 0822646889": [
+    ""
+  ],
+  "Activate": [
+    ""
+  ],
+  "Use the code we emailed you to unlock the plugin.": [
+    ""
+  ],
+  "Can't find it? Search your inbox for \\": [
+    ""
+  ],
+  "Or configure with a refresh token": [
+    ""
+  ],
+  "API Refresh Token": [
+    ""
+  ],
+  "Please enter or update the API refresh token below. This token is required for secure API connections.": [
+    ""
+  ],
+  "Save Token": [
+    ""
+  ],
+  "Use activation code instead →": [
+    ""
+  ],
+  "You do not have sufficient permissions to access this page.": [
+    ""
+  ],
+  "Nonce verification failed. Please try again.": [
+    ""
+  ],
+  "Refresh token saved successfully.": [
+    ""
+  ],
+  "Failed to save the refresh token. Please try again.": [
+    ""
+  ],
+  "Invalid activation code.": [
+    ""
+  ],
+  "Unable to process activation code. Please try again later.": [
+    ""
+  ],
+  "Free": [
+    ""
+  ],
+  "per month": [
+    ""
+  ],
+  "Basic SEO insights": [
+    ""
+  ],
+  "Limited keyword tracking": [
+    ""
+  ],
+  "Basic performance monitoring": [
+    ""
+  ],
+  "Standard": [
+    ""
+  ],
+  "SEO tasks": [
+    ""
+  ],
+  "AI powered SEO tasks": [
+    ""
+  ],
+  "Social Media tasks": [
+    ""
+  ],
+  "Local Marketing tasks": [
+    ""
+  ],
+  "AI Text optimisation": [
+    ""
+  ],
+  "AI URL optimiser": [
+    ""
+  ],
+  "SEO performance reports": [
+    ""
+  ],
+  "Google Analytics integration": [
+    ""
+  ],
+  "Monitor up to 20 keywords": [
+    ""
+  ],
+  "Track up to 3 locations": [
+    ""
+  ],
+  "Track up to 3 competitors": [
+    ""
+  ],
+  "AI streamlined onboarding": [
+    ""
+  ],
+  "Business Profile creation": [
+    ""
+  ],
+  "Listing checker": [
+    ""
+  ],
+  "Publish business on Facebook & Google Business Profile": [
+    ""
+  ],
+  "Upgrade to Standard": [
+    ""
+  ],
+  "Everything in Standard, plus:": [
+    ""
+  ],
+  "Publish Business on multiple directories": [
+    ""
+  ],
+  "Online Presence insights": [
+    ""
+  ],
+  "Create & publish posts and events on Google Business Profile": [
+    "Crea e pubblica articoli ed eventi sul profile dell'attività su Google"
+  ],
+  "Create & publish posts on Facebook and Instagram": [
+    ""
+  ],
+  "Videos on posts": [
+    ""
+  ],
+  "AI content for posts and events": [
+    "Contenuti IA per post ed eventi"
+  ],
+  "Competitor-based post suggestions": [
+    ""
+  ],
+  "URL shortener": [
+    ""
+  ],
+  "View and respond to posts comments": [
+    ""
+  ],
+  "Social Media insights": [
+    ""
+  ],
+  "View reviews from multiple platforms": [
+    ""
+  ],
+  "Manual review replies": [
+    ""
+  ],
+  "Generate replies to reviews with AI": [
+    ""
+  ],
+  "Automatic replies with AI": [
+    ""
+  ],
+  "Reputation widget": [
+    ""
+  ],
+  "Get reviews widget": [
+    ""
+  ],
+  "Add additional review sources": [
+    ""
+  ],
+  "Sentiment analysis": [
+    ""
+  ],
+  "Track online mentions": [
+    ""
+  ],
+  "Reputation Insights": [
+    ""
+  ],
+  "Email Report management": [
+    "Gestione dei rapporti via email"
+  ],
+  "Upgrade to Advanced": [
+    ""
+  ],
+  "Pro": [
+    ""
+  ],
+  "Everything in Advanced, plus:": [
+    ""
+  ],
+  "Create Google Ads campaign": [
+    ""
+  ],
+  "Boost an existing post with Meta ads": [
+    ""
+  ],
+  "Upgrade to Pro": [
+    ""
+  ],
+  "Increase your digital touch points. Get found easily.": [
+    ""
+  ],
+  "Publish your Business Profile across multiple directories with one click. Monitor your overall listings presence and manage it easily with fine-tune updates.": [
+    ""
+  ],
+  "Write content once. Publish everywhere.": [
+    ""
+  ],
+  "Create posts and events, fine-tune them with AI assistance. Schedule or publish them across multiple social media channels, adapted for each platform.": [
+    ""
+  ],
+  "Stay on top of every review. Respond in no time.": [
+    ""
+  ],
+  "Reply with AI or manually to reviews from Google, Facebook, and numerous other sources, in one single place. All to save time and protect your reputation.": [
+    ""
+  ],
+  "Go further with": [
+    ""
+  ],
+  "Get powerful extra features like these — and more.": [
+    ""
+  ],
+  "Reach more clients with ads. Right where they are.": [
+    ""
+  ],
+  "Promote your business with two easy ad options. You can launch a Google Ads campaign to appear in search results or turn your best-performing social posts into Meta ads for Facebook. Either way, you'll get seen by the right people, with less effort.": [
+    ""
+  ],
+  "FAQs": [
+    ""
+  ],
+  "1. Is the Pro plan suitable for small businesses?": [
+    ""
+  ],
+  "Yes, Pro is ideal for small businesses aiming for growth, increased visibility, and efficient marketing management.": [
+    ""
+  ],
+  "2. Can I directly upgrade from Standard to Pro?": [
+    ""
+  ],
+  "Absolutely! You can upgrade directly to Pro from Standard to immediately access all features and benefits.": [
+    ""
+  ],
+  "3. What types of businesses benefit most from Pro?": [
+    ""
+  ],
+  "Yes, it`s perfect for businesses looking to grow their reach by running Google Ads campaigns or boosting posts with Meta ads.": [
+    ""
+  ],
+  "Your competitors made themselves visible.": [
+    ""
+  ],
+  "Don't risk remaining invisible.": [
+    ""
+  ],
+  "The right plan helps your business appear where people search, compare, and decide, so you're not left behind.": [
+    ""
+  ],
+  "You're currently using the %s plan.": [
+    ""
+  ],
+  "No plans available at the moment. Please try again later.": [
+    ""
+  ],
+  "Recommended": [
+    ""
+  ],
+  "Your current plan": [
+    ""
+  ],
+  "Upgrade": [
+    ""
+  ],
+  "By clicking \\": [
+    ""
+  ],
+  "Terms & Conditions": [
+    ""
+  ],
+  "and": [
+    ""
+  ],
+  "Privacy policy": [
+    ""
+  ],
+  "No keywords found to synchronize": [
+    ""
+  ],
+  "All keywords already have external IDs, no need to synchronize": [
+    ""
+  ],
+  "Empty response from keywords sync API after retries": [
+    ""
+  ],
+  "Keywords table '%s' does not exist": [
+    ""
+  ],
+  "Error fetching keywords: %s": [
+    ""
+  ],
+  "Error in keywords sync API response: %s": [
+    ""
+  ],
+  "Keywords sync API returned non-success message: %s": [
+    ""
+  ],
+  "Invalid response format from keywords sync API. Response: %s": [
+    ""
+  ],
+  "Error processing keywords sync response: %s": [
+    ""
+  ],
+  "API endpoint cannot be empty.": [
+    ""
+  ],
+  "Transport error occurred during request: %s": [
+    ""
+  ],
+  "Client error: %s": [
+    "Errore cliente: %s"
+  ],
+  "Server error: %s": [
+    ""
+  ],
+  "Redirection error: %s": [
+    ""
+  ],
+  "Error decoding JSON response: %s": [
+    ""
+  ],
+  "Unsupported content type.": [
+    ""
+  ],
+  "Unknown error": [
+    ""
+  ],
+  "Unknown message": [
+    ""
+  ],
+  "API error: %1$s - %2$s": [
+    ""
+  ],
+  "Invalid account access token are assigned to this JWT": [
+    ""
+  ],
+  "JWT Token is missing": [
+    ""
+  ],
+  "JWT Token has expired": [
+    ""
+  ],
+  "Invalid JWT Token": [
+    ""
+  ],
+  "Autoloader file not found or not readable.": [
+    ""
+  ],
+  "Posts in %s category": [
+    ""
+  ],
+  "Posts by %s": [
+    ""
+  ],
+  "Archive for %s": [
+    ""
+  ],
+  "Archives": [
+    ""
+  ],
+  "Posts": [
+    ""
+  ],
+  "Blog posts": [
+    ""
+  ],
+  "Pages": [
+    ""
+  ],
+  "Site pages": [
+    ""
+  ],
+  "Import translated categories": [
+    ""
+  ],
+  "Read Website All Pages": [
+    ""
+  ],
+  "Read Plugin Data": [
+    ""
+  ],
+  "Read List of Modules": [
+    ""
+  ],
+  "Read Account Details": [
+    ""
+  ],
+  "Read Location Keywords": [
+    ""
+  ],
+  "Read Distinct Module Data": [
+    ""
+  ],
+  "Made The Plugin Onboarding": [
+    ""
+  ],
+  "Access to Assign Keywords SEO operations": [
+    ""
+  ],
+  "Access to Improve Content Quality And Length SEO operations": [
+    ""
+  ],
+  "Access to Optimize Readability On Page SEO operations": [
+    ""
+  ],
+  "Access to First Paragraph Keyword Usage SEO operations": [
+    ""
+  ],
+  "Access to Header Tags Structure SEO operations": [
+    ""
+  ],
+  "Access to Add Local Keywords In Content SEO operations": [
+    ""
+  ],
+  "Access to Create Meta Description Tag SEO operations": [
+    ""
+  ],
+  "Access to Meta Description Keywords SEO operations": [
+    ""
+  ],
+  "Access to Create Meta Title Tag SEO operations": [
+    ""
+  ],
+  "Access to Meta Title Keywords SEO operations": [
+    ""
+  ],
+  "Access to Optimize Page Content Keywords SEO operations": [
+    ""
+  ],
+  "Access to Analyze Backlink Profile SEO operations": [
+    ""
+  ],
+  "Access to Fix Broken Links On Page SEO operations": [
+    ""
+  ],
+  "Access to Alt Text To Images SEO operations": [
+    ""
+  ],
+  "Access to Optimize Image File Sizes SEO operations": [
+    ""
+  ],
+  "Access to Optimize Page Speed SEO operations": [
+    ""
+  ],
+  "Access to Optimize URL Structure SEO operations": [
+    ""
+  ],
+  "Access to Schema Markup SEO operations": [
+    ""
+  ],
+  "Access to Search Engine Indexation SEO operations": [
+    ""
+  ],
+  "Access to Use Canonical Tags SEO operations": [
+    ""
+  ],
+  "To ensure rankingCoach works properly, please deactivate the conflicting plugins: %s": [
+    ""
+  ],
+  "To ensure rankingCoach works properly, please deactivate the conflicting plugin: %s": [
+    ""
+  ],
+  "Click to deactivate.": [
+    ""
+  ],
+  "<strong>rankingCoach SEO</strong> is not compatible with the following plugins:": [
+    ""
+  ],
+  "<strong>rankingCoach SEO</strong> is not compatible with the following plugin: <strong>%s</strong>": [
+    ""
+  ],
+  "To ensure rankingCoach works properly, please deactivate the conflicting plugins.": [
+    ""
+  ],
+  "To ensure rankingCoach works properly, please deactivate the conflicting plugin.": [
+    ""
+  ],
+  "Plugin Conflict Detected": [
+    ""
+  ],
+  "Click here to Deactivate.": [
+    ""
+  ],
+  "Invalid security token.": [
+    ""
+  ],
+  "You do not have permission to deactivate plugins.": [
+    ""
+  ],
+  "Successfully deactivated: %s": [
+    ""
+  ],
+  "No conflicting plugins found.": [
+    ""
+  ],
+  "rankingCoach Assistant": [
+    ""
+  ],
+  "rankingCoach SEO Overview": [
+    ""
+  ],
+  "Run <code>npm run build</code> in your application root!": [
+    ""
+  ],
+  "Cannot calculate balance without both primary and secondary keywords": [
+    ""
+  ],
+  "Secondary keywords are more prominent than your primary keyword. Consider rebalancing.": [
+    ""
+  ],
+  "Good balance between primary and secondary keywords.": [
+    ""
+  ],
+  "Primary keyword is significantly more used than secondary keywords. Consider more topic diversity.": [
+    ""
+  ],
+  "Content focuses too heavily on primary keyword at the expense of topic diversity.": [
+    ""
+  ],
+  "5th grade (Very easy to read)": [
+    ""
+  ],
+  "6th grade (Easy to read)": [
+    ""
+  ],
+  "7th grade (Fairly easy to read)": [
+    ""
+  ],
+  "8th-9th grade (Plain English)": [
+    ""
+  ],
+  "10th-12th grade (Fairly difficult)": [
+    ""
+  ],
+  "College (Difficult)": [
+    ""
+  ],
+  "College graduate (Very difficult)": [
+    ""
+  ],
+  "Written by %s": [
+    ""
+  ],
+  "Content from %s": [
+    ""
+  ],
+  "Found results for: %s": [
+    ""
+  ],
+  "Tagged: %s": [
+    ""
+  ],
+  "Search results for: %s": [
+    ""
+  ],
+  "Plugin activation failed: %s": [
+    ""
+  ],
+  "You do not have sufficient permissions to perform this action.": [
+    ""
+  ],
+  "Security check failed. Please try again.": [
+    ""
+  ],
+  "Notification dismissed successfully.": [
+    ""
+  ],
+  "You must complete onboarding before accessing this endpoint.": [
+    ""
+  ],
+  "Log sharing is disabled. The client has not agreed to share logs for debugging purposes. Please enable log sharing in plugin settings to allow log downloads.": [
+    ""
+  ],
+  "No log files found": [
+    ""
+  ],
+  "Method not allowed": [
+    ""
+  ],
+  "Internal server error: %s": [
+    ""
+  ],
+  "Failed to retrieve settings": [
+    ""
+  ],
+  "Invalid request body. Expected JSON object with settings.": [
+    ""
+  ],
+  "Failed to update settings: %s": [
+    ""
+  ],
+  "Invalid setting key: %s": [
+    ""
+  ],
+  "Failed to retrieve setting": [
+    ""
+  ],
+  "Failed to update setting: %s": [
+    ""
+  ],
+  "Failed to reset setting: %s": [
+    ""
+  ],
+  "Setting '%1$s': %2$s": [
+    ""
+  ],
+  "Setting '%s' must be a boolean value": [
+    ""
+  ],
+  "Setting '%s' must be a numeric value": [
+    ""
+  ],
+  "-": [
+    ""
+  ],
+  "%1$s %2$s %3$s Comments Feed": [
+    ""
+  ],
+  "%1$s %2$s %3$s Category Feed": [
+    ""
+  ],
+  "%1$s %2$s %3$s Tag Feed": [
+    ""
+  ],
+  "%1$s %2$s %3$s %4$s Feed": [
+    ""
+  ],
+  "%1$s %2$s Posts by %3$s Feed": [
+    ""
+  ],
+  "%1$s %2$s Search Results for &#8220;%3$s&#8221; Feed": [
+    ""
+  ],
+  "%1$s %2$s %3$s Feed": [
+    ""
+  ],
+  "Invalid post ID provided.": [
+    ""
+  ],
+  "Post not found or insufficient permissions.": [
+    ""
+  ],
+  "Menu %s": [
+    ""
+  ],
+  "They show up everywhere. You can too.": [
+    ""
+  ],
+  "Your competitors are everywhere, not just on a website. Without multi-channel visibility, you`re losing customers. Upgrade now to stand out where it counts: Google, directories, social platforms, and reviews.": [
+    ""
+  ],
+  "Onboarding not finished": [
+    "Onboarding non completato"
+  ],
+  "You can't use all plugin features because you didn't finish the onboarding. Complete it now to start using RankingCoach.": [
+    ""
+  ],
+  "Website Analysis Overview": [
+    ""
+  ],
+  "Current Score": [
+    ""
+  ],
+  "Min Score": [
+    ""
+  ],
+  "Max Score": [
+    ""
+  ],
+  "Unexpected Error": [
+    ""
+  ],
+  "An unexpected error occurred.": [
+    ""
+  ],
+  "Unhandled exception type.": [
+    ""
+  ],
+  "Contact support if the issue persists.": [
+    ""
+  ],
+  "Invalid JSON Response": [
+    ""
+  ],
+  "The response received from the external API is invalid or malformed. This may prevent the plugin from functioning correctly.": [
+    ""
+  ],
+  "The response is not in the expected format.": [
+    ""
+  ],
+  "The response is empty or missing.": [
+    ""
+  ],
+  "The response is not properly set.": [
+    ""
+  ],
+  "Invalid Token": [
+    ""
+  ],
+  "The provided token is invalid. This may prevent secure communication with external APIs.": [
+    ""
+  ],
+  "The token is invalid or malformed.": [
+    ""
+  ],
+  "The token is not properly set.": [
+    ""
+  ],
+  "The token might be empty or missing.": [
+    ""
+  ],
+  "Click here to <a href=\\": [
+    ""
+  ],
+  "Refresh Token Missing": [
+    ""
+  ],
+  "A refresh token is required to continue. This token allows secure and seamless interactions with the external API.": [
+    ""
+  ],
+  "The token might have been removed or expired.": [
+    ""
+  ],
+  "Configuration might be missing for API integration.": [
+    ""
+  ],
+  "Ensure the token generation process has been completed.": [
+    ""
+  ],
+  "Plugin Activation Failed": [
+    ""
+  ],
+  "An issue occurred during the plugin activation process, preventing successful initialization.": [
+    ""
+  ],
+  "Possible connection issues with the external API.": [
+    ""
+  ],
+  "Server configuration conflicts or incompatible environment settings.": [
+    ""
+  ],
+  "Calories": [
+    ""
+  ],
+  "Not Found": [
+    ""
+  ],
+  "Content ID must be a positive integer": [
+    ""
+  ],
+  "Post with ID %d does not exist": [
+    ""
+  ],
+  "Edit business address": [
+    ""
+  ],
+  "Country": [
+    ""
+  ],
+  "Enter country": [
+    ""
+  ],
+  "Address first line": [
+    ""
+  ],
+  "Enter address first line": [
+    ""
+  ],
+  "Address line 2": [
+    ""
+  ],
+  "Enter address line 2": [
+    ""
+  ],
+  "City": [
+    ""
+  ],
+  "Enter city": [
+    ""
+  ],
+  "Postal code": [
+    ""
+  ],
+  "Enter postal code": [
+    ""
+  ],
+  "Insufficient Secondary Keywords": [
+    ""
+  ],
+  "Invalid URL format: ": [
+    ""
+  ],
+  "Unsupported HTTP method: %s": [
+    ""
+  ],
+  "Request failed after multiple retries: ": [
+    ""
+  ],
+  "Keyword insert failed. Error: %1$s. Query: %2$s": [
+    ""
+  ],
+  "Composer autoload file not found: ": [
+    ""
+  ],
+  "Log sharing is disabled. Please enable log sharing in plugin settings to allow log downloads.": [
+    ""
+  ],
+  "Download token is required": [
+    ""
+  ],
+  "Invalid or expired download token": [
+    ""
+  ],
+  "Download token has expired": [
+    ""
+  ],
+  "Download token has already been used": [
+    ""
+  ],
+  "Missing X-RC-Request-ID header": [
+    ""
+  ],
+  "X-RC-Request-ID does not match the token": [
+    ""
+  ],
+  "Disable mobile auto-links for this page:": [
+    ""
+  ],
+  "You have reached your keyword tracking limit. %1$sUpgrade your plan%2$s to continue tracking more keywords and improve your SEO performance.": [
+    ""
+  ],
+  "BeyondSEO": [
+    ""
+  ],
+  "Be found easier in Google. Effectively perform online marketing in WordPress. Assistant on SEO, Listing & Ads for better Google rankings and online visibility, and much more.": [
+    ""
+  ],
+  "SEO Plugin Team": [
+    ""
+  ],
+  "<strong>%s</strong> is not compatible with the following plugins:": [
+    ""
+  ],
+  "<strong>%s</strong> is not compatible with the following plugin: <strong>%s</strong>": [
+    ""
+  ],
+  "To ensure %s works properly, please deactivate the conflicting plugins.": [
+    ""
+  ],
+  "To ensure %s works properly, please deactivate the conflicting plugin.": [
+    ""
+  ],
+  "%s Assistant": [
+    ""
+  ],
+  "%s Overview": [
+    ""
+  ],
+  "An error occurred while performing the self-check.": [
+    ""
+  ],
+  "You can't use all plugin features because you didn't finish the onboarding. Complete it now to start using the plugin.": [
+    ""
+  ],
+  "Cache Management": [
+    ""
+  ],
+  "The primary website domain does not match the WordPress site URL.": [
+    ""
+  ],
+  "This dedicated rankingCoach account requires completed onboarding before plugin activation.": [
+    ""
+  ],
+  "All plugin caches have been cleared successfully.": [
+    ""
+  ],
+  "Object cache cleared successfully.": [
+    ""
+  ],
+  "Failed to clear object cache.": [
+    ""
+  ],
+  "Cleared %d transients.": [
+    ""
+  ],
+  "OPcache cleared successfully.": [
+    ""
+  ],
+  "OPcache not available or failed to clear.": [
+    ""
+  ],
+  "Cleared %d expired transients.": [
+    ""
+  ],
+  "Redis Object Cache enabled successfully.": [
+    ""
+  ],
+  "Failed to enable Redis Object Cache: %s": [
+    ""
+  ],
+  "Memcached Object Cache enabled successfully.": [
+    ""
+  ],
+  "Failed to enable Memcached Object Cache: %s": [
+    ""
+  ],
+  "APCu Object Cache enabled successfully.": [
+    ""
+  ],
+  "Failed to enable APCu Object Cache: %s": [
+    ""
+  ],
+  "Object Cache disabled successfully.": [
+    ""
+  ],
+  "Failed to disable Object Cache: %s": [
+    ""
+  ],
+  "Object Cache test passed successfully.": [
+    ""
+  ],
+  "Object Cache test failed: %s": [
+    ""
+  ],
+  "Cache Overview": [
+    ""
+  ],
+  "Object Cache:": [
+    ""
+  ],
+  "Enabled": [
+    ""
+  ],
+  "Disabled": [
+    ""
+  ],
+  "OPcache:": [
+    ""
+  ],
+  "%d scripts cached": [
+    ""
+  ],
+  "Multisite:": [
+    ""
+  ],
+  "Yes": [
+    ""
+  ],
+  "No": [
+    ""
+  ],
+  "Cache Plugins:": [
+    ""
+  ],
+  "Cache Actions": [
+    ""
+  ],
+  "Clear All Caches": [
+    ""
+  ],
+  "Clear Object Cache": [
+    ""
+  ],
+  "Clear Transients": [
+    ""
+  ],
+  "Clear OPcache": [
+    ""
+  ],
+  "Clear Expired Transients Only": [
+    ""
+  ],
+  "Use \\": [
+    ""
+  ],
+  "Cache Details": [
+    ""
+  ],
+  "Refresh": [
+    ""
+  ],
+  "Cache Type": [
+    ""
+  ],
+  "Count/Status": [
+    ""
+  ],
+  "Details": [
+    ""
+  ],
+  "Transients": [
+    ""
+  ],
+  "Plugin-specific transients in database": [
+    ""
+  ],
+  "Site Transients": [
+    ""
+  ],
+  "Network-wide transients (multisite)": [
+    ""
+  ],
+  "Object Cache": [
+    ""
+  ],
+  "Active": [
+    ""
+  ],
+  "Inactive": [
+    ""
+  ],
+  "Type: %s": [
+    ""
+  ],
+  "Using default WordPress object cache": [
+    ""
+  ],
+  "OPcache": [
+    ""
+  ],
+  "Memory: %s MB": [
+    ""
+  ],
+  "PHP bytecode cache": [
+    ""
+  ],
+  "Cache Statistics": [
+    ""
+  ],
+  "Statistic": [
+    ""
+  ],
+  "Value": [
+    ""
+  ],
+  "Last Updated": [
+    ""
+  ],
+  "Security check failed": [
+    ""
+  ],
+  "Insufficient permissions": [
+    ""
+  ],
+  "All caches cleared": [
+    ""
+  ],
+  "Object cache cleared": [
+    ""
+  ],
+  "Failed to clear object cache": [
+    ""
+  ],
+  "Cleared %d transients": [
+    ""
+  ],
+  "Object Cache Management": [
+    ""
+  ],
+  "Current Status:": [
+    ""
+  ],
+  "Available Systems:": [
+    ""
+  ],
+  "Connected": [
+    ""
+  ],
+  "Not Connected": [
+    ""
+  ],
+  "Enable %s": [
+    ""
+  ],
+  "%s Not Available": [
+    ""
+  ],
+  "No Object Cache Systems Available": [
+    ""
+  ],
+  "Install Redis, Memcached, or APCu to enable object caching.": [
+    ""
+  ],
+  "Disable Object Cache": [
+    ""
+  ],
+  "Test Object Cache": [
+    ""
+  ],
+  "Object Cache File:": [
+    ""
+  ],
+  "High-performance in-memory data structure store": [
+    ""
+  ],
+  "Distributed memory object caching system": [
+    ""
+  ],
+  "User cache for PHP (shared memory)": [
+    ""
+  ],
+  "Redis PHP extension is not installed.": [
+    ""
+  ],
+  "Cannot connect to Redis server. Please ensure Redis is running.": [
+    ""
+  ],
+  "Failed to create object-cache.php file. Check file permissions.": [
+    ""
+  ],
+  "Memcached PHP extension is not installed.": [
+    ""
+  ],
+  "Cannot connect to Memcached server. Please ensure Memcached is running.": [
+    ""
+  ],
+  "APCu PHP extension is not installed or enabled.": [
+    ""
+  ],
+  "Object cache is not currently enabled.": [
+    ""
+  ],
+  "Failed to remove object-cache.php file. Check file permissions.": [
+    ""
+  ],
+  "Failed to set cache value.": [
+    ""
+  ],
+  "Cache value mismatch. Expected: %s, Got: %s": [
+    ""
+  ],
+  "Failed to delete cache value.": [
+    ""
+  ],
+  "Cache value was not properly deleted.": [
+    ""
+  ],
+  "All cache operations completed successfully.": [
+    ""
+  ],
+  "Domain Mismatch Error": [
+    ""
+  ],
+  "The domain associated with your activation code does not match your WordPress site URL. This prevents the plugin from being activated correctly.": [
+    ""
+  ],
+  "The activation code is associated with a different domain.": [
+    ""
+  ],
+  "Your WordPress site URL has changed since the activation code was generated.": [
+    ""
+  ],
+  "The activation code was generated for a different website.": [
+    ""
+  ],
+  "Please contact support or request a new activation code for your current domain.": [
+    ""
+  ],
+  "Onboarding Incomplete Error": [
+    ""
+  ],
+  "This is a dedicated rankingCoach account that requires completed onboarding before the plugin can be activated. The onboarding process must be finalized in the rankingCoach platform.": [
+    ""
+  ],
+  "The onboarding process has not been completed in your rankingCoach account.": [
+    ""
+  ],
+  "Plugin activation is blocked until all required setup steps are finished.": [
+    ""
+  ],
+  "Please complete the onboarding process in your rankingCoach platform account, then try activating the plugin again.": [
+    ""
+  ],
+  "Default image source (%s)": [
+    ""
+  ],
+  "Featured Image": [
+    ""
+  ],
+  "Attached Image": [
+    ""
+  ],
+  "First Image in Content": [
+    ""
+  ],
+  "Image from custom field (%s)": [
+    ""
+  ],
+  "Post Author Image": [
+    ""
+  ],
+  "Please enter at least 3 characters.": [
+    ""
+  ],
+  "This field contains too many punctuations. The maximum allowed is 6.": [
+    ""
+  ],
+  "Show more": [
+    ""
+  ],
+  "Show less": [
+    ""
+  ],
+  "To ensure %1$s works properly, please deactivate the conflicting plugins: %2$s": [
+    "Per garantire il corretto funzionamento di %1$s, disattiva i plugin in conflitto: %2$s"
+  ],
+  "To ensure %1$s works properly, please deactivate the conflicting plugin: %2$s": [
+    "Per garantire il corretto funzionamento di %1$s, disattiva il plugin in conflitto: %2$s"
+  ],
+  "Cache value mismatch. Expected: %1$s, Got: %2$s": [
+    "Valore della cache non corrispondente. Atteso: %1$s, Ottenuto: %2$s"
+  ],
+  "<strong>%1$s</strong> is not compatible with the following plugin: <strong>%2$s</strong>": [
+    "<strong>%1$s</strong> non è compatibile con il seguente plugin: <strong>%2$s</strong>"
+  ],
+  "Connecting WordPress integration": [
+    "Connessione all'integrazione di WordPress"
+  ],
+  "Adding project name": [
+    "Aggiunta del nome del progetto"
+  ],
+  "Saving project contact details": [
+    "Salvataggio dei dettagli di contatto del progetto"
+  ],
+  "Setting project type": [
+    "Impostazione del tipo di progetto"
+  ],
+  "Adding project address": [
+    "Aggiunta dell'indirizzo del progetto"
+  ],
+  "Connecting project website": [
+    "Connessione al sito web del progetto"
+  ],
+  "Defining local service areas": [
+    "Definizione delle aree di servizio locali"
+  ],
+  "Adding weekday hours": [
+    "Aggiunta degli orari feriali"
+  ],
+  "Adding weekend hours": [
+    "Aggiunta degli orari del fine settimana"
+  ],
+  "Setting primary category": [
+    "Impostazione della categoria principale"
+  ],
+  "Adding secondary categories": [
+    "Aggiunta di categorie secondarie"
+  ],
+  "Adding primary keywords": [
+    "Aggiunta di parole chiave principali"
+  ],
+  "Adding additional keywords": [
+    "Aggiunta di parole chiave aggiuntive"
+  ],
+  "Adding competitors": [
+    "Aggiunta dei concorrenti"
+  ],
+  "Setting up main goal": [
+    "Impostazione dell'obiettivo principale"
+  ],
+  "Setting up secondary goal": [
+    "Impostazione dell'obiettivo secondario"
+  ],
+  "Adding short description": [
+    "Aggiunta di una descrizione breve"
+  ],
+  "Adding long description": [
+    "Aggiunta di una descrizione lunga"
+  ],
+  "Searching listings": [
+    "Ricerca di elenchi"
+  ],
+  "Getting status of listings": [
+    "Ottenimento dello stato degli elenchi"
+  ],
+  "Checking connections": [
+    "Verifica delle connessioni"
+  ],
+  "Finalising project fine tuning": [
+    "Finalizzazione della messa a punto del progetto"
+  ],
+  "Let's get started.": [
+    "Iniziamo."
+  ],
+  "First, could you tell me what your website or project is about?": [
+    " Per prima cosa, potresti dirmi di cosa tratta il tuo sito web o progetto?"
+  ],
+  "Do you already have a name for your website, project, or business?": [
+    "Hai già un nome per il tuo sito web, progetto o attività?"
+  ],
+  "Wonderful!": [
+    "Meraviglioso!"
+  ],
+  "Could you describe in more detail what you plan to do with your website? For example, will you offer products or services, share blog articles, or something else?": [
+    "Potresti descrivere più in dettaglio cosa intendi fare con il tuo sito web? Ad esempio, offrirai prodotti o servizi, condividerai articoli di blog o qualcos'altro?"
+  ],
+  "Just tasty! Thanks for sharing!": [
+    "Semplicemente gustoso! Grazie per aver condiviso!"
+  ],
+  "Is your project or business tied to a specific location? Do you serve customers locally, or operate in multiple areas?": [
+    "Capisco. Il tuo progetto o la tua attività è legato a una posizione specifica? Servi clienti a livello locale o operi in più aree?"
+  ],
+  "I see.": [
+    "Capisco."
+  ],
+  "Where do you primarily want to focus your reach? Is there a particular city or region you'd like to target, or do you want to go nationwide?": [
+    "Dove vuoi concentrare principalmente la tua portata? C'è una città o una regione particolare che vorresti targettizzare, o vuoi andare a livello nazionale?"
+  ],
+  "Thanks for providing that!": [
+    "Grazie per aver fornito queste informazioni!"
+  ],
+  "Lastly, is there anything else you'd like to highlight about your project or business, something that makes it unique or special?": [
+    "Infine, c'è qualcos'altro che vorresti evidenziare riguardo al tuo progetto o alla tua attività, qualcosa che lo rende unico o speciale?"
+  ],
+  "Here`s a summary of your website profile. Everything looks good?": [
+    "Ecco un riepilogo del profilo del tuo sito web. Tutto sembra a posto?"
+  ],
+  "This category has already been added.": [
+    "Questa categoria è già stata aggiunta."
+  ],
+  "Enter your website description": [
+    "Inserisci la descrizione del tuo sito web"
+  ],
+  "Edit Business Information": [
+    "Modifica le informazioni sull'attività"
+  ],
+  "Enter your business name": [
+    "Inserisci il nome della tua attività"
+  ],
+  "Enter your website URL": [
+    "Inserisci l'URL del tuo sito web"
+  ],
+  "All fields are required. To finish onboarding, set your address on the map and add at least five keywords and one category.": [
+    "Tutti i campi sono obbligatori. Per completare l'onboarding, imposta il tuo indirizzo sulla mappa e aggiungi almeno una parola chiave e una categoria."
+  ],
+  "Hey there, I`m your assistant.": [
+    "Ciao, sono il tuo assistente."
+  ],
+  "I`m here to make SEO simple and effective for your website.": [
+    "Sono qui per rendere la SEO semplice ed efficace per il tuo sito web."
+  ],
+  "Please wait, I’m setting this up now. We’ll continue in just a few minutes.": [
+    "Attendere, sto configurando tutto ora. Continueremo tra pochi minuti."
+  ],
+  "After I`ll open Wordpress, and we can continue on optimising your website and content from there.": [
+    "Dopo aprirò Wordpress e potremo continuare a ottimizzare il tuo sito web e i contenuti da lì."
+  ],
+  "We cannot accept names with certain special characters, because these names must be published later uniformly in online directories, which partially reject these characters. This is in the best interest of your company, as publishing information in many online directories will significantly improve your local visibility and local rankings on Google": [
+    "Non possiamo accettare nomi con determinati caratteri speciali, perché questi nomi devono essere pubblicati in modo uniforme in seguito nelle directory online, che in parte rifiutano questi caratteri. Questo è nel miglior interesse della tua azienda, poiché la pubblicazione di informazioni in molte directory online migliorerà significativamente la tua visibilità locale e il posizionamento locale su Google"
+  ],
+  "Add Adornments": [
+    "Aggiungi ornamenti"
+  ],
+  "This field cannot be empty": [
+    "Questo campo non può essere vuoto"
+  ],
+  "Image Source": [
+    "Fonte dell'immagine"
+  ],
+  "You will be automatically redirected to the main dashboard in %d seconds...": [
+    "Verrai reindirizzato automaticamente alla dashboard principale tra %d secondi..."
+  ],
+  "broken": [
+    "rotto"
+  ],
+  "active": [
+    "attivo"
+  ],
+  "unscanned": [
+    "non scansionato"
+  ],
+  "You already have added this category": [
+    "Hai già aggiunto questa categoria."
+  ],
+  "You can not add more than 10 categories": [
+    "Non puoi aggiungere più di 10 categorie."
+  ],
+  "Certain special characters are not allowed.": [
+    "Alcuni caratteri speciali non sono consentiti."
+  ],
+  "You have medium optimisation level on this page": [
+    "Il livello di ottimizzazione di questa pagina è medio"
+  ],
+  "Minimum required keywords: 5.": [
+    "Parole chiave minime richieste: 5."
+  ],
+  "Proceed to shop": [
+    "Procedi al negozio"
+  ],
+  "Address is not precise enough, please confirm your location on the map.": [
+    "L'indirizzo non è abbastanza preciso, conferma la tua posizione sulla mappa."
+  ],
+  "Check for new version": [
+    ""
+  ],
+  "Advanced analytics dashboard": [
+    ""
+  ],
+  "Priority customer support": [
+    ""
+  ],
+  "Failed to check plugin updates": [
+    ""
+  ],
+  "Go to updates": [
+    ""
+  ],
+  "Update": [
+    ""
+  ],
+  "No categories found for your search.": [
+    ""
+  ],
+  "Error suggestion": [
+    ""
+  ],
+  "Notice suggestion": [
+    ""
+  ],
+  "Third-Party Cookies Required": [
+    ""
+  ],
+  "To access the dashboard, please enable third-party cookies in your browser.": [
+    ""
+  ],
+  "Open Safari Preferences (Safari → Settings)": [
+    ""
+  ],
+  "Go to the \\": [
+    ""
+  ],
+  "Uncheck \\": [
+    ""
+  ],
+  "Refresh this page": [
+    ""
+  ],
+  "Click the three dots menu (⋮) in the top right corner": [
+    ""
+  ],
+  "Go to Settings → Privacy and security → Cookies and other site data": [
+    ""
+  ],
+  "Select \\": [
+    ""
+  ],
+  "Click the menu button (☰) and select Settings": [
+    ""
+  ],
+  "Go to Privacy & Security panel": [
+    ""
+  ],
+  "Under \\": [
+    ""
+  ],
+  "If Custom, uncheck \\": [
+    ""
+  ],
+  "Click the three dots menu (...) in the top right corner": [
+    ""
+  ],
+  "Go to Settings → Cookies and site permissions → Cookies and site data": [
+    ""
+  ],
+  "Turn off \\": [
+    ""
+  ],
+  "Open your browser's Settings or Preferences": [
+    ""
+  ],
+  "Look for Privacy, Security, or Cookies settings": [
+    ""
+  ],
+  "Enable third-party cookies or disable tracking protection": [
+    ""
+  ],
+  "How to enable:": [
+    ""
+  ],
+  "Refresh Page": [
+    ""
+  ],
+  "Open Dashboard in New Tab": [
+    ""
+  ],
+  "To access the dashboard, please enable third-party cookies in your browser. If you prefer not to enable them, you can still view the dashboard by clicking the \\": [
+    ""
+  ],
+  "On the right click Third-party cookies": [
+    ""
+  ],
+  "Pick Allow third-party cookies": [
+    ""
+  ],
+  "To access the dashboard, please enable third-party cookies in your browser. If you prefer not to enable them, you can still view the dashboard by clicking the": [
+    ""
+  ],
+  "Open Dashboard in New Page": [
+    ""
+  ],
+  "button below": [
+    ""
+  ],
+  "Optimize WordPress SEO": [
+    ""
+  ],
+  "Manage local listings": [
+    ""
+  ],
+  "Track keyword rankings": [
+    ""
+  ],
+  "Start your personal online marketing agent": [
+    ""
+  ],
+  "BeyondSEO Team": [
+    ""
+  ],
+  "https://www.beyond-seo.com": [
+    ""
+  ],
+  "Activation code is required.": [
+    ""
+  ],
+  "Deactivate feedback": [
+    ""
+  ],
+  "Help Us Improve": [
+    ""
+  ],
+  "Would you mind telling us why you are deactivating %s? Your feedback helps us make the plugin better.": [
+    ""
+  ],
+  "Submit and Deactivate": [
+    ""
+  ],
+  "Skip and Deactivate": [
+    ""
+  ],
+  "Please select a reason": [
+    ""
+  ],
+  "Submitting...": [
+    ""
+  ],
+  "Delete all project data and settings upon deactivation": [
+    ""
+  ],
+  "I no longer need the plugin": [
+    ""
+  ],
+  "I'm switching to a different plugin": [
+    ""
+  ],
+  "I couldn't get the plugin to work": [
+    ""
+  ],
+  "It’s a temporary deactivation": [
+    ""
+  ],
+  "Other": [
+    ""
+  ],
+  "Please share the reason": [
+    ""
+  ],
+  "You do not have permission to perform this action.": [
+    ""
+  ],
+  "Thank you for your feedback!": [
+    ""
+  ],
+  "Please describe the issue you faced": [
+    ""
+  ],
+  "Registration": [
+    ""
+  ],
+  "Invalid response during account activation.": [
+    ""
+  ],
+  "Missing refresh token in activation response.": [
+    ""
+  ],
+  "Error fetching account data.": [
+    ""
+  ],
+  "Activation succeeded but data could not be saved.": [
+    ""
+  ],
+  "Failed to save refresh token.": [
+    ""
+  ],
+  "You do not have sufficient permissions.": [
+    ""
+  ],
+  "Nonce verification failed.": [
+    ""
+  ],
+  "Verification link expired. Resend the email and try again.": [
+    ""
+  ],
+  "We couldn't check your email verification status. Please try again.": [
+    ""
+  ],
+  "We couldn't complete your registration. Please try again.": [
+    ""
+  ],
+  "We couldn't send the verification email. Please try again.": [
+    ""
+  ],
+  "Could not start registration. Please reload and try again.": [
+    ""
+  ],
+  "Resend verification email": [
+    ""
+  ],
+  "Please enter a valid email address.": [
+    ""
+  ],
+  "Please select a country.": [
+    ""
+  ],
+  "Please accept marketing communications to continue.": [
+    ""
+  ],
+  "Please provide a valid email.": [
+    ""
+  ],
+  "Challenge creation failed.": [
+    ""
+  ],
+  "You will be automatically redirected in %d seconds...": [
+    ""
+  ],
+  "We couldn't complete the activation": [
+    ""
+  ],
+  "Contact support": [
+    ""
+  ],
+  "Try another code": [
+    ""
+  ],
+  "Can’t find it? Search your inbox for 'activation code.'": [
+    ""
+  ],
+  "In the left sidebar, click Privacy and security.": [
+    ""
+  ],
+  "BeyondSEO Logo": [
+    ""
+  ],
+  "Please complete your registration to continue.": [
+    ""
+  ],
+  "Email": [
+    ""
+  ],
+  "name@company.com": [
+    ""
+  ],
+  "Select your country": [
+    ""
+  ],
+  "I agree to receive product updates and marketing communications.": [
+    ""
+  ],
+  "Register & Continue": [
+    ""
+  ],
+  "If this is a new account, you will need to validate your email before proceeding.": [
+    ""
+  ],
+  "We sent you a confirmation link. Please check your email.": [
+    ""
+  ],
+  "This screen will update automatically once your email is validated.": [
+    ""
+  ],
+  "Checking…": [
+    ""
+  ],
+  "Existing Account Connection": [
+    ""
+  ],
+  "We found an existing account with this email. The verification will quickly reconnect your account and restore your previous settings and data.": [
+    ""
+  ],
+  "We've sent a verification email to confirm your identity.": [
+    ""
+  ],
+  "Please check your inbox and click the verification link to reconnect your existing account.": [
+    ""
+  ],
+  "Waiting for email verification…": [
+    ""
+  ],
+  "This page will automatically update once your email is verified.": [
+    ""
+  ],
+  "New Account Setup": [
+    ""
+  ],
+  "As this is a new account, the verification process may take a few moments. We're setting up your workspace and preparing everything for you.": [
+    ""
+  ],
+  "We've sent a confirmation email to verify your address.": [
+    ""
+  ],
+  "Please check your inbox and click the verification link to complete your registration.": [
+    ""
+  ],
+  "You will need to validate your email before proceeding.": [
+    ""
+  ],
+  "%s functionality is temporarily unavailable due to system requirements not being met.": [
+    ""
+  ],
+  "Germany": [
+    ""
+  ],
+  "United States": [
+    ""
+  ],
+  "United Kingdom": [
+    ""
+  ],
+  "France": [
+    ""
+  ],
+  "Spain": [
+    ""
+  ],
+  "Italy": [
+    ""
+  ],
+  "Canada": [
+    ""
+  ],
+  "Australia": [
+    ""
+  ],
+  "Netherlands": [
+    ""
+  ],
+  "Switzerland": [
+    ""
+  ],
+  "Welcome to BeyondSEO": [
+    ""
+  ],
+  "Log in or create a new account to start using your SEO tools.": [
+    ""
+  ],
+  "Enter your email": [
+    ""
+  ],
+  "Verify your email": [
+    ""
+  ],
+  ". This helps keep your account secure.": [
+    ""
+  ],
+  "Change Email address": [
+    ""
+  ],
+  "Next": [
+    ""
+  ],
+  "Try again": [
+    ""
+  ],
+  "Freemium got your business online. But other businesses pay to stand out first.": [
+    ""
+  ],
+  "You’re fighting for attention against companies that automate their work while you’re still handling things manually. We offer more than one plan to help you change that. Choose the one that fits you best to save time, stay ahead, and grow faster.": [
+    ""
+  ],
+  "1. Is the Standard plan suitable for small businesses?": [
+    ""
+  ],
+  "Yes. The Standard plan is designed for small businesses looking to strengthen their visibility and presence.": [
+    ""
+  ],
+  "2. Can I directly upgrade to Advanced?": [
+    ""
+  ],
+  "Yes. You can upgrade to the Advanced plan at any time and gain immediate access to all additional features and benefits.": [
+    ""
+  ],
+  "3. Can I cancel my plan?": [
+    ""
+  ],
+  "Yes. You may cancel your plan whenever you choose.": [
+    ""
+  ],
+  "Trust is the most important factor in a purchase. Advanced helps you get trusted by clients.": [
+    ""
+  ],
+  "Customers trust what others say online about your business. With AI-powered features, you can reply to reviews right away, get more customers to share their feedback, and learn what people really think with sentiment analysis. All these features and more work together to help you build trust and stand out online.": [
+    ""
+  ],
+  "1. Who is Advanced best suited for?": [
+    ""
+  ],
+  "Businesses in competitive markets, those managing multiple review sources, or anyone who needs broader listings coverage and deeper reputation insights.": [
+    ""
+  ],
+  "2. How can I buy the Social add-on?": [
+    ""
+  ],
+  "To buy the Social add-on, you first need to have the Advanced plan. Once you’ve upgraded to Advanced, you’ll be able to purchase the add-on separately.": [
+    ""
+  ],
+  "60% of businesses that grew last year relied on social media. Use the social add-on to join this year`s growing businesses.": [
+    ""
+  ],
+  "Show up where your clients are, share content that captures attention, and keep the conversation going. Plan, post, and boost to build trust, grow engagement, and turn followers into loyal customers": [
+    ""
+  ],
+  "1. Is the Social add-on right for my business?": [
+    ""
+  ],
+  "It’s ideal for businesses that want to actively engage their audience, grow visibility on social media, and streamline posting with AI and planning features.": [
+    ""
+  ],
+  "2. Can I track performance and engagement?": [
+    ""
+  ],
+  "Yes. You can monitor post interactions, view and reply to comments, track link performance, and access social media insights.": [
+    ""
+  ],
+  "3. Can I create and publish posts on all major platforms?": [
+    ""
+  ],
+  "Yes. You can create and publish posts on Google Business Profile, Facebook, Instagram, LinkedIn, and X.": [
+    ""
+  ],
+  "Everything in Freemium, plus:": [
+    ""
+  ],
+  "AI text optimisation": [
+    ""
+  ],
+  "Create Google ads campaign": [
+    ""
+  ],
+  "Monitor 3 locations": [
+    ""
+  ],
+  "Publish Business Profile in up to 46 directories": [
+    ""
+  ],
+  "Automatic AI reply to reviews": [
+    ""
+  ],
+  "Reviews booster (send review request via e-mail or use print materials)": [
+    ""
+  ],
+  "AI-powered reputation sentiment analysis": [
+    ""
+  ],
+  "Track 25 keywords": [
+    ""
+  ],
+  "Monitor 5 competitors": [
+    ""
+  ],
+  "Manually reply to reviews": [
+    ""
+  ],
+  "Collect reviews widget": [
+    ""
+  ],
+  "Reputation insights": [
+    ""
+  ],
+  "Create & publish posts on Facebook, Instagram, LinkedIn, X and Google Business Profile": [
+    ""
+  ],
+  "AI-powered Social Media Planner": [
+    ""
+  ],
+  "AI image generator": [
+    ""
+  ],
+  "Create & publish events on Google Business Profile": [
+    ""
+  ],
+  "Competitor-based post suggestion": [
+    ""
+  ],
+  "View & respond to posts comments": [
+    ""
+  ],
+  "Link performance": [
+    ""
+  ],
+  "Social media insights": [
+    ""
+  ],
+  "Boosts posts with Meta ads": [
+    ""
+  ],
+  "Grow your business online with easy video tutorials.": [
+    ""
+  ],
+  "Follow simple step-by-step videos for SEO, Local Marketing, and Social Media tasks. Get results faster without expert help. Save time and skip the complexity of doing it all yourself.": [
+    ""
+  ],
+  "Create your Google Ads campaign in minutes. Choose from automatically generated ad texts, set your daily budget, and launch with ease. Once your campaign is live, monitor its performance with insights. You can adjust or pause it anytime to stay in control.": [
+    ""
+  ],
+  "Get found faster with AI-powered text optimisation.": [
+    ""
+  ],
+  "AI reviews your content, fixes SEO issues, and fine-tunes it for your keywords. This helps your business rank higher and reach the right audience with less effort.": [
+    ""
+  ],
+  "Publish your Business Profile in up to 46 directories with one click. Monitor your overall listings presence and manage it easily with fine-tune updates.": [
+    ""
+  ],
+  "Create social media content with ease.": [
+    ""
+  ],
+  "Transform one content idea into many ready-to-use posts.": [
+    ""
+  ],
+  "Planning a promotion, and one post won’t cut it? Simply tell the AI what the series is about, the number of posts, frequency, and schedule. The AI will generate your entire series in seconds. Review, tweak if needed, and your posts will be published automatically as scheduled.": [
+    ""
+  ],
+  "Make it easy for customers to leave reviews.": [
+    ""
+  ],
+  "Encourage more customers to leave feedback by sending review requests via email or offering printed QR materials for easy scanning at your location.": [
+    ""
+  ],
+  "See what customers really think of your business.": [
+    ""
+  ],
+  "Get a full overview of your business reputation based on customer reviews. See an overall sentiment score and a detailed breakdown by topic, showing what customers value most and where there’s room for improvement.": [
+    ""
+  ],
+  "Creating buzz means having visuals without a design team.": [
+    ""
+  ],
+  "Skip complicated design tools. Just describe the image you want or select relevant keywords, and our AI will generate ready-to-use visuals in seconds.": [
+    ""
+  ],
+  "Expand your reach. Boost your posts with Meta ads.": [
+    ""
+  ],
+  "Choose a post to boost, set your budget, and launch instantly. Once your boost is live, track its performance with detailed insights. You’re always in control, pause or adjust your boost and budget anytime.": [
+    ""
+  ],
+  "takes it further": [
+    ""
+  ],
+  "completes the picture": [
+    ""
+  ],
+  "You're currently using the %s plan": [
+    ""
+  ],
+  "Add-on": [
+    ""
+  ],
+  "To buy the add-on, you must upgrade to Advanced first": [
+    ""
+  ],
+  "Keyword insert failed. Error: %1$s": [
+    ""
+  ],
+  "Why take 46 steps when one click gets you there?": [
+    ""
+  ],
+  "See how to stand out": [
+    ""
+  ],
+  "Every slow reply signals a lack of care": [
+    ""
+  ],
+  "Every unanswered review weakens trust": [
+    ""
+  ],
+  "The Advanced plan helps you with every part of your reputation and more.": [
+    ""
+  ],
+  "See how to build trust": [
+    ""
+  ],
+  "Social Media seems like a chore, but it pays off more than you’d think.": [
+    ""
+  ],
+  "Stop forgetting to post regularly": [
+    ""
+  ],
+  "Stop writing the same post 5 times": [
+    ""
+  ],
+  "Stop taking from your free time": [
+    ""
+  ],
+  "The Social add-on takes the pressure off and can help turn your social platforms into real gains.": [
+    ""
+  ],
+  "Add Social Features": [
+    ""
+  ],
+  "Premium Plan": [
+    ""
+  ],
+  "Everything you need to dominate search rankings": [
+    ""
+  ],
+  "AI-Powered SEO Optimization": [
+    ""
+  ],
+  "Social Media Management": [
+    ""
+  ],
+  "Reputation Management": [
+    ""
+  ],
+  "Analytics & Reports": [
+    ""
+  ],
+  "Listings in 46+ Directories": [
+    ""
+  ],
+  "Review Response Automation": [
+    ""
+  ],
+  "Keyword Tracking": [
+    ""
+  ],
+  "Competitor Monitoring": [
+    ""
+  ],
+  "Upgrade Now": [
+    ""
+  ],
+  "What makes this plan different?": [
+    ""
+  ],
+  "Our Premium Plan combines AI-powered tools with comprehensive marketing features to help you grow your business online efficiently.": [
+    ""
+  ],
+  "Can I cancel anytime?": [
+    ""
+  ],
+  "Yes. You can cancel your subscription at any time with no penalties or long-term commitments.": [
+    ""
+  ],
+  "Is support included?": [
+    ""
+  ],
+  "Yes. Premium support is included with your subscription to help you get the most out of your tools.": [
+    ""
+  ],
+  "Grow Your Business with Premium Tools": [
+    ""
+  ],
+  "Take your online presence to the next level with our comprehensive marketing suite": [
+    ""
+  ],
+  "Current Plan: %s": [
+    ""
+  ],
+  "Included Features": [
+    ""
+  ],
+  "30-day money-back guarantee": [
+    ""
+  ],
+  "Frequently Asked Questions": [
+    ""
+  ],
+  "You're fighting for attention against companies that automate their work while you're still handling things manually. We offer more than one plan to help you change that. Choose the one that fits you best to save time, stay ahead, and grow faster.": [
+    ""
+  ],
+  "To buy the Social add-on, you first need to have the Advanced plan. Once you've upgraded to Advanced, you'll be able to purchase the add-on separately.": [
+    ""
+  ],
+  "It's ideal for businesses that want to actively engage their audience, grow visibility on social media, and streamline posting with AI and planning features.": [
+    ""
+  ],
+  "Planning a promotion, and one post won't cut it? Simply tell the AI what the series is about, the number of posts, frequency, and schedule. The AI will generate your entire series in seconds. Review, tweak if needed, and your posts will be published automatically as scheduled.": [
+    ""
+  ],
+  "Get a full overview of your business reputation based on customer reviews. See an overall sentiment score and a detailed breakdown by topic, showing what customers value most and where there's room for improvement.": [
+    ""
+  ],
+  "Choose a post to boost, set your budget, and launch instantly. Once your boost is live, track its performance with detailed insights. You're always in control, pause or adjust your boost and budget anytime.": [
+    ""
+  ],
+  "Check my account": [
+    ""
+  ],
+  "ActivationCode:": [
+    ""
+  ],
+  "Open rC dashboard in new tab": [
+    ""
+  ],
+  "I agree that the BeyondSEO plugin may create/authenticate my account and communicate with rankingCoach servers to provide its services. I have read and accept the ": [
+    ""
+  ],
+  "Privacy Policy": [
+    ""
+  ],
+  " and the ": [
+    ""
+  ],
+  "Terms and Conditions": [
+    ""
+  ],
+  ".": [
+    ""
+  ],
+  "SEO helps people find you.  <mark> Premium helps them choose you.</mark>": [
+    ""
+  ],
+  "Good SEO brings visitors to your site. To earn their trust, you must appear active and credible, not just on your site, but everywhere they look. Premium makes that happen.": [
+    ""
+  ],
+  "Monthly": [
+    ""
+  ],
+  "Annual": [
+    ""
+  ],
+  "Get Premium": [
+    ""
+  ],
+  "* Annual payment": [
+    ""
+  ],
+  "* Monthly payment": [
+    ""
+  ],
+  "Being active on social, showing up in listings, and earning trust from reviews takes daily work. Here are some of the key tasks your competitors are automating to keep their edge.": [
+    ""
+  ],
+  "They use AI to reply to reviews instantly": [
+    ""
+  ],
+  "They schedule weeks of social content in minutes": [
+    ""
+  ],
+  "They get listed on every top directory with one click": [
+    ""
+  ],
+  "Loading categories...": [
+    ""
+  ],
+  "Type at least 2 characters to search categories": [
+    ""
+  ],
+  "Loading more...": [
+    ""
+  ],
+  "categories": [
+    ""
+  ],
+  "%1$s": [
+    ""
+  ],
+  "Connecting to server...": [
+    ""
+  ],
+  "Opening RankingCoach dashboard in a new tab...": [
+    ""
+  ],
+  "Your refresh token has expired. Please %s to regenerate it.": [
+    ""
+  ],
+  "re-activate the plugin": [
+    ""
+  ],
+  "re-register the plugin": [
+    ""
+  ]
+}

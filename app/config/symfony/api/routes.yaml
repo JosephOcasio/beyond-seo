@@ -1,0 +1,9 @@
+controllers:
+    resource: '../../../src/Presentation/Api'
+    type: annotation
+    prefix: '/api'
+    schemes: [http]
+
+kernel:
+    resource: '@DDDBundle/Symfony/Kernels/DDDKernel.php'
+    type: annotation

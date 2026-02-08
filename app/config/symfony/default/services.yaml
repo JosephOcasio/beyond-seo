@@ -1,0 +1,148 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+parameters:
+  app.contents_dir: '%kernel.project_dir%/src/'
+  container.dumper.inline_factories: false
+  router.request_context.scheme: 'https'
+  asset.request_context.secure: true
+
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+    public: false
+
+  # makes classes in src/ available to be used as services
+  # this creates a service per class whose id is the fully-qualified class name
+
+  DDD\:
+    resource: '%kernel.project_dir%/vendor/mgamadeus/ddd/src/*'
+    exclude:
+      - '%kernel.project_dir%/vendor/mgamadeus/ddd/src/**/*{Attributes,Exceptions,Traits,Validators,Interfaces,Lazyload,QueryOptions}*' # This will exclude any directory or file with 'Attributes' in the name.
+      - '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Domain/Base/Repo/DB/{Database,Doctrine}*'
+      - '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Infrastructure/{Cache,Reflection,Validation,Helpers}*'
+      - '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Presentation/**/*{OpenApi,QueryOptions,Router}*'
+      - '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Symfony/{Bundles,Kernels,Extended}*'
+
+  DDD\Domain\Base\Services\:
+    resource: '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Domain/Base/Services/*'
+    public: true
+
+  DDD\Domain\Common\Services\:
+    resource: '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Domain/Common/Services/*'
+    public: true
+
+  DDD\Presentation\Services\:
+    resource: '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Presentation/Services/*'
+    public: true
+
+  DDD\Infrastructure\Services\:
+    resource: '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Infrastructure/Services/*'
+    public: true
+
+  # Symfony folder contains e.g. symfony commands, these cannot be lazy-loaded as they are not understood otherwise
+  DDD\Symfony\:
+    resource: '%kernel.project_dir%/vendor/mgamadeus/ddd/src/Symfony/*'
+    exclude:
+      - '%kernel.project_dir%/ddd_src/Symfony/{Bundles,Kernels,Extended}*'
+
+  App\:
+    resource: '%kernel.project_dir%/src/*'
+    exclude:
+      - '%kernel.project_dir%/src/**/*{Exceptions,Traits,Validators,Interfaces,Lazyload,QueryOptions}*' # This will exclude any directory or file with 'Attributes' in the name.
+      - '%kernel.project_dir%/src/Domain/Base/Repo/DB/{Database,Doctrine}*'
+      - '%kernel.project_dir%/src/Domain/Base/Repo/Argus*'
+      - '%kernel.project_dir%/src/Infrastructure/{Cache,Reflection,Validation,Helpers}*'
+      - '%kernel.project_dir%/src/Presentation/**/*{QueryOptions,Router}*'
+      - '%kernel.project_dir%/src/Symfony/{Bundles,Kernels,Extended}*'
+    #exclude: '%kernel.project_dir%/src/{Presentation,Infrastructure}'
+
+  # Symfony folder contains e.g. symfony commands, these cannot be lazy-loaded as they are not understood otherwise
+  App\Symfony\:
+    resource: '%kernel.project_dir%/src/Symfony/*'
+
+  App\Domain\Integrations\WordPress\Setup\Services\:
+    resource: '%kernel.project_dir%/src/Domain/Integrations/WordPress/Setup/Services/*'
+    public: true
+
+  App\Domain\Integrations\WordPress\Seo\Services\:
+    resource: '%kernel.project_dir%/src/Domain/Integrations/WordPress/Seo/Services/*'
+    public: true
+
+  App\Domain\Integrations\WordPress\Plugin\Services\:
+    resource: '%kernel.project_dir%/src/Domain/Integrations/WordPress/Plugin/Services/*'
+    public: true
+
+  App\Domain\Integrations\WordPress\Common\Services\:
+    resource: '%kernel.project_dir%/src/Domain/Integrations/WordPress/Common/Services/*'
+    public: true
+
+  App\Domain\Common\Services\:
+    resource: '%kernel.project_dir%/src/Domain/Common/Services/*'
+    public: true
+
+  App\Infrastructure\Services\:
+    resource: '%kernel.project_dir%/src/Infrastructure/Services/*'
+    public: true
+    lazy: true
+
+
+  # Override Services
+  DDD\Infrastructure\Services\DDDService:
+    class: App\Infrastructure\Services\AppService
+
+  DDD\Domain\Common\Entities\Accounts\Account:
+    class: App\Domain\Common\Entities\Accounts\Account
+
+  DDD\Domain\Common\Entities\Accounts\Accounts:
+    class: App\Domain\Common\Entities\Accounts\Accounts
+
+  DDD\Domain\Common\Services\AccountsService:
+    class: App\Domain\Common\Services\AccountsService
+
+  DDD\Domain\Common\Entities\Roles\Role:
+    class: App\Domain\Common\Entities\Roles\Role
+
+  DDD\Domain\Common\Entities\CacheScopes\CacheScope:
+    class: App\Domain\Common\Entities\CacheScopes\CacheScope
+
+  DDD\Domain\Common\Services\CacheScopeInvalidationsService:
+    class: App\Domain\Common\Services\CacheScopeInvalidationsService
+
+  DDD\Infrastructure\Services\AuthService:
+    class: App\Infrastructure\Services\AuthService
+
+  # custom loaders that support multiple route annotations on controller classes
+  DDD\Symfony\Loaders\CustomAnnotationClassLoader:
+    tags: [ routing.loader ]
+
+  DDD\Symfony\Loaders\CustomAnnotationFileLoader:
+    tags: [ routing.loader ]
+    autowire: true
+
+  DDD\Symfony\Loaders\CustomAnnotationDirectoryLoader:
+    tags: [ routing.loader ]
+    autowire: true
+
+  DDD\Symfony\EventListeners\CorsListener:
+    tags:
+      - { name: kernel.event_subscriber }
+
+  Symfony\Component\Messenger\MessageBus:
+    public: true
+
+  Symfony\Component\Console\Application:
+    public: true
+
+  logger:
+    alias: 'monolog.logger'
+    public: true
+
+  Symfony\Component\Security\Http\AccessMapInterface: '@security.access_map'
+
+  # add more service definitions when explicit configuration is needed
+  # please note that last definitions always *replace* previous ones
