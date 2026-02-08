@@ -1,0 +1,134 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Domain\Integrations\WordPress\Setup\Repo\RC\Onboarding;
+
+use App\Domain\Base\Repo\RC\Attributes\RCLoad;
+use App\Domain\Base\Repo\RC\Traits\RCTrait;
+use App\Domain\Base\Repo\RC\Traits\RCSecurityTrait;
+use App\Domain\Base\Repo\RC\Utils\RCApiOperation;
+use App\Domain\Base\Repo\RC\Utils\RCCache;
+use App\Domain\Common\Entities\Keywords\Keywords;
+use App\Domain\Integrations\WordPress\Setup\Entities\Flows\Onboarding\Onboarding;
+use App\Domain\Integrations\WordPress\Setup\Entities\Flows\Requirements\WPRequirement;
+use App\Domain\Integrations\WordPress\Setup\Entities\Flows\WPFlowRequirements;
+use App\Domain\Integrations\WordPress\Seo\Libs\ContentFetcher;
+use App\Domain\Integrations\WordPress\Setup\Entities\WPSetupSetting;
+use JsonException;
+use RankingCoach\Inc\Core\Plugin\RankingCoachPlugin;
+use RankingCoach\Inc\Core\TokensManager;
+use RankingCoach\Inc\Exceptions\HttpApiException;
+use ReflectionException;
+
+/**
+ * Class RCOnboarding
+ */
+#[RCLoad(
+    loadEndpoint: 'POST:{CUSTOM_FULL_DOMAIN}',
+    cacheLevel: RCCache::CACHELEVEL_NONE,
+    cacheTtl: RCCache::CACHE_TTL_TEN_MINUTES
+)]
+class RCOnboarding extends Onboarding {
+    use RCTrait;
+    use RCSecurityTrait;
+
+    /**
+     * Get the endpoint for loading the onboarding data
+     *
+     * @return string|null
+     */
+    public function getLoadEndpoint(): ?string
+    {
+        $config = require RANKINGCOACH_PLUGIN_APP_DIR . 'config/app/externalIntegrations.php';
+        // Set prefix based on production mode
+        if (RankingCoachPlugin::isProductionMode()) {
+            $prefix = $config['liveEnv'];
+        } else {
+            $prefix = get_option('testing_environment', $config['devEnv']);
+        }
+        $url = 'https://' . $prefix . '.rankingcoach.com/app/api/client/integrations/wordpress/onboarding?debug=1&noCache=true';
+        ContentFetcher::setUrlToCache($url);
+        return $url;
+    }
+
+    /**
+     * @return array|null
+     * @throws ReflectionException
+     * @throws JsonException
+     * @throws HttpApiException
+     */
+    protected function getLoadPayload(): ?array
+    {
+        /** @var Onboarding $entity */
+        $entity = $this->toEntity();
+
+        $payload = array_reduce (
+            $entity->requirements->getElements(),
+            static function (array $carry, WPRequirement $requirement) {
+                $value = match ($requirement->setupRequirement) {
+                    WPFlowRequirements::SETUP_REQUIREMENT_BUSINESS_KEYWORDS,
+                    WPFlowRequirements::SETUP_REQUIREMENT_BUSINESS_CATEGORIES,
+                    WPFlowRequirements::SETUP_REQUIREMENT_BUSINESS_GEO_ADDRESS
+                        => !empty($requirement->value)
+                            ? json_decode($requirement->value, true, 512, JSON_THROW_ON_ERROR)
+                            : null,
+                    default => $requirement->value,
+                };
+                $carry[$requirement->entityAlias] = $value;
+                return $carry;
+            }, []
+        );
+
+        // Generate the base payload with common security data
+        $basePayload = $this->generateSecurityPayload($payload);
+
+        /** @var TokensManager $tokensManager */
+        $tokensManager = TokensManager::instance();
+        $token = $tokensManager->getAccessToken(static::class);
+
+        // Prepare security headers
+        $this->prepareSecurityHeaders($token, $basePayload);
+
+        // Get security-enhanced payload structure
+        $securityEnhancedPayload = $this->getSecurityEnhancedPayload([
+            'timeout' => 60,
+            'body' => $basePayload,
+            'path' => [
+                'CUSTOM_FULL_DOMAIN' => $this->getLoadEndpoint()
+            ],
+        ], $token);
+
+        // Add Authorization header
+        $securityEnhancedPayload['headers']['Authorization'] = 'Bearer ' . $token;
+
+        $payload = array_map(fn($a) => $a, $securityEnhancedPayload);
+        return $payload;
+    }
+
+    /**
+     * @param mixed|null $callResponseData
+     * @param RCApiOperation|null $apiOperation
+     * @return void
+     */
+    public function handleLoadResponse(
+        mixed &$callResponseData = null,
+        RCApiOperation &$apiOperation = null
+    ): void {
+        if($callResponseData) {
+            /** @var Keywords $responseKeywords */
+            $responseKeywords = $callResponseData->keywords?->elements ?? [];
+            $this->keywords = Keywords::createFromArray($responseKeywords);
+            $this->keywords->addChildren($this->keywords);
+            $this->maxAllowedKeywords = $responseKeywords->maxAllowedKeywords ?? 20;
+
+            $this->setupSettings = new WPSetupSetting();
+            $this->setupSettings->rankingcoachCompletedAuto = $callResponseData->rankingcoachCompletedAuto ?? false;
+            $this->setupSettings->rankingcoachCompleted = $callResponseData->rankingcoachCompleted ?? false;
+            $this->setupSettings->autogeneratedCategoriesNotConfirmed = $callResponseData->autogeneratedCategoriesNotConfirmed ?? false;
+            $this->setupSettings->autogeneratedKeywordsNotConfirmed = $callResponseData->autogeneratedKeywordsNotConfirmed ?? false;
+
+            $this->postProcessLoadResponse($callResponseData);
+        }
+    }
+}
