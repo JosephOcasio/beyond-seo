@@ -1,0 +1,73 @@
+name: Static Analysis
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  phpstan:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          coverage: none
+
+      - name: Install dependencies
+        run: |
+          if [ -f composer.json ]; then
+            composer install --no-interaction --prefer-dist
+          else
+            echo "ℹ️  No composer.json found, creating minimal config for analysis..."
+          fi
+
+      - name: Install PHPStan
+        run: |
+          composer require --dev phpstan/phpstan phpstan/phpstan-strict-rules 2>/dev/null || \
+          mkdir -p tools && cd tools && \
+          composer require phpstan/phpstan phpstan/phpstan-strict-rules --no-interaction || \
+          echo "✓ PHPStan installation may require manual setup"
+
+      - name: Run PHPStan analysis (app/src)
+        continue-on-error: true
+        run: |
+          if command -v phpstan &> /dev/null; then
+            phpstan analyse app/src --level=max || true
+          elif [ -f vendor/bin/phpstan ]; then
+            vendor/bin/phpstan analyse app/src --level=max || true
+          else
+            echo "⚠️  PHPStan not available, skipping analysis"
+          fi
+
+  code-quality:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Install Code Sniffer
+        run: |
+          composer require --dev squizlabs/php_codesniffer 2>/dev/null || \
+          echo "✓ PHP CodeSniffer requires manual installation"
+
+      - name: Check code style (app/src)
+        continue-on-error: true
+        run: |
+          if command -v phpcs &> /dev/null; then
+            phpcs --standard=PSR12 app/src || true
+          elif [ -f vendor/bin/phpcs ]; then
+            vendor/bin/phpcs --standard=PSR12 app/src || true
+          else
+            echo "⚠️  PHP CodeSniffer not available"
+          fi

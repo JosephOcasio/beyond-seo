@@ -1,0 +1,32 @@
+# API Routes Configuration
+# Place in app/config/routes/api.yaml
+
+api_plugin_settings:
+  path: /api/settings
+  controller: App\Presentation\Http\Controllers\Api\PluginSettingsController
+  methods: GET
+  name: api_settings_index
+
+api_plugin_settings_show:
+  path: /api/settings/{key}
+  controller: App\Presentation\Http\Controllers\Api\PluginSettingsController::show
+  methods: GET
+  name: api_settings_show
+
+api_plugin_settings_store:
+  path: /api/settings/{key}
+  controller: App\Presentation\Http\Controllers\Api\PluginSettingsController::store
+  methods: [POST, PUT]
+  name: api_settings_store
+
+api_plugin_settings_batch:
+  path: /api/settings/batch
+  controller: App\Presentation\Http\Controllers\Api\PluginSettingsController::batch
+  methods: POST
+  name: api_settings_batch
+
+api_plugin_settings_destroy:
+  path: /api/settings/{key}
+  controller: App\Presentation\Http\Controllers\Api\PluginSettingsController::destroy
+  methods: DELETE
+  name: api_settings_destroy
