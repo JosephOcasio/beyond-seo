@@ -9,14 +9,28 @@ import argparse
 import csv
 import glob
 import json
+import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List
+from typing import List, Tuple
 
 
 ROOT = Path("/Users/josephocasio/Documents/New project")
 OUT_DIR = ROOT / "out" / "us_audit" / "coverage"
+STUB_TOKENS = (
+    "access denied",
+    "you don't have permission to access",
+    "errors.edgesuite.net",
+)
+MIN_BYTES_DEFAULT = 512
+MIN_BYTES_BY_SUFFIX = {
+    ".pdf": 10 * 1024,
+    ".csv": 128,
+    ".json": 256,
+    ".html": 10 * 1024,
+    ".htm": 10 * 1024,
+}
 
 
 @dataclass
@@ -73,15 +87,89 @@ def resolve(pattern: str) -> list[str]:
     return sorted(glob.glob(str(ROOT / pattern)))
 
 
+def _read_head(path: Path, byte_count: int = 8192) -> bytes:
+    with path.open("rb") as f:
+        return f.read(byte_count)
+
+
+def validate_file_integrity(path_str: str) -> Tuple[bool, str]:
+    path = Path(path_str)
+    suffix = path.suffix.lower()
+    min_bytes = MIN_BYTES_BY_SUFFIX.get(suffix, MIN_BYTES_DEFAULT)
+
+    try:
+        size = path.stat().st_size
+    except OSError as exc:
+        return False, f"stat_failed:{exc}"
+
+    if size < min_bytes:
+        return False, f"file_too_small:{size}<{min_bytes}"
+
+    try:
+        head = _read_head(path)
+    except OSError as exc:
+        return False, f"read_failed:{exc}"
+
+    head_text = head.decode("utf-8", errors="ignore").lower()
+    if any(token in head_text for token in STUB_TOKENS):
+        return False, "access_denied_stub"
+
+    if suffix == ".pdf":
+        if not head.startswith(b"%PDF-"):
+            return False, "pdf_header_missing"
+        return True, "verified_pdf"
+
+    if suffix == ".csv":
+        if head_text.lstrip().startswith("<html") or "<title>access denied</title>" in head_text:
+            return False, "csv_is_html_stub"
+        if "," not in head_text and "\t" not in head_text:
+            return False, "csv_delimiter_missing"
+        return True, "verified_csv"
+
+    if suffix == ".json":
+        try:
+            json.loads(path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            return False, f"json_parse_failed:{exc}"
+        return True, "verified_json"
+
+    if suffix in (".html", ".htm"):
+        if re.search(r"<title>\s*access denied\s*</title>", head_text):
+            return False, "html_access_denied_stub"
+        return True, "verified_html"
+
+    return True, "verified_generic"
+
+
 def calc_target_coverage(target: Target) -> dict:
     checks = []
     matched = 0
     for p in target.required_patterns:
         files = resolve(p)
-        ok = len(files) > 0
+        valid_files: list[str] = []
+        invalid_files: list[dict] = []
+        for file_path in files:
+            ok_file, reason = validate_file_integrity(file_path)
+            if ok_file:
+                valid_files.append(file_path)
+            else:
+                invalid_files.append({"file": file_path, "reason": reason})
+
+        ok = len(valid_files) > 0
         if ok:
             matched += 1
-        checks.append({"pattern": p, "matched": ok, "files": files[:10]})
+        checks.append(
+            {
+                "pattern": p,
+                "matched": ok,
+                "matched_by_integrity": ok,
+                "files_found_count": len(files),
+                "valid_files_count": len(valid_files),
+                "invalid_files_count": len(invalid_files),
+                "files": valid_files[:10],
+                "invalid_files": invalid_files[:10],
+            }
+        )
     pct = (matched / len(target.required_patterns) * 100.0) if target.required_patterns else 100.0
     return {
         "id": target.id,
@@ -112,6 +200,11 @@ def main() -> int:
         "overall_required": overall_required,
         "overall_matched": overall_matched,
         "overall_coverage_pct": round(overall_pct, 2),
+        "integrity_validation": {
+            "enabled": True,
+            "stub_tokens": list(STUB_TOKENS),
+            "min_bytes_by_suffix": MIN_BYTES_BY_SUFFIX,
+        },
         "targets": rows,
     }
     out_json.write_text(json.dumps(payload, indent=2), encoding="utf-8")
@@ -142,6 +235,13 @@ def main() -> int:
             if not c["matched"]:
                 gaps += 1
                 lines.append(f"- {r['id']}: missing `{c['pattern']}`")
+            if c["invalid_files_count"] > 0:
+                invalid_preview = ", ".join(
+                    [f"{item['file']} ({item['reason']})" for item in c["invalid_files"][:3]]
+                )
+                lines.append(
+                    f"- {r['id']}: invalid files for `{c['pattern']}` -> {invalid_preview}"
+                )
     if gaps == 0:
         lines.append("- None")
     out_md.write_text("\n".join(lines) + "\n", encoding="utf-8")
