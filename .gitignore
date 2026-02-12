@@ -1,0 +1,11 @@
+# Local datasets and generated audit artifacts
+/out/
+/inbox/us_sources/
+/staging_event.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local envs
+.venv/
