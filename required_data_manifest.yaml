@@ -1,0 +1,127 @@
+schema_version: "1.0"
+project_root: "/Users/josephocasio/Documents/New project"
+generated_at_utc: "2026-02-12T00:00:00Z"
+
+priorities:
+  - id: usaspending_award_transactions
+    priority: P0
+    owner: usaspending
+    purpose: "Award-level DOD and IRS transaction anomaly detection."
+    source_type: api
+    source_ref: "https://api.usaspending.gov/api/v2/search/spending_by_transaction/"
+    cadence: daily
+    required: true
+    output_artifact: "out/us_audit/dod_irs_all/raw/dod_sep_last_week_transactions.json"
+
+  - id: treasury_debt_to_penny
+    priority: P0
+    owner: treasury
+    purpose: "Macro debt baseline and time-series anchor."
+    source_type: api
+    source_ref: "https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v2/accounting/od/debt_to_penny"
+    cadence: daily
+    required: true
+    output_artifact: "out/us_audit/dod_irs_all/raw/treasury_debt_to_penny_latest.json"
+
+  - id: gao_recommendations_and_high_risk
+    priority: P0
+    owner: gao
+    purpose: "Open/closed recommendation status and high-risk domain tracking."
+    source_type: web
+    source_ref: "https://www.gao.gov/high-risk-list"
+    cadence: weekly
+    required: true
+    output_artifact: "out/us_audit/dod_irs_all/raw/gao_high_risk_list.html"
+
+  - id: dod_financial_weaknesses
+    priority: P0
+    owner: dod_oig_gao
+    purpose: "Material weakness and remediation lag evidence."
+    source_type: web
+    source_ref: "https://www.dodig.mil/"
+    cadence: weekly
+    required: true
+    output_artifact: "out/us_audit/final_gap_closed_matrix.csv"
+
+  - id: irs_control_group
+    priority: P0
+    owner: irs_gao
+    purpose: "Control-group baseline for identifiable audit posture."
+    source_type: derived
+    source_ref: "local tools parser"
+    cadence: on_run
+    required: true
+    output_artifact: "out/us_audit/dod_irs_all/irs_control_group.json"
+
+  - id: ssa_trustees_sensitivity
+    priority: P1
+    owner: ssa
+    purpose: "Sensitivity around depletion assumptions."
+    source_type: derived
+    source_ref: "local scenario model"
+    cadence: on_run
+    required: true
+    output_artifact: "out/us_audit/ssa_hhs_deep_dive/ssa_jacobian_sweep_meta.json"
+
+pipeline:
+  stages:
+    - id: fetch_us_baseline
+      order: 10
+      enabled: true
+      script: "tools/dod_irs_audit_pack.py"
+      args: []
+      expected_outputs:
+        - "out/us_audit/dod_irs_all/summary.md"
+        - "out/us_audit/dod_irs_all/metrics.json"
+        - "out/us_audit/dod_irs_all/manifest.json"
+
+    - id: parse_irs_control_group
+      order: 20
+      enabled: true
+      script: "tools/parse_irs_control_group.py"
+      args: []
+      expected_outputs:
+        - "out/us_audit/dod_irs_all/irs_control_group.json"
+        - "out/us_audit/dod_irs_all/irs_control_group.md"
+
+    - id: build_gao_recommendation_aging
+      order: 25
+      enabled: true
+      script: "tools/build_gao_recommendation_aging.py"
+      args: []
+      expected_outputs:
+        - "out/us_audit/gao_recommendations_aging/gao_recommendations_aging.csv"
+        - "out/us_audit/gao_recommendations_aging/gao_recommendations_aging_summary.json"
+        - "out/us_audit/gao_recommendations_aging/gao_recommendations_aging.md"
+
+    - id: build_gap_closed_matrix
+      order: 30
+      enabled: true
+      script: "tools/generate_final_gap_closed_matrix.py"
+      args: []
+      expected_outputs:
+        - "out/us_audit/final_gap_closed_matrix.csv"
+        - "out/us_audit/final_gap_closed_matrix.md"
+
+    - id: run_ssa_sensitivity
+      order: 40
+      enabled: true
+      script: "tools/ssa_jacobian_sensitivity_sweep.py"
+      args:
+        - "--base-deficit"
+        - "3.82"
+        - "--base-depletion-year"
+        - "2033"
+      expected_outputs:
+        - "out/us_audit/ssa_hhs_deep_dive/ssa_jacobian_sweep.csv"
+        - "out/us_audit/ssa_hhs_deep_dive/ssa_jacobian_sweep_meta.json"
+        - "out/us_audit/ssa_hhs_deep_dive/ssa_jacobian_sweep.md"
+
+    - id: step_level_reasoner_pulse
+      order: 50
+      enabled: true
+      script: "tools/step_level_reasoner.py"
+      args:
+        - "--institutional-operational"
+      expected_outputs:
+        - "out/us_audit/reasoner"
