@@ -1,0 +1,70 @@
+manifest_version: "1.0.0"
+generated_at_utc: "2026-02-17T00:00:00Z"
+organization: "REPLACE_ORG_NAME"
+prepared_by: "REPLACE_OWNER"
+review_cycle_days: 30
+
+hard_dates:
+  memo_issue_date: "2025-12-11"
+  agency_update_deadline: "2026-03-11"
+  memo_sunset_date: "2027-12-11"
+
+signing:
+  method: "ed25519"
+  key_id: "REPLACE_KEY_ID"
+  kms_or_hsm: "REPLACE_KMS_OR_HSM_URI"
+
+audit_storage:
+  provider: "s3-compatible"
+  endpoint: "REPLACE_ENDPOINT"
+  bucket: "REPLACE_BUCKET"
+  versioning_enabled: true
+  access_logging_enabled: true
+  immutable_retention_days: 365
+
+systems:
+  - system_id: "REPLACE_SYSTEM_ID"
+    criticality: "high"
+    owner: "REPLACE_OWNER"
+    environment: "production"
+    endpoint: "https://REPLACE_ENDPOINT"
+    model:
+      provider: "REPLACE_PROVIDER"
+      model_name: "REPLACE_MODEL_NAME"
+      model_version: "REPLACE_MODEL_VERSION"
+      model_hash_sha256: "REPLACE_MODEL_HASH"
+      training_date_utc: "YYYY-MM-DDTHH:MM:SSZ"
+    data:
+      datasets:
+        - uri: "s3://REPLACE_BUCKET/path/to/dataset.csv"
+          schema_hash_sha256: "REPLACE_SCHEMA_HASH"
+          pii_classification: "REPLACE_PII_CLASS"
+    controls:
+      refuse_uncertain:
+        enabled: true
+        policy_version: "REPLACE_POLICY_VERSION"
+        thresholds:
+          predictive_entropy: "REPLACE_NUMERIC_THRESHOLD"
+          softmax_max: "REPLACE_NUMERIC_THRESHOLD"
+      jacobian_gate:
+        enabled: true
+        rank_min: "REPLACE_R_MIN"
+        condition_max: "REPLACE_KAPPA_MAX"
+      transparency_artifacts:
+        aup: "REPLACE_DOC_URI"
+        model_or_system_or_data_card: "REPLACE_DOC_URI"
+        end_user_resources: "REPLACE_DOC_URI"
+        feedback_mechanism: "REPLACE_DOC_URI"
+    evidence:
+      latest_attestation_uri: "s3://REPLACE_BUCKET/path/to/attestation.json"
+      latest_attestation_signature_uri: "s3://REPLACE_BUCKET/path/to/attestation.sig"
+      latest_jacobian_report_uri: "s3://REPLACE_BUCKET/path/to/jacobian_report.json"
+      latest_runbook_uri: "REPLACE_DOC_URI"
+    status:
+      required_controls_pass: false
+      last_checked_utc: "YYYY-MM-DDTHH:MM:SSZ"
+      open_findings:
+        - id: "REPLACE_FINDING_ID"
+          severity: "required"
+          summary: "REPLACE_FINDING_SUMMARY"
+

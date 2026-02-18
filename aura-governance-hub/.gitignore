@@ -1,0 +1,33 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+
+# Generated runtime artifacts
+out
+output
+runs
+
+# Environment
+.env
+.env.*
+*.local
+
+# Editor
+.vscode
+.idea
+.DS_Store
+*.swp
+
+# Base44
+.app.json*
+.types/
+
+# Security-sensitive material
+*private_key*
+*.pem
+*.key
+*.p12
+*.pfx
+*.jwk

@@ -1,0 +1,28 @@
+{
+  "config_version": "2026-02-17",
+  "effective_date": "2026-03-11",
+  "notes": "Fill legal thresholds before production. Null values must block final attestations.",
+  "uncertainty_thresholds": {
+    "predictive_entropy": null,
+    "softmax_max": null,
+    "interval_width_norm": null
+  },
+  "calibration_requirements": {
+    "coverage_gamma": null,
+    "allowable_error_epsilon": null,
+    "confidence_level_alpha": null
+  },
+  "ecm_transition_thresholds": {
+    "E0_SPECULATIVE->E1_STRUCTURAL": null,
+    "E1_STRUCTURAL->E2_INFORMATIONAL": null,
+    "E2_INFORMATIONAL->E3_CAUSAL": null,
+    "E3_CAUSAL->E4_HISTORICAL": null,
+    "E4_HISTORICAL->E5_PHYSICAL": null
+  },
+  "policy_owner": "REPLACE_LEGAL_OWNER",
+  "approval": {
+    "approved_by": "REPLACE_APPROVER",
+    "approved_at_utc": null,
+    "signature_ref": null
+  }
+}

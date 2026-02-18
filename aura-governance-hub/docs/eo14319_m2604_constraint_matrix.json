@@ -1,0 +1,87 @@
+{
+  "version": "2026-02-17",
+  "effective_context": {
+    "eo_14319_signed": "2025-07-23",
+    "m26_04_issued": "2025-12-11",
+    "agency_policy_update_deadline": "2026-03-11"
+  },
+  "constraints": [
+    {
+      "id": "C1_TRUTH_SEEKING",
+      "type": "required",
+      "rule": "LLM must support truth-seeking behavior and acknowledge uncertainty when reliable information is incomplete or contradictory.",
+      "evidence_required": ["policy_statement", "evaluation_results", "uncertainty_behavior_examples"],
+      "source": "EO 14319 Sec. 3(a); M-26-04 Overview"
+    },
+    {
+      "id": "C2_IDEOLOGICAL_NEUTRALITY",
+      "type": "required",
+      "rule": "LLM must be neutral/nonpartisan and not intentionally encode ideological judgments unless prompted or readily accessible.",
+      "evidence_required": ["policy_statement", "prompt_control_docs", "evaluation_results"],
+      "source": "EO 14319 Sec. 3(b); M-26-04 Overview"
+    },
+    {
+      "id": "C3_NEW_CONTRACT_TERMS",
+      "type": "required",
+      "rule": "After M-26-04 issuance, solicitations/orders for LLM procurement must include contractual requirements for compliance with Unbiased AI Principles.",
+      "evidence_required": ["contract_template", "solicitation_clause"],
+      "source": "M-26-04 Agency Actions (a)"
+    },
+    {
+      "id": "C4_EXISTING_CONTRACT_MODS",
+      "type": "recommended",
+      "rule": "Existing LLM contracts should be modified, where practicable, before option extension.",
+      "evidence_required": ["contract_mod_plan", "option_extension_controls"],
+      "source": "M-26-04 Agency Actions (b)"
+    },
+    {
+      "id": "C5_POLICY_UPDATE_DEADLINE",
+      "type": "required",
+      "rule": "By 2026-03-11, agency policies/procedures must include these contract requirements and a user reporting process for violating outputs.",
+      "evidence_required": ["policy_doc", "reporting_workflow"],
+      "source": "M-26-04 Agency Actions (c)"
+    },
+    {
+      "id": "C6_MIN_TRANSPARENCY_ARTIFACTS",
+      "type": "required",
+      "rule": "Solicitation package must request AUP, model/system/data cards, end-user resources, and feedback mechanism.",
+      "evidence_required": ["aup", "model_or_system_or_data_card", "end_user_resources", "feedback_mechanism"],
+      "source": "M-26-04 Appendix A.1(A)(i-iv)"
+    },
+    {
+      "id": "C7_MATERIALITY_FOR_DEFAULT",
+      "type": "required",
+      "rule": "Relevant requirements should be marked material to eligibility/payment to support termination for default after noncompliance and failed corrective action.",
+      "evidence_required": ["materiality_clause", "corrective_action_clause"],
+      "source": "M-26-04 Appendix A.1(C)"
+    },
+    {
+      "id": "C8_SENSITIVE_DATA_MINIMIZATION",
+      "type": "recommended",
+      "rule": "Documentation requests should avoid requiring disclosure of model weights/sensitive technical data where practicable.",
+      "evidence_required": ["data_request_scope", "ip_protection_clause"],
+      "source": "EO 14319 Sec. 4(a)(ii); M-26-04 Appendix A.1 preface"
+    },
+    {
+      "id": "C9_SUNSET_AWARENESS",
+      "type": "required",
+      "rule": "M-26-04 ceases force/effect two years after issuance unless OMB Director provides otherwise.",
+      "evidence_required": ["compliance_calendar"],
+      "source": "M-26-04 Agency Actions (d)"
+    }
+  ],
+  "sources": [
+    {
+      "label": "EO 14319",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/07/preventing-woke-ai-in-the-federal-government/"
+    },
+    {
+      "label": "M-26-04 PDF",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles-1.pdf"
+    },
+    {
+      "label": "OMB Memoranda Index",
+      "url": "https://www.whitehouse.gov/omb/information-resources/guidance/memoranda/"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "att-20260217-0001",
+  "timestamp_utc": "2026-02-17T01:00:00Z",
+  "system_id": "lucidity-main",
+  "model_version": "aura-vip-2026-rc1",
+  "input_hash_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "decision": {
+    "type": "classification",
+    "prediction": "REFUSE_UNCERTAIN",
+    "probabilities": [
+      0.31,
+      0.33,
+      0.36
+    ],
+    "refuse_uncertain": true,
+    "refuse_reason": "predictive_entropy_above_threshold"
+  },
+  "uncertainty": {
+    "metric": "predictive_entropy",
+    "value": 1.08,
+    "threshold": 0.9,
+    "policy_version": "2026-02-15"
+  },
+  "jacobian": {
+    "shape": [
+      3,
+      24
+    ],
+    "rank": 2,
+    "rank_min": 3,
+    "condition_number": 1234567.0,
+    "condition_max": 100000000.0,
+    "singular_values_topk": [
+      12.4,
+      0.91,
+      0.000004
+    ],
+    "status": "RANK_DEFICIENT"
+  },
+  "audit": {
+    "script_version": "jacobian_gate_audit.py@1.0.0",
+    "dataset_uri": "s3://audit-bucket/samples/admissions_sample.csv",
+    "dataset_hash_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "artifact_uri": "s3://audit-bucket/attestations/att-20260217-0001.json",
+    "artifact_hash_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "kms://lucidity/attestation-key-01",
+    "value_base64": "REPLACE_BASE64_SIGNATURE"
+  }
+}
+

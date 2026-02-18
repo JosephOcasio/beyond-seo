@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aura.local/schemas/lucidity_attestation.schema.json",
+  "title": "Lucidity Attestation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "timestamp_utc",
+    "system_id",
+    "model_version",
+    "input_hash_sha256",
+    "decision",
+    "uncertainty",
+    "jacobian",
+    "audit",
+    "signature"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{8,128}$"
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "system_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_hash_sha256": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "prediction",
+        "refuse_uncertain"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "classification",
+            "regression",
+            "ranking",
+            "other"
+          ]
+        },
+        "prediction": {},
+        "probabilities": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0
+          }
+        },
+        "refuse_uncertain": {
+          "type": "boolean"
+        },
+        "refuse_reason": {
+          "type": "string"
+        }
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metric",
+        "value",
+        "threshold",
+        "policy_version"
+      ],
+      "properties": {
+        "metric": {
+          "type": "string",
+          "enum": [
+            "predictive_entropy",
+            "softmax_max",
+            "interval_width",
+            "other"
+          ]
+        },
+        "value": {
+          "type": "number"
+        },
+        "threshold": {
+          "type": "number"
+        },
+        "policy_version": {
+          "type": "string"
+        }
+      }
+    },
+    "jacobian": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "shape",
+        "rank",
+        "rank_min",
+        "condition_number",
+        "condition_max",
+        "status"
+      ],
+      "properties": {
+        "shape": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "rank": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rank_min": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "condition_number": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "condition_max": {
+          "type": "number",
+          "minimum": 0.0
+        },
+        "singular_values_topk": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0.0
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "PASS",
+            "RANK_DEFICIENT",
+            "ILL_CONDITIONED",
+            "REFUSE_UNCERTAIN"
+          ]
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "script_version",
+        "dataset_uri",
+        "dataset_hash_sha256",
+        "artifact_uri",
+        "artifact_hash_sha256"
+      ],
+      "properties": {
+        "script_version": {
+          "type": "string"
+        },
+        "dataset_uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "dataset_hash_sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "artifact_uri": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact_hash_sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "key_id",
+        "value_base64"
+      ],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": [
+            "ed25519",
+            "rsa-pss-sha256"
+          ]
+        },
+        "key_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value_base64": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
+

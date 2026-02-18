@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aura.local/schemas/ecm_promotion_request.schema.json",
+  "title": "ECM Promotion Request",
+  "description": "Deterministic input envelope for Existence-Class Manager (E0-E5) promotion checks.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "timestamp_utc",
+    "claim_id",
+    "current_class",
+    "target_class",
+    "prior_feasible_volume",
+    "posterior_feasible_volume",
+    "evidence",
+    "constraints_verified"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9._:-]{8,128}$"
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "claim_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "current_class": {
+      "type": "string",
+      "enum": [
+        "E0_SPECULATIVE",
+        "E1_STRUCTURAL",
+        "E2_INFORMATIONAL",
+        "E3_CAUSAL",
+        "E4_HISTORICAL",
+        "E5_PHYSICAL"
+      ]
+    },
+    "target_class": {
+      "type": "string",
+      "enum": [
+        "E0_SPECULATIVE",
+        "E1_STRUCTURAL",
+        "E2_INFORMATIONAL",
+        "E3_CAUSAL",
+        "E4_HISTORICAL",
+        "E5_PHYSICAL"
+      ]
+    },
+    "prior_feasible_volume": {
+      "type": "number",
+      "exclusiveMinimum": 0.0
+    },
+    "posterior_feasible_volume": {
+      "type": "number",
+      "exclusiveMinimum": 0.0
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence_id",
+          "type",
+          "score",
+          "provenance"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "jacobian",
+              "empirical",
+              "sensor",
+              "physics",
+              "other"
+            ]
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "uri",
+              "hash_sha256"
+            ],
+            "properties": {
+              "uri": {
+                "type": "string",
+                "minLength": 1
+              },
+              "hash_sha256": {
+                "type": "string",
+                "pattern": "^[a-fA-F0-9]{64}$"
+              }
+            }
+          },
+          "timestamp_utc": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "constraints_verified": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}
+

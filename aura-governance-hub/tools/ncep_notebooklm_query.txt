@@ -1,0 +1,10 @@
+Extract only falsifiable conditional statements and explicit mathematical or physical constraints from the corpus.
+Remove all interpretive, theological, financial, compliance, or narrative framing.
+Present output only in this form:
+CP_i: condition -> consequence
+
+Rules:
+- Keep only statements that can fail.
+- Include explicit thresholds, inequalities, gate requirements, and function mappings.
+- For each CP_i, include at least one failure mode in plain text.
+- Do not summarize; enumerate.

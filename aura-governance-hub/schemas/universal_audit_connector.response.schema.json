@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aura.local/schemas/universal_audit_connector.response.schema.json",
+  "title": "Universal Audit Connector Response",
+  "description": "Output envelope returned by OSRE Master Auditor after gating a submitted claim/action.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "connector_version",
+    "request_id",
+    "trace_id",
+    "evaluated_at_utc",
+    "decision",
+    "reason",
+    "gate_results",
+    "scores",
+    "forensic"
+  ],
+  "properties": {
+    "connector_version": {
+      "type": "string",
+      "pattern": "^UAC-[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9._:-]{8,128}$"
+    },
+    "trace_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9._:-]{8,128}$"
+    },
+    "evaluated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "REFUSE_UNCERTAIN",
+        "VETO_POLICY",
+        "NON_CONVERGENT",
+        "INADMISSIBLE",
+        "ERROR"
+      ]
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gate_results": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "invariance_lambda",
+        "identifiability_pass",
+        "policy_pass",
+        "multiplicative_zero_applied"
+      ],
+      "properties": {
+        "invariance_lambda": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "identifiability_pass": {
+          "type": "boolean"
+        },
+        "policy_pass": {
+          "type": "boolean"
+        },
+        "execution_gate_w3_pass": {
+          "type": "boolean"
+        },
+        "multiplicative_zero_applied": {
+          "type": "boolean"
+        },
+        "foundation_lock_triggered": {
+          "type": "boolean"
+        }
+      }
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rank_score", "evidence_count", "admissibility_delta"],
+      "properties": {
+        "rank_score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        "evidence_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "admissibility_delta": {
+          "type": "number"
+        }
+      }
+    },
+    "forensic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_refs",
+        "ledger_recorded",
+        "step_trace_included",
+        "model_weights_disclosed"
+      ],
+      "properties": {
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "ledger_recorded": {
+          "type": "boolean"
+        },
+        "ledger_entry_id": {
+          "type": "string"
+        },
+        "step_trace_included": {
+          "type": "boolean"
+        },
+        "model_weights_disclosed": {
+          "type": "boolean"
+        },
+        "response_hash_sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        }
+      }
+    },
+    "remediation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message"],
+        "properties": {
+          "code": {
+            "type": "string",
+            "enum": [
+              "ADD_EVIDENCE",
+              "INCREASE_JACOBIAN_RANK",
+              "REMOVE_POLICY_CONFLICT",
+              "NARROW_ACTION_SCOPE",
+              "RETRY_LATER"
+            ]
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

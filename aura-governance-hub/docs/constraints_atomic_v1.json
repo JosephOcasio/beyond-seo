@@ -1,0 +1,87 @@
+{
+  "spec_id": "lucidity-legal-constraints-v1",
+  "generated_at_utc": "2026-02-17T00:00:00Z",
+  "legal_sources": [
+    {
+      "id": "EO14319",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/07/preventing-woke-ai-in-the-federal-government/",
+      "notes": "Defines Unbiased AI Principles and Federal procurement policy direction."
+    },
+    {
+      "id": "M26-04",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles-1.pdf",
+      "notes": "Implements agency procurement actions, timing, and transparency requirements."
+    }
+  ],
+  "hard_dates": {
+    "memo_issue_date": "2025-12-11",
+    "agency_update_deadline": "2026-03-11",
+    "memo_sunset_date": "2027-12-11"
+  },
+  "constraints": [
+    {
+      "id": "C1_UNCERTAINTY_DISCLOSURE",
+      "severity": "required",
+      "statement": "System must expose uncertainty and permit refusal behavior when reliable information is incomplete or contradictory.",
+      "formal_test": "For each audited decision d, record uncertainty_metric(d), threshold(d), and refusal_flag(d). PASS iff uncertainty fields exist and refusal policy is operational.",
+      "expected_artifacts": ["uncertainty_policy", "decision_logs_with_uncertainty", "refusal_policy"],
+      "missing_parameters": ["binding numeric thresholds per decision class"]
+    },
+    {
+      "id": "C2_NEUTRALITY_GUARDRAILS",
+      "severity": "required",
+      "statement": "System must align to truth-seeking and ideological neutrality requirements.",
+      "formal_test": "PASS iff procurement packet includes explicit policy language and test evidence for nonpartisan behavior under controlled evaluations.",
+      "expected_artifacts": ["policy_statement", "evaluation_plan", "evaluation_results"]
+    },
+    {
+      "id": "C3_NEW_SOLICITATION_CLAUSES",
+      "severity": "required",
+      "statement": "Solicitations/orders issued after 2025-12-11 must include Unbiased AI Principle contractual clauses.",
+      "formal_test": "PASS iff solicitation template version date >= 2025-12-11 and includes required clauses.",
+      "expected_artifacts": ["solicitation_template", "contract_clause_library"]
+    },
+    {
+      "id": "C4_EXISTING_CONTRACT_MODIFICATION",
+      "severity": "recommended",
+      "statement": "Existing contracts should be modified where practicable before options are exercised.",
+      "formal_test": "PASS iff contract inventory tracks which options are pending and modification status per contract.",
+      "expected_artifacts": ["contract_inventory", "modification_tracking_table"]
+    },
+    {
+      "id": "C5_POLICY_AND_USER_REPORTING_DEADLINE",
+      "severity": "required",
+      "statement": "By 2026-03-11 agencies must update policy/procedures and establish a user reporting process.",
+      "formal_test": "PASS iff policy effective date <= 2026-03-11 and reporting workflow is documented and active.",
+      "expected_artifacts": ["policy_document", "reporting_sop", "ticketing_endpoint"]
+    },
+    {
+      "id": "C6_MINIMUM_TRANSPARENCY_PACKET",
+      "severity": "required",
+      "statement": "Minimum transparency docs must be requestable: AUP, model/system/data card, end-user resources, and feedback mechanism.",
+      "formal_test": "PASS iff each required document class exists and has a current version/date.",
+      "expected_artifacts": ["AUP", "model_or_system_or_data_card", "end_user_resources", "feedback_mechanism"]
+    },
+    {
+      "id": "C7_MATERIALITY_AND_REMEDIATION",
+      "severity": "required",
+      "statement": "Contract should treat key requirements as material to eligibility/payment and define remediation then default termination path.",
+      "formal_test": "PASS iff contract includes materiality clause and explicit cure/remediation timeline fields.",
+      "expected_artifacts": ["materiality_clause", "corrective_action_clause", "default_termination_clause"]
+    },
+    {
+      "id": "C8_SENSITIVE_TECH_DATA_MINIMIZATION",
+      "severity": "recommended",
+      "statement": "Requests should avoid model weight disclosure where practicable.",
+      "formal_test": "PASS iff data request matrix marks model weights as not required and documents acceptable substitute evidence.",
+      "expected_artifacts": ["data_request_matrix", "ip_protection_terms"]
+    },
+    {
+      "id": "C9_SUNSET_CONTROL",
+      "severity": "required",
+      "statement": "M-26-04 has a 2-year sunset unless extended.",
+      "formal_test": "PASS iff compliance calendar tracks 2027-12-11 and includes review checkpoint before sunset.",
+      "expected_artifacts": ["compliance_calendar", "sunset_review_task"]
+    }
+  ]
+}

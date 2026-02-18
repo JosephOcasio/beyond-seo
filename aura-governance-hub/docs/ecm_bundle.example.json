@@ -1,0 +1,100 @@
+{
+  "promotion_request": {
+    "request_id": "aaaaaaaa-2222-3333-4444-555566667777",
+    "claim_id": "claim-revenue-policy-01",
+    "from_class": "E2_INFORMATIONAL",
+    "to_class": "E3_CAUSAL",
+    "requested_by": "lucidity-operator-01",
+    "timestamp": "2026-02-16T22:15:00Z",
+    "evidence_set": [
+      {
+        "evidence_id": "11111111-2222-3333-4444-555555555555",
+        "type": "jacobian",
+        "provenance": {
+          "uri": "s3://ocasio-vault/audits/jacobian-001.json",
+          "hash_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "artifact_type": "audit"
+        },
+        "score": 0.91,
+        "constraints_verified": [
+          "identifiability_rank",
+          "jacobian_condition_ok"
+        ],
+        "payload_summary": {
+          "rank": 12
+        },
+        "timestamp": "2026-02-16T22:14:00Z"
+      }
+    ],
+    "policy_thresholds": {
+      "deltaF_threshold": 0.2,
+      "required_constraints": [
+        "identifiability_rank"
+      ]
+    },
+    "justification": "Promote informational claim to causal based on deterministic Jacobian evidence"
+  },
+  "promotion_proof": {
+    "proof_id": "9f8e7d1a-1111-2222-3333-444455556666",
+    "promotion_request_id": "aaaaaaaa-2222-3333-4444-555566667777",
+    "prover_id": "lucidity-prover-01",
+    "timestamp": "2026-02-16T22:30:00Z",
+    "method": "rank_surrogate",
+    "prior_summary": {
+      "rank": 12,
+      "singular_values": [
+        12.34,
+        4.56,
+        1.23,
+        0.45,
+        0.1,
+        0.01,
+        0.001
+      ],
+      "effective_dimension": 2.508313676674248,
+      "entropy_nats": 0.9196106853942958
+    },
+    "posterior_summary": {
+      "rank": 5,
+      "singular_values": [
+        9.99,
+        1.5,
+        0.3,
+        0.02,
+        0.001
+      ],
+      "effective_dimension": 1.662956688487641,
+      "entropy_nats": 0.5085971556669688
+    },
+    "deltaF": 0.33702203837099776,
+    "deltaF_method_details": {
+      "algorithm": "exponentiated-shannon-of-singular-spectrum",
+      "deterministic_seed": 0,
+      "svd_tolerance": "max(m,n)*eps*max(singulars)",
+      "numeric_tolerance": 1e-12
+    },
+    "constraints_satisfied": [
+      "identifiability_rank",
+      "jacobian_condition_ok"
+    ],
+    "provenance": [
+      {
+        "uri": "s3://ocasio-vault/models/aura-vip-2026-rc1.tar.gz",
+        "hash_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "artifact_type": "model"
+      },
+      {
+        "uri": "s3://ocasio-vault/samples/sample1.csv",
+        "hash_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+        "artifact_type": "dataset"
+      }
+    ],
+    "signatures": [
+      {
+        "key_id": "lucidity_attestation_key_2026",
+        "algo": "Ed25519",
+        "signature_b64": "REPLACE_WITH_REAL_SIGNATURE"
+      }
+    ]
+  }
+}

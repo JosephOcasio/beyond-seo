@@ -1,0 +1,30 @@
+{
+  "name": "AuditEvent",
+  "type": "object",
+  "title": "Audit Event",
+  "description": "Append-only governance audit trail",
+  "properties": {
+    "trace_id": { "type": "string" },
+    "module": { "type": "string" },
+    "request_id": { "type": "string" },
+    "decision": { "type": "string", "enum": ["PASS", "REFUSE_UNCERTAIN", "VETO_POLICY"] },
+    "reason": { "type": "string" },
+    "rank_score": { "type": "number" },
+    "equation_score": { "type": "number" },
+    "equation_version": { "type": "string" },
+    "evidence_count": { "type": "number" },
+    "source_refs": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "version": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "required": [
+    "trace_id",
+    "module",
+    "decision",
+    "reason",
+    "rank_score",
+    "evidence_count",
+    "version",
+    "created_at"
+  ]
+}

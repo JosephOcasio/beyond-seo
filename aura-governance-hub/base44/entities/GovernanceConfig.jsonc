@@ -1,0 +1,20 @@
+{
+  "name": "GovernanceConfig",
+  "type": "object",
+  "title": "Governance Config",
+  "description": "Active governance policy configuration",
+  "properties": {
+    "key": { "type": "string", "default": "active" },
+    "version": { "type": "string", "default": "2026.03.04" },
+    "min_rank": { "type": "number", "default": 0.75 },
+    "equation_min_score": { "type": "number", "default": 0.75 },
+    "equation_version": { "type": "string", "default": "ocasio-v1" },
+    "eq_alpha_evidence": { "type": "number", "default": 0.5 },
+    "eq_beta_sources": { "type": "number", "default": 0.5 },
+    "eq_gamma_confidence": { "type": "number", "default": 0.0 },
+    "min_evidence_count": { "type": "number", "default": 2 },
+    "blocked_terms": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "enabled": { "type": "boolean", "default": true }
+  },
+  "required": ["key"]
+}

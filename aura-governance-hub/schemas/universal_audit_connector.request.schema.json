@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aura.local/schemas/universal_audit_connector.request.schema.json",
+  "title": "Universal Audit Connector Request",
+  "description": "Input envelope for submitting a model claim/action to OSRE Master Auditor.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "connector_version",
+    "request_id",
+    "timestamp_utc",
+    "source_model",
+    "proposed_action",
+    "constraint_context",
+    "audit_preferences"
+  ],
+  "properties": {
+    "connector_version": {
+      "type": "string",
+      "pattern": "^UAC-[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9._:-]{8,128}$"
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "model_id", "deployment_scope"],
+      "properties": {
+        "provider": { "type": "string", "minLength": 1 },
+        "model_id": { "type": "string", "minLength": 1 },
+        "model_version": { "type": "string" },
+        "deployment_scope": {
+          "type": "string",
+          "enum": ["research", "staging", "production"]
+        },
+        "auth_context": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "actor_id": { "type": "string" },
+            "tenant_id": { "type": "string" },
+            "role": { "type": "string" }
+          }
+        }
+      }
+    },
+    "proposed_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action_type", "domain", "claim", "utility_phi", "requires_execution"],
+      "properties": {
+        "action_type": {
+          "type": "string",
+          "enum": [
+            "inference",
+            "classification",
+            "forecast",
+            "execution_plan",
+            "transaction_decision",
+            "trajectory_solution",
+            "custom"
+          ]
+        },
+        "domain": {
+          "type": "string",
+          "enum": ["ai", "finance", "astro", "textual", "policy", "custom"]
+        },
+        "claim": { "type": "string", "minLength": 1 },
+        "utility_phi": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "requires_execution": { "type": "boolean" },
+        "payload": { "type": "object" }
+      }
+    },
+    "constraint_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "invariants",
+        "expected_parameter_dim",
+        "jacobian_rank",
+        "evidence",
+        "thresholds"
+      ],
+      "properties": {
+        "invariants": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "expected_parameter_dim": { "type": "integer", "minimum": 1 },
+        "jacobian_rank": { "type": "integer", "minimum": 0 },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["evidence_id", "type", "source_uri", "confidence"],
+            "properties": {
+              "evidence_id": { "type": "string" },
+              "type": {
+                "type": "string",
+                "enum": ["measurement", "document", "simulation", "sensor", "ledger", "other"]
+              },
+              "source_uri": { "type": "string", "minLength": 1 },
+              "hash_sha256": {
+                "type": "string",
+                "pattern": "^[a-fA-F0-9]{64}$"
+              },
+              "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+              "timestamp_utc": { "type": "string", "format": "date-time" }
+            }
+          }
+        },
+        "thresholds": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min_identifiability_rank", "min_evidence_count", "min_integrity_lambda"],
+          "properties": {
+            "min_identifiability_rank": { "type": "integer", "minimum": 1 },
+            "min_evidence_count": { "type": "integer", "minimum": 0 },
+            "max_policy_risk": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+            "min_integrity_lambda": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+          }
+        },
+        "policy_tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "observability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sensor_resolution": { "type": "number", "minimum": 0.0 },
+        "signal_domain": { "type": "number", "minimum": 0.0 },
+        "coupling_omega": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      }
+    },
+    "audit_preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strict_refusal_on_underdetermined",
+        "include_step_trace",
+        "return_remediation"
+      ],
+      "properties": {
+        "strict_refusal_on_underdetermined": { "type": "boolean" },
+        "include_step_trace": { "type": "boolean" },
+        "return_remediation": { "type": "boolean" }
+      }
+    }
+  }
+}

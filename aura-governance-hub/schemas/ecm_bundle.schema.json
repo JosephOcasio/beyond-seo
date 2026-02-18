@@ -1,0 +1,287 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Existence-Class Manager Schema (ECM)",
+  "description": "Schema for evidence objects, promotion requests, and promotion proofs implementing RGAA.",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "existence_class": {
+      "type": "string",
+      "enum": [
+        "E0_SPECULATIVE",
+        "E1_STRUCTURAL",
+        "E2_INFORMATIONAL",
+        "E3_CAUSAL",
+        "E4_HISTORICAL",
+        "E5_PHYSICAL"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "uri": {
+          "type": "string"
+        },
+        "hash_sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "artifact_type": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "string"
+        },
+        "container_digest": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "uri",
+        "hash_sha256"
+      ]
+    },
+    "evidence_object": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "jacobian",
+            "empirical",
+            "sensor",
+            "physics",
+            "legal",
+            "other"
+          ]
+        },
+        "provenance": {
+          "$ref": "#/definitions/provenance"
+        },
+        "score": {
+          "type": "number"
+        },
+        "constraints_verified": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "payload_summary": {
+          "type": "object"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "evidence_id",
+        "type",
+        "provenance",
+        "timestamp"
+      ]
+    }
+  },
+  "properties": {
+    "promotion_request": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "claim_id": {
+          "type": "string"
+        },
+        "from_class": {
+          "$ref": "#/definitions/existence_class"
+        },
+        "to_class": {
+          "$ref": "#/definitions/existence_class"
+        },
+        "requested_by": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "evidence_set": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/evidence_object"
+          },
+          "minItems": 1
+        },
+        "policy_thresholds": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "deltaF_threshold": {
+              "type": "number"
+            },
+            "required_constraints": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "deltaF_threshold"
+          ]
+        },
+        "justification": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "request_id",
+        "claim_id",
+        "from_class",
+        "to_class",
+        "requested_by",
+        "timestamp",
+        "evidence_set",
+        "policy_thresholds"
+      ]
+    },
+    "promotion_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "proof_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "promotion_request_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "prover_id": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "method": {
+          "type": "string",
+          "enum": [
+            "rank_surrogate",
+            "entropy_surrogate",
+            "gaussian_transfer",
+            "custom"
+          ]
+        },
+        "prior_summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "rank": {
+              "type": "integer"
+            },
+            "singular_values": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "effective_dimension": {
+              "type": "number"
+            },
+            "entropy_nats": {
+              "type": "number"
+            }
+          }
+        },
+        "posterior_summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "rank": {
+              "type": "integer"
+            },
+            "singular_values": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              }
+            },
+            "effective_dimension": {
+              "type": "number"
+            },
+            "entropy_nats": {
+              "type": "number"
+            }
+          }
+        },
+        "deltaF": {
+          "type": "number"
+        },
+        "deltaF_method_details": {
+          "type": "object"
+        },
+        "constraints_satisfied": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provenance": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/provenance"
+          }
+        },
+        "signatures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "key_id": {
+                "type": "string"
+              },
+              "algo": {
+                "type": "string"
+              },
+              "signature_b64": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "key_id",
+              "algo",
+              "signature_b64"
+            ]
+          }
+        }
+      },
+      "required": [
+        "proof_id",
+        "promotion_request_id",
+        "prover_id",
+        "timestamp",
+        "method",
+        "prior_summary",
+        "posterior_summary",
+        "deltaF",
+        "provenance",
+        "signatures"
+      ]
+    }
+  },
+  "required": [
+    "promotion_request",
+    "promotion_proof"
+  ]
+}

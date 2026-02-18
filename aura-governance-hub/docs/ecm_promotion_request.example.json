@@ -1,0 +1,37 @@
+{
+  "request_id": "req-ecm-20260217-0001",
+  "timestamp_utc": "2026-02-17T01:20:00Z",
+  "claim_id": "claim-revenue-policy-01",
+  "current_class": "E2_INFORMATIONAL",
+  "target_class": "E3_CAUSAL",
+  "prior_feasible_volume": 1.0,
+  "posterior_feasible_volume": 0.72,
+  "evidence": [
+    {
+      "evidence_id": "e1",
+      "type": "jacobian",
+      "score": 0.91,
+      "provenance": {
+        "uri": "s3://audit-bucket/jacobian/report-001.json",
+        "hash_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "timestamp_utc": "2026-02-17T01:19:00Z"
+    },
+    {
+      "evidence_id": "e2",
+      "type": "empirical",
+      "score": 0.83,
+      "provenance": {
+        "uri": "s3://audit-bucket/experiments/counterfactual-001.json",
+        "hash_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "timestamp_utc": "2026-02-17T01:19:20Z"
+    }
+  ],
+  "constraints_verified": [
+    "C_IDENTIFIABILITY_BASE",
+    "C_DATA_PROVENANCE",
+    "C_CAUSAL_TEST"
+  ]
+}
+

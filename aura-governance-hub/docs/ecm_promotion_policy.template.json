@@ -1,0 +1,48 @@
+{
+  "policy_id": "ecm-promotion-policy-v1",
+  "updated_at_utc": "2026-02-17T00:00:00Z",
+  "monotonic_required": true,
+  "allow_one_step_only": true,
+  "delta_f_required_by_transition": {
+    "E0_SPECULATIVE->E1_STRUCTURAL": 0.05,
+    "E1_STRUCTURAL->E2_INFORMATIONAL": 0.10,
+    "E2_INFORMATIONAL->E3_CAUSAL": 0.15,
+    "E3_CAUSAL->E4_HISTORICAL": 0.20,
+    "E4_HISTORICAL->E5_PHYSICAL": 0.25
+  },
+  "min_evidence_count_by_transition": {
+    "E0_SPECULATIVE->E1_STRUCTURAL": 1,
+    "E1_STRUCTURAL->E2_INFORMATIONAL": 2,
+    "E2_INFORMATIONAL->E3_CAUSAL": 2,
+    "E3_CAUSAL->E4_HISTORICAL": 3,
+    "E4_HISTORICAL->E5_PHYSICAL": 3
+  },
+  "required_constraints_by_target_class": {
+    "E1_STRUCTURAL": [
+      "C_IDENTIFIABILITY_BASE"
+    ],
+    "E2_INFORMATIONAL": [
+      "C_IDENTIFIABILITY_BASE",
+      "C_DATA_PROVENANCE"
+    ],
+    "E3_CAUSAL": [
+      "C_IDENTIFIABILITY_BASE",
+      "C_DATA_PROVENANCE",
+      "C_CAUSAL_TEST"
+    ],
+    "E4_HISTORICAL": [
+      "C_IDENTIFIABILITY_BASE",
+      "C_DATA_PROVENANCE",
+      "C_CAUSAL_TEST",
+      "C_HISTORICAL_CORROBORATION"
+    ],
+    "E5_PHYSICAL": [
+      "C_IDENTIFIABILITY_BASE",
+      "C_DATA_PROVENANCE",
+      "C_CAUSAL_TEST",
+      "C_HISTORICAL_CORROBORATION",
+      "C_PHYSICAL_SENSOR_CONFIRMATION"
+    ]
+  }
+}
+

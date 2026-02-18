@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aura.local/schemas/ecm_promotion_result.schema.json",
+  "title": "ECM Promotion Result",
+  "description": "Deterministic Existence-Class Manager evaluation output with Delta-F computation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "request_id",
+    "claim_id",
+    "evaluated_at_utc",
+    "transition",
+    "delta_f",
+    "delta_f_required",
+    "evidence_count",
+    "required_evidence_count",
+    "decision",
+    "reason_codes"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "claim_id": {
+      "type": "string"
+    },
+    "evaluated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "transition": {
+      "type": "string",
+      "pattern": "^E[0-5]_[A-Z]+->E[0-5]_[A-Z]+$"
+    },
+    "delta_f": {
+      "type": "number"
+    },
+    "delta_f_formula": {
+      "type": "string",
+      "const": "delta_f = 1 - (posterior_feasible_volume / prior_feasible_volume)"
+    },
+    "delta_f_required": {
+      "type": "number"
+    },
+    "evidence_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "required_evidence_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "constraints_required": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints_missing": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "REFUSE_UNCERTAIN",
+        "VETO_POLICY"
+      ]
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  }
+}
+

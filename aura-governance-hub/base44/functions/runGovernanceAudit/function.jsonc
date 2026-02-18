@@ -1,0 +1,4 @@
+{
+  "name": "runGovernanceAudit",
+  "entry": "index.ts"
+}
