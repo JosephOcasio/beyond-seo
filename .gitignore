@@ -2,6 +2,8 @@
 /out/
 /inbox/us_sources/
 /staging_event.json
+/web_portal_v1/launch_readiness.json
+/web_portal_v1/connectivity_debugger_report.json
 
 # Python cache
 __pycache__/
@@ -9,3 +11,6 @@ __pycache__/
 
 # Local envs
 .venv/
+.env
+.env.*
+!.env.example
