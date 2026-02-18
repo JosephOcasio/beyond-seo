@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { base44 } from "@/api/base44Client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,8 +20,6 @@ const passSampleEvidence = [
 ];
 
 const refuseSampleEvidence = [];
-const STORAGE_KEY = "aura_internal_access_key";
-
 export default function InternalConsole() {
   const [moduleName, setModuleName] = useState("ao-audit-engine");
   const [requestId, setRequestId] = useState("");
@@ -34,15 +32,6 @@ export default function InternalConsole() {
   const [accessKeyInput, setAccessKeyInput] = useState("");
   const [accessKey, setAccessKey] = useState("");
   const [isUnlocked, setIsUnlocked] = useState(false);
-
-  useEffect(() => {
-    const saved = window.sessionStorage.getItem(STORAGE_KEY) || "";
-    if (saved) {
-      setAccessKey(saved);
-      setAccessKeyInput(saved);
-      setIsUnlocked(true);
-    }
-  }, []);
 
   const parsedEvidenceCount = useMemo(() => {
     try {
@@ -72,7 +61,6 @@ export default function InternalConsole() {
     setError("");
     setAccessKey(key);
     setIsUnlocked(true);
-    window.sessionStorage.setItem(STORAGE_KEY, key);
   };
 
   const lockConsole = () => {
@@ -81,7 +69,6 @@ export default function InternalConsole() {
     setIsUnlocked(false);
     setAudit(null);
     setError("");
-    window.sessionStorage.removeItem(STORAGE_KEY);
   };
 
   const runAudit = async () => {
@@ -145,7 +132,8 @@ export default function InternalConsole() {
               <h1 className="text-xl font-semibold">Internal Console Locked</h1>
             </div>
             <p className="text-sm text-slate-600">
-              Enter the internal access key. Requests are also enforced server-side.
+              Enter the internal access key. Requests are enforced server-side and the key is held
+              in memory only for this tab session.
             </p>
             <Input
               type="password"

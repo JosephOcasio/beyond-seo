@@ -13,7 +13,7 @@ DEFAULT_FUNCTION_PATH = Path("base44/functions/runGovernanceAudit/index.ts")
 
 
 def main() -> int:
-  parser = argparse.ArgumentParser(description="Rotate INTERNAL_ACCESS_KEY_HASH in backend function")
+  parser = argparse.ArgumentParser(description="Rotate default internal access key hash in backend function")
   parser.add_argument("--key", required=True, help="New plaintext access key")
   parser.add_argument(
     "--file",
@@ -29,10 +29,10 @@ def main() -> int:
   new_hash = hashlib.sha256(args.key.encode("utf-8")).hexdigest()
   text = target.read_text(encoding="utf-8")
 
-  pattern = r'(const INTERNAL_ACCESS_KEY_HASH =\s*")[0-9a-f]{64}(";)'
+  pattern = r'(const DEFAULT_INTERNAL_ACCESS_KEY_HASH =\s*")[0-9a-f]{64}(";)'
   updated, count = re.subn(pattern, rf"\g<1>{new_hash}\2", text, count=1)
   if count != 1:
-    raise RuntimeError("Could not locate INTERNAL_ACCESS_KEY_HASH constant to update.")
+    raise RuntimeError("Could not locate DEFAULT_INTERNAL_ACCESS_KEY_HASH constant to update.")
 
   target.write_text(updated, encoding="utf-8")
   print(f"Updated hash in {target}")

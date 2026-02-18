@@ -13,34 +13,33 @@ export default function PublicLanding() {
             </span>
           </h1>
           <p className="text-slate-600 text-lg max-w-2xl">
-            Constraint-first verification infrastructure for high-integrity AI workflows.
+            Enterprise governance platform for controlled decision workflows.
           </p>
         </header>
 
         <section className="bg-white rounded-xl border border-slate-200 shadow-sm p-6 space-y-4">
           <h2 className="text-xl font-semibold text-slate-900">Public Overview</h2>
           <p className="text-slate-700">
-            This public page is intentionally limited to high-level product context.
-            Technical evaluation details, internal audit traces, and operational controls are
-            available in private review.
+            This site is intentionally limited to high-level context.
+            Internal methods, model behavior, and review artifacts are not exposed on public pages.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
             <div className="rounded-lg border border-slate-200 p-4">
-              <div className="font-medium text-slate-900">Verification Layer</div>
+              <div className="font-medium text-slate-900">Policy Controls</div>
               <div className="text-slate-600 mt-1">
-                Formal gate checks before decision release.
+                Release controls for regulated workflows.
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 p-4">
-              <div className="font-medium text-slate-900">Forensic Logging</div>
+              <div className="font-medium text-slate-900">Operational Audit</div>
               <div className="text-slate-600 mt-1">
-                Append-only decision trace for third-party auditability.
+                Immutable event history for internal compliance.
               </div>
             </div>
             <div className="rounded-lg border border-slate-200 p-4">
-              <div className="font-medium text-slate-900">Deployment Model</div>
+              <div className="font-medium text-slate-900">Access Model</div>
               <div className="text-slate-600 mt-1">
-                Public presentation with private evaluation environment.
+                Public presentation with private review channels.
               </div>
             </div>
           </div>

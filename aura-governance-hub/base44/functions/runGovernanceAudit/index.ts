@@ -40,8 +40,10 @@ type EquationResult = {
 };
 
 const INTERNAL_ACCESS_ENABLED = true;
-const INTERNAL_ACCESS_KEY_HASH =
+const DEFAULT_INTERNAL_ACCESS_KEY_HASH =
   "208661d2fc7a6eae6bcccaaca26978577d9fd192f9b06b0f0e20bdb0b4159dfc";
+const INTERNAL_ACCESS_KEY_HASH =
+  normalizeString(Deno.env.get("INTERNAL_ACCESS_KEY_HASH")) || DEFAULT_INTERNAL_ACCESS_KEY_HASH;
 
 function clampNumber(value: unknown, min: number, max: number, fallback: number): number {
   const n = typeof value === "number" ? value : Number(value);

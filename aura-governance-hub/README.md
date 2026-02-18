@@ -1,21 +1,24 @@
-# Todo App
+# AURA Governance Hub
 
-A simple todo list app built with React and Base44 backend.
+Public-safe frontend plus private internal audit console for `runGovernanceAudit`.
 
-## Structure
+## Access Model
 
-```
-base44/               # Backend configuration
-├── config.jsonc      # Project settings
-└── entities/         # Data schemas
-    └── task.jsonc    # Task entity
+- Public route: `/`
+- Internal route: `/internal` (disabled in production by default)
+- Internal console is enabled only when:
+  - local dev (`npm run dev`), or
+  - `VITE_ENABLE_INTERNAL_CONSOLE=true` at build time
+  - if disabled at build time, internal console code is excluded from the production bundle
 
-src/                  # Frontend code
-├── App.jsx           # Main todo app
-├── api/              # Base44 client
-├── components/ui/    # UI components
-└── lib/              # Utilities
-```
+## Security Defaults
+
+- Public page is high-level only (no proprietary method details).
+- Internal access key is held in memory only in the browser (not persisted to storage).
+- Backend key hash supports env override:
+  - `INTERNAL_ACCESS_KEY_HASH` (preferred)
+  - falls back to default hash in source if env not set
+- Generated artifacts and local corpus data are git-ignored.
 
 ## Development
 
@@ -24,18 +27,19 @@ npm install
 npm run dev
 ```
 
-## Commands
+Open:
+- Public: `http://localhost:5173/`
+- Internal: `http://localhost:5173/internal`
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start dev server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-
-## Base44 CLI
+## Base44
 
 ```bash
-base44 login          # Authenticate
-base44 entities push  # Push entity schemas
-base44 deploy         # Deploy backend + hosting
+base44 entities push
+base44 deploy
+```
+
+If you rotate the default fallback key hash:
+
+```bash
+python3 tools/rotate_internal_access_key.py --key "NEW_KEY"
 ```
