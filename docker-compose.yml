@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      RBAC_ENFORCE: "false"
+      DATABASE_URL: "sqlite:////app/out/us_audit/prototype.db"
+      VERTEX_AUTH_MODE: "adc"
+      VERTEX_LOCATIONS: "global,us-central1"
+      MASTER_SCRIBE_SCRIPT: "/app/Master_Scribe_Final.py"
+    volumes:
+      - ./:/app
