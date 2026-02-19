@@ -1,0 +1,50 @@
+name: Backend Prototype CI
+
+on:
+  pull_request:
+    paths:
+      - "backend/**"
+      - "Master_Scribe_Final.py"
+      - ".github/workflows/backend-prototype-ci.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "backend/**"
+      - "Master_Scribe_Final.py"
+      - ".github/workflows/backend-prototype-ci.yml"
+
+jobs:
+  backend-prototype:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r backend/requirements.txt
+
+      - name: Static compile check
+        run: |
+          python -m py_compile backend/app/*.py backend/app/services/*.py backend/tests/*.py
+
+      - name: Run Alembic migrations
+        env:
+          DATABASE_URL: sqlite:///${{ github.workspace }}/tmp/backend_ci.db
+        run: |
+          mkdir -p tmp
+          alembic -c backend/alembic.ini upgrade head
+          alembic -c backend/alembic.ini current
+
+      - name: Run backend tests
+        run: |
+          python -m pytest backend/tests -q
